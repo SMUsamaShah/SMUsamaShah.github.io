@@ -7,8 +7,9 @@ Muhammad Usama
 =========================
 
 ----
-
->  Specialties: C, C++, Java, C#, Windows
+>  **Software Engineer**
+> 
+>  Specialties: C, C++, Java, C#, Windows,
 >  Masters in Computer Science 
 
 ----
@@ -20,5 +21,5 @@ Since 2015
 :   *Software Engineer for [Gorillabox](https://www.gorillabox.net/)*
     (Islamabad, Pakistan).
 
-    Game Integration, Encoding,
+    Game Integration, Encoding,  
     Performance improvments.
