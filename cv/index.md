@@ -69,43 +69,30 @@ February 2011 (3 months)
 Tools and Tech
 --------------
 
-    C/C++, Java, C# .Net, JavaScript, PHP 
-    Spring Hibernate, Android, JNI, Windows API, Win32, Live555, DirectX9, DirectX10, SDL, SDL2, HTML5 Canvas, jQuery, Angular JS, DLL Injection, API Hooking, Git, WebRTC
-    My SQL, MS SQL Server, MS Access, PostgreSQL, MS Visual Studio, NetBeans, Eclipse, Matlab 
+:    C/C++, Java, C# .Net, JavaScript, PHP 
+:    Spring Hibernate, Android, JNI, Windows API, Win32, Live555, DirectX9, DirectX10, SDL, SDL2, HTML5 Canvas, jQuery, Angular JS, DLL Injection, API Hooking, Git, WebRTC
+:    My SQL, MS SQL Server, MS Access, PostgreSQL, MS Visual Studio, NetBeans, Eclipse, Matlab 
     
 
 Projects
 --------
+C++
+: **Multi-Screen Mouse Snap (GitHub)** *[Win32]* Avoid accidental mouse movements between monitors. 
 
-Radiological Management System 
-: [ASP.NET MVC5, jQuery, AngularJS] Web app to manage Dicom files (studies) in different hospital centers. Bulk file upload. Study review workflow. Reports generation.
+C# 
+: **Radiological Management System** *[ASP.NET MVC5, jQuery, AngularJS]* Web app to manage Dicom files (studies) in different hospital centers. Bulk file upload. Study review workflow. Reports generation.
+: **EMS NUST** *[MS SQL Server, MS Charts, MS Reports]* Dashboard to view power generators stats and manage them. Stats fuel, power etc. visualization. Monthly, weekly reports. Data is received as SMS from devices on generators on request and stored in database. 
+: **Recipe Manager**  *[MS Access]* Keep record of sales and stock of recipes and their ingredients. 
+: **Column Reader** *[Win Forms]* Express. Offline reading. No DB. Support more with DLLs. Bulk Download.
 
-Scientific Workflow System 
-: [Java, Jade, Swing] Scientific workflow system as an implementation of MS thesis. Provides required output through interface generated for selected workflow. 
+Java 
+: **Scientific Workflow System**  *[Jade, Swing]* Scientific workflow system as an implementation of MS thesis. Provides required output through interface generated for selected workflow. 
 
-ASA Film Crew 
-: [PhoneGap 3.3.0, Puship, JavaScript, jQuery] Mobile application and PHP server for film crew recruiting business. Send film crew booking requests. Supports push notifications. 
-
-EMS NUST 
-: [C#, MS SQL Server, MS Charts, MS Reports] Dashboard to view power generators stats and manage them. Stats fuel, power etc. visualization. Monthly, weekly reports. Data is received as SMS from devices on generators on request and stored in database. 
-
-Recipe Manager 
-: [C#, MS Access] Keep record of sales and stock of recipes and their ingredients. 
-
-Procedural Trees (GitHub) 
-: [JavaScript, Canvas] Generates beautiful fractals based trees on HTML5 Canvas. 
-
-Multi-Screen Mouse Snap (GitHub) 
-: [Win32, C++] Avoid accidental mouse movements between monitors. 
-
-Column Reader
-: [C#, Win Forms] Express. Offline reading. No DB. Support more with DLLs. Bulk Download.
-
-Friendly Clock (Opera Addons) 
-: [JavaScript, Opera extension API] speed dial extension for Opera. 
-
-Bulk Delete Delicious tags (Source Forge) 
-: [JavaScript] to remove useless Del.icio.us tags.
+JavaScript
+: **ASA Film Crew** *[PhoneGap 3.3.0, Puship, jQuery]* Mobile application and PHP server for film crew recruiting business. Send film crew booking requests. Supports push notifications. 
+: **Procedural Trees (GitHub)** *[HTML5 Canvas]* Generates beautiful fractals based trees on HTML5 Canvas. 
+: **Friendly Clock (Opera Addons)** *[Opera extension API]* speed dial extension for Opera. 
+: **Bulk Delete Delicious tags (Source Forge)** to remove useless Del.icio.us tags.
 
 Education
 ---------
