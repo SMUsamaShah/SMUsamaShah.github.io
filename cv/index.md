@@ -17,7 +17,8 @@ Muhammad Usama
 Work Experience
 --------------------
 
-Aug 2015-Oct 2017 (2+ years)
+Aug 2015-Oct 2017 
+(2+ years)
 : **Software Engineer** @ [Gorillabox](https://www.gorillabox.net/) (Islamabad, Pakistan). 
 
   Project [GLoader](https://en.gamigo.com/corporate/gamigo-games/gorillabox-brings-its-successful-g-loader-technology-to-the-us-market-in-time-for-game-connection/)
@@ -46,7 +47,8 @@ Aug 2015-Oct 2017 (2+ years)
   NvFBC, DirectX 9 & DirectX10, API Monitoring, API Hooking, DLL Injection, EasyHook, Live555, Citrix 
   XenServer and XenCenter, Git 
 
-Dec 2012 (1 year 6 months)
+Dec 2012 
+(1 year 6 months)
 :   **Research Associate** @ [NUST](http://seecs.nust.edu.pk/) (Islamabad, Pakistan).
 
     DSpace is an Open source digital data repository. I worked in SEECS part time to provide DSpace based solution 
@@ -56,13 +58,15 @@ Dec 2012 (1 year 6 months)
     -  Published bug fixes in original GitHub repo. 
     -  Git, PostgreSQL.
     
-Mar 2013 (3 months)
+Mar 2013 
+(3 months)
 :   **Teaching Assistant (Java)** @ [NUST](http://seecs.nust.edu.pk/) (Islamabad, Pakistan).
 
     Teaching, checking assignments, Computer Programming course for Java. 
     
 
-February 2011 (3 months) 
+February 2011 
+(3 months) 
 :   **PHP Internee** @ [SASD International] (Lahore, Pakistan)
 
     Worked in core PHP, WordPress (themes creation) and Joomla.
@@ -70,9 +74,17 @@ February 2011 (3 months)
 Tools and Tech
 --------------
 
-:    C/C++, Java, C# .Net, JavaScript, PHP 
-:    Spring Hibernate, Android, JNI, Windows API, Win32, Live555, DirectX9, DirectX10, SDL, SDL2, HTML5 Canvas, jQuery, Angular JS, DLL Injection, API Hooking, Git, WebRTC
-:    My SQL, MS SQL Server, MS Access, PostgreSQL, MS Visual Studio, NetBeans, Eclipse, Matlab 
+Languages
+: C/C++, Java, C# .Net, JavaScript, PHP 
+
+Tech
+: Spring Hibernate, Android, JNI, Windows API, Win32, Live555, DirectX9, DirectX10, SDL, SDL2, HTML5 Canvas, jQuery, Angular JS, DLL Injection, API Hooking, Git, WebRTC
+
+DB
+: My SQL, MS SQL Server, MS Access, PostgreSQL, 
+
+Tools
+: MS Visual Studio, NetBeans, Eclipse, Matlab 
     
 
 Projects
