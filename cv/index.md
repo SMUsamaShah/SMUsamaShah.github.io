@@ -11,6 +11,8 @@ Muhammad Usama
 > 
 >  Specialties: C, C++, Java, C#, Windows,
 >  Masters in Computer Science 
+> 
+> Software Developer with 3 years of working experience in many languages including C/C++, C#, Java and others as required. I also have web development experience in Java Spring, ASP.net and PHP. My favorite development platform is Windows and I can work on Linux where required.
 
 ----
 
@@ -19,9 +21,7 @@ Work Experience
 
 Aug 2015-Oct 2017 
 (2+ years)
-: **Software Engineer** @ [Gorillabox](https://www.gorillabox.net/) (Islamabad, Pakistan). 
-
-  Project [GLoader](https://en.gamigo.com/corporate/gamigo-games/gorillabox-brings-its-successful-g-loader-technology-to-the-us-market-in-time-for-game-connection/)
+: **Software Engineer** @ [Gorillabox](https://www.gorillabox.net/) (Islamabad, Pakistan).  
 
   Accomplishments: 
   -  Fiesta Online is fully supported and G-Loader is released with it as the first game. 
@@ -40,36 +40,37 @@ Aug 2015-Oct 2017
   -  Java/Spring based Management Server to manage streams.  
   -  Reverse Engineering and DLL Injection to hook required functionality. 
   -  Citrix XenServer, License Servers, VMs management and Git repo management. 
+  
+  Project: [GLoader](https://en.gamigo.com/corporate/gamigo-games/gorillabox-brings-its-successful-g-loader-technology-to-the-us-market-in-time-for-game-connection/)
 
-  Languages, Tools and Technologies: 
+  Tools and Tech: 
   C/C++, Java Spring, MySQL, Hibernate, C#, Android, JNI, Win32, Windows API, AWS EC2 API, Windows 
   Services, SDL2, CURL, H264 & H265, Video Encoders, WebRTC Native, FFmpeg, Nvidia NVENC, NvIFR, 
   NvFBC, DirectX 9 & DirectX10, API Monitoring, API Hooking, DLL Injection, EasyHook, Live555, Citrix 
   XenServer and XenCenter, Git 
 
 Dec 2012 
-(1 year 6 months)
-:   **Research Associate** @ [NUST](http://seecs.nust.edu.pk/) (Islamabad, Pakistan).
+(1.5 years)
+: **Research Associate** @ [NUST](http://seecs.nust.edu.pk/) (Islamabad, Pakistan).
 
-    DSpace is an Open source digital data repository. I worked in SEECS part time to provide DSpace based solution 
-    for PASTIC and SEECS. 
-    -  Java, JSP and JavaScript for development. 
-    -  Delivered successfully for PASTIC and SEECS. 
-    -  Published bug fixes in original GitHub repo. 
-    -  Git, PostgreSQL.
+  Worked in SEECS part time to provide DSpace based solution for PASTIC and SEECS. 
+  -  Java, JSP and JavaScript for development. 
+  -  Delivered successfully for PASTIC and SEECS. 
+  -  Published bug fixes in original GitHub repo. 
+  -  Git, PostgreSQL.
     
 Mar 2013 
 (3 months)
-:   **Teaching Assistant (Java)** @ [NUST](http://seecs.nust.edu.pk/) (Islamabad, Pakistan).
+: **Teaching Assistant (Java)** @ [NUST](http://seecs.nust.edu.pk/) (Islamabad, Pakistan).
 
-    Teaching, checking assignments, Computer Programming course for Java. 
+  Teaching, checking assignments, Computer Programming course for Java. 
     
 
 February 2011 
 (3 months) 
-:   **PHP Internee** @ [SASD International] (Lahore, Pakistan)
+: **Internship (PHP)** @ [SASD International] (Lahore, Pakistan)
 
-    Worked in core PHP, WordPress (themes creation) and Joomla.
+  Worked in core PHP, WordPress (themes creation) and Joomla.
     
 Tools and Tech
 --------------
