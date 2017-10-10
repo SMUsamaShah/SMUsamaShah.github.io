@@ -89,22 +89,32 @@ Tools
 
 Projects
 --------
-C++
+C++ 
+
 : **Multi-Screen Mouse Snap (GitHub)** *[Win32]* Avoid accidental mouse movements between monitors. 
 
 C# 
+
 : **Radiological Management System** *[ASP.NET MVC5, jQuery, AngularJS]* Web app to manage Dicom files (studies) in different hospital centers. Bulk file upload. Study review workflow. Reports generation.
+
 : **EMS NUST** *[MS SQL Server, MS Charts, MS Reports]* Dashboard to view power generators stats and manage them. Stats fuel, power etc. visualization. Monthly, weekly reports. Data is received as SMS from devices on generators on request and stored in database. 
+
 : **Recipe Manager**  *[MS Access]* Keep record of sales and stock of recipes and their ingredients. 
+
 : **Column Reader** *[Win Forms]* Express. Offline reading. No DB. Support more with DLLs. Bulk Download.
 
 Java 
+
 : **Scientific Workflow System**  *[Jade, Swing]* Scientific workflow system as an implementation of MS thesis. Provides required output through interface generated for selected workflow. 
 
 JavaScript
+
 : **ASA Film Crew** *[PhoneGap 3.3.0, Puship, jQuery]* Mobile application and PHP server for film crew recruiting business. Send film crew booking requests. Supports push notifications. 
+
 : **Procedural Trees (GitHub)** *[HTML5 Canvas]* Generates beautiful fractals based trees on HTML5 Canvas. 
+
 : **Friendly Clock (Opera Addons)** *[Opera extension API]* speed dial extension for Opera. 
+
 : **Bulk Delete Delicious tags (Source Forge)** to remove useless Del.icio.us tags.
 
 Education
