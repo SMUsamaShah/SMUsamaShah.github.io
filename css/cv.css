@@ -48,11 +48,11 @@ h2:before {
 dt {
     float: left;
     clear: left;
-    width: 17%;
+    width: 20%;
     font-weight: bold;
 }
 dd {
-    margin-left: 17%;
+    margin-left: 20%;
 }
 p {
     margin-top:0;
