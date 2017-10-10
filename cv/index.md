@@ -18,32 +18,33 @@ Work Experience
 --------------------
 
 Aug 2015-Oct 2017 (2+ years)
-:   **Software Engineer** @ [Gorillabox](https://www.gorillabox.net/) (Islamabad, Pakistan). 
-:   Project [GLoader](https://en.gamigo.com/corporate/gamigo-games/gorillabox-brings-its-successful-g-loader-technology-to-the-us-market-in-time-for-game-connection/)
+: **Software Engineer** @ [Gorillabox](https://www.gorillabox.net/) (Islamabad, Pakistan). 
 
-    Accomplishments: 
-    -  Fiesta Online is fully supported and G-Loader is released with it as the first game. 
-    -  Added H264, H265 Hardware Encoder for DirectX9, DirectX10 based games. 
-    -  Multi-Streaming (concurrent game instances on same machine) with input hooking. 
-    -  Integration of many DirectX based games.
-    -  DirectX9Ex support for newer games. 
-    -  Wrote generic desktop based streaming for easier faster integration of any game. 
-    -  Hardware Encoder implementation in WebRTC. 
-    -  Wrote analytics with activity logging to check conversions of thousands of users. 
-    -  Design of web server backend. 
+  Project [GLoader](https://en.gamigo.com/corporate/gamigo-games/gorillabox-brings-its-successful-g-loader-technology-to-the-us-market-in-time-for-game-connection/)
 
-    Roles and responsibilities. 
-    -  Improvements in G-core server-side video streamer. 
-    -  Integration of new games.  
-    -  Java/Spring based Management Server to manage streams.  
-    -  Reverse Engineering and DLL Injection to hook required functionality. 
-    -  Citrix XenServer, License Servers, VMs management and Git repo management. 
+  Accomplishments: 
+  -  Fiesta Online is fully supported and G-Loader is released with it as the first game. 
+  -  Added H264, H265 Hardware Encoder for DirectX9, DirectX10 based games. 
+  -  Multi-Streaming (concurrent game instances on same machine) with input hooking. 
+  -  Integration of many DirectX based games.
+  -  DirectX9Ex support for newer games. 
+  -  Wrote generic desktop based streaming for easier faster integration of any game. 
+  -  Hardware Encoder implementation in WebRTC. 
+  -  Wrote analytics with activity logging to check conversions of thousands of users. 
+  -  Design of web server backend. 
 
-    Languages, Tools and Technologies: 
-    C/C++, Java Spring, MySQL, Hibernate, C#, Android, JNI, Win32, Windows API, AWS EC2 API, Windows 
-    Services, SDL2, CURL, H264 & H265, Video Encoders, WebRTC Native, FFmpeg, Nvidia NVENC, NvIFR, 
-    NvFBC, DirectX 9 & DirectX10, API Monitoring, API Hooking, DLL Injection, EasyHook, Live555, Citrix 
-    XenServer and XenCenter, Git 
+  Roles and responsibilities. 
+  -  Improvements in G-core server-side video streamer. 
+  -  Integration of new games.  
+  -  Java/Spring based Management Server to manage streams.  
+  -  Reverse Engineering and DLL Injection to hook required functionality. 
+  -  Citrix XenServer, License Servers, VMs management and Git repo management. 
+
+  Languages, Tools and Technologies: 
+  C/C++, Java Spring, MySQL, Hibernate, C#, Android, JNI, Win32, Windows API, AWS EC2 API, Windows 
+  Services, SDL2, CURL, H264 & H265, Video Encoders, WebRTC Native, FFmpeg, Nvidia NVENC, NvIFR, 
+  NvFBC, DirectX 9 & DirectX10, API Monitoring, API Hooking, DLL Injection, EasyHook, Live555, Citrix 
+  XenServer and XenCenter, Git 
 
 Dec 2012 (1 year 6 months)
 :   **Research Associate** @ [NUST](http://seecs.nust.edu.pk/) (Islamabad, Pakistan).
