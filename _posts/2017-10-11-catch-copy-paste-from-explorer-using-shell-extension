@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to get windows copy paste events with shell hook."
+date: 2017-10-11
 ---
 
 # How to catch copy paste from explorer using shell extension? ICopyHook alternative for files and folder
