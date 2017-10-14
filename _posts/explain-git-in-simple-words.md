@@ -41,19 +41,74 @@ When you change one file (blob1) and commit, git will store the complete file ag
 
 ![commit](../images/git/commit2.png "For each change there is a new blob and a new tree")
 
+
+### Check in = Do a Commit
+
+Check in is simply another name for doing a commit in the repository.
+
+### Check out = Load a Commit
+
+Similary Check out is the process of loading a commit from the repository.
+
 More Details:  
-[Git Object: Git Commit - GitGuys]
-(https://waybackmachine.org/web/20160902075749/http://www.gitguys.com/topics/git-object-commit/)
+[Git Object: Git Commit - GitGuys](https://waybackmachine.org/web/20160902075749/http://www.gitguys.com/topics/git-object-commit/)
 
 https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html
 
 History
 -------
 
-If you make some changes and commit again, the next commit stores a pointer to the commit that came immediately before it. So the commits “flow” in one direction only. This flow of commits can be divide into multiple branches.
-By default all commits go on master branch, but you can always create more branches. Commits are connect like a linked list where each new node points to previous node unlike simple link list. This gives us the power to create multiple nodes pointing to same previous commit. e.g. in above diagram 3rd and 4th commit both point to 2nd commit hence creating two branches.
+If you make some changes and commit again, the new commit will also point to the previous commit. So each new commit only knows about its previous commit (like a 'linked list' or 'tree'). When you keep changing files, a chain of commits maintains the `history` of what was done in each commit. You may load any previous commit any time.
+
+![history](../images/git/history1.png "Commits are connected in chain keeping history of changes")
+
+You can see that we can have multiple commits (commit3 and commit4) pointing to same previous commit (commit2). This is called `branching`. 
+
+Branch
+------
+
+We have seen earlier that chain of commits can go in multiple directions creating multiple branches. But also note that each commit only knows about its previous commit. If you have loaded "commit4" you can go back to "commit2" but there is no way you can reach "commit3" until you have stored its address somewhere. The thing which keeps track of different branches is named simply a `branch`.
+
+A branch is just a *move-able* pointer which keeps pointing to latest commit in that branch. Everytime you commit, it moves to that newly made commit. Git names the default branch as `master`.
+
+![branch](../images/git/branch1.png "Branch is a pointer with a name, pointing to latest commit")
+
+What branch or commit which you have currently loaded is tracking by the **HEAD**. Head always points to the commit or branch which you are on at that time.
+
+![head branch](../images/git/branch2.png "Head points to currently loaded branch")
+
+You can work on each branch independently to work on different versions of your software independently e.g. for Windows XP and Windows 7. Imagine one base Linux with all different flavors as different branches. 
+
+### Visualizing branches
+
+Many GIT Gui tools (like SmartGit) can show graph representation of branches and commits to easily see how they are connected.
+
+![visualize branches](../images/git/branch-visual.png "commits and branches visualized")
 
 
+More details Creating And Playing With Branches | Git Branch | GitGuys http://www.gitguys.com/topics/creating-and-playing-with-branches/
+Also see What a Branch Is for details. http://yyliang.cn/book/ch3-1.html
+
+http://www.gitguys.com/topics/git-show-branch-to-see-branches-and-their-commits/
+
+
+
+Tag (Bookmark)
+--------------
+
+Think of `tag` as bookmark. Where branch is a *move-able* pointer, a tag is *immove-able* pointer which always points to one specific commit. Tags are useful to specify a version. e.g. after a lots of commits and fixes you can tag a commit where everything working fine as `version 1.0`. 
+
+![tag](../images/git/tag.png "Tag is a bookmark on the specified commit")
+
+For more details Git Object: Tag | Git Tag | GitGuys.com http://www.gitguys.com/topics/git-object-tag/
+[Source: Git objects: the tag] http://365git.tumblr.com/post/497500602/git-objects-the-tag
+
+
+
+
+
+
+---
 
 Sources: 
 
@@ -62,4 +117,6 @@ http://gitready.com/beginner/2009/02/17/how-git-stores-your-data.html
 https://jwiegley.github.io/git-from-the-bottom-up/1-Repository/3-blobs-are-stored-in-trees.html
 
 https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html
+
+https://marklodato.github.io/visual-git-guide/index-en.html
 
