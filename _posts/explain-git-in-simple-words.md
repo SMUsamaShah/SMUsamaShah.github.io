@@ -1,5 +1,11 @@
-Long time ago I started hearing and reading about Git here and there and its various strange words like branch, index, tree, commit, clone, fork, master, origin, head, check out, check in, push and pull etc. Available tutorials were difficult to understand because they jumped straight to git commands. I asked this on [Quora](https://www.quora.com/How-do-you-explain-the-basics-of-Git-in-simple-words-What-does-branch-index-tree-commit-clone-fork-master-origin-head-check-out-check-in-etc-mean) in hope for something more visual and easier to understand, then answered it myself getting most upvotes. I am posting it with more and hopefully better explanation here on my own blog now :)
+---
+title: How to explain git in simple words?
+date: 2017-10-14
+layout: post
+---
 
+
+A while ago I started hearing about Git here and there and its various strange words like branch, index, tree, commit, clone, fork, master, origin, head, check out, check in, push and pull etc. Available tutorials were difficult to understand because they jumped straight to git commands. I asked this on [Quora](https://www.quora.com/How-do-you-explain-the-basics-of-Git-in-simple-words-What-does-branch-index-tree-commit-clone-fork-master-origin-head-check-out-check-in-etc-mean) in hope for something more visual and easier to understand, then answered it myself getting most upvotes. I am posting it with more and hopefully better explanation here on my own blog now :)
 
 
 ---
@@ -49,6 +55,19 @@ Check in is simply another name for doing a commit in the repository.
 ### Check out = Load a Commit
 
 Similary Check out is the process of loading a commit from the repository.
+
+### Working directory
+
+This the git directory in which you are working. When you check-out a commit, your whole directory with all files is changed/replaced to match that commit *(except ignored files)*.
+
+### Stage OR Index
+
+The Index is your proposed next commit. Its a buffer before actual commit. It’s basically a loading dock where you get to determine what changes get shipped away. Since the working directory and what gets saved by Git are essentially decoupled, this allows the developer to build up their commits however they want. You can even stage a single individual line from your many changes and only commit that.
+
+![index](../images/git/index.gif "Index is the buffer before commit.")
+
+More details What is the deal with the Git Index? What is the Git Index? - GitGuys http://www.gitguys.com/topics/whats-the-deal-with-the-git-index/
+
 
 More Details:  
 [Git Object: Git Commit - GitGuys](https://waybackmachine.org/web/20160902075749/http://www.gitguys.com/topics/git-object-commit/)
@@ -107,6 +126,28 @@ For more details Git Object: Tag | Git Tag | GitGuys.com http://www.gitguys.com/
 
 
 
+Remote
+------
+
+Multiple people can work on a git repository. Each person gets his/her own copy of the whole repository. It is setup usually like this. There is one centeral repository, everyone who wants to work on it makes its **clone** (copy) on their own computer. For each person, the original repository from where they made the copy is a `remote` repo.
+
+### Clone and Fork
+
+`Clone` is the process of copying a repository. After clone, the orignal repository is added as its remote. Push and Pull can be performed on that remote. `Fork` is just a different name used by GitHub or Bitbucket in a sense that a fork operation clones the repository to your github account instead of your computer.
+
+### Fetch
+
+The process of getting updates/changes from remote is called `pull`. When pulled, latest commits are download to the user's computer. These changes are then applied with a `merge` command.
+
+### Pull
+
+Pull downloads the changes and applies them in one go automatically.
+
+
+### Push
+
+Push is the process of uploading your changes to remote repository
+
 
 ---
 
@@ -120,3 +161,10 @@ https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html
 
 https://marklodato.github.io/visual-git-guide/index-en.html
 
+http://gitready.com/
+
+http://yyliang.cn/
+
+Aha! Moments When Learning Git http://betterexplained.com/articles/aha-moments-when-learning-git/
+
+Git documentation and Git tutorials on GitGuys | GitGuys.com http://www.gitguys.com/topics/
