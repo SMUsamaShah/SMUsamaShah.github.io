@@ -15,14 +15,14 @@ File OR Blob
 
 All contents of a file are stored in a thing called `blob`. When a file is changed, a new blob will store complete file with all new changes. Blob is one of the basic storage units in Git. Others units/object types are Commit and Tree.
 
-![blob](../images/git/blob.png "A blob stores file contents")
+![blob]({{ "/images/git/blob.png" | absolute_url }} "A blob stores file contents")
 
 Hash
 ----
 
 `de9f2c7fd25e1b3afad3e85a0bd17d9b100db4b3`. You see a similar strange string or its short form with (first few characters) everywhere in git. This is `hash` ([SHA1](http://en.wikipedia.org/wiki/SHA1)). A hash can point to a blob, a commit or a tree. It is 40 characters but only few are usually enough to identify a commit. For example GitHub shows first 10 characters.
 
-![hash](../images/git/hash.png "A Hash for each basic unit")
+![hash]({{ "/images/git/hash.png" | absolute_url }} "A Hash for each basic unit")
 
 Tree
 ----
@@ -31,7 +31,7 @@ Files are stored in folders, and a folder can have many folders and files. Like 
 
 There is always a tree on root, pointing to the tree wich contains stuff.
 
-![tree](../images/git/tree.png "A tree stores blobs and trees")
+![tree]({{ "/images/git/tree.png" | absolute_url }} "A tree stores blobs and trees")
 
 More details Git Object: tree | GitGuys.com
 More details here http://www.gitguys.com/topics/git-object-tree/
@@ -41,11 +41,11 @@ Commit
 
 Now let say you have two files. You want to save these in a way that you can get back to them in exact same state anytime later. When you save a snapshot of it with git, a `commit` is created pointing to the tree with two blobs (lets call them blob1 and blob2). Each commit has its own hash and it also saves your message, timestamp and your info.
 
-![commit](../images/git/commit1.png "A commit points to tree")
+![commit]({{ "/images/git/commit1.png" | absolute_url }} "A commit points to tree")
 
 When you change one file (blob1) and commit, git will store the complete file again in a new blob (blob1c). A new tree is created with a new hash pointing to blob2 and the new blob1c. Now your git repo has both versions of a file.
 
-![commit](../images/git/commit2.png "For each change there is a new blob and a new tree")
+![commit]({{ "/images/git/commit2.png" | absolute_url }} "For each change there is a new blob and a new tree")
 
 
 ### Check in = Do a Commit
@@ -64,7 +64,7 @@ This the git directory in which you are working. When you check-out a commit, yo
 
 The Index is your proposed next commit. Its a buffer before actual commit. It’s basically a loading dock where you get to determine what changes get shipped away. Since the working directory and what gets saved by Git are essentially decoupled, this allows the developer to build up their commits however they want. You can even stage a single individual line from your many changes and only commit that.
 
-![index](../images/git/index.gif "Index is the buffer before commit.")
+![index]({{ "/images/git/index.gif" | absolute_url }} "Index is the buffer before commit.")
 
 More details What is the deal with the Git Index? What is the Git Index? - GitGuys http://www.gitguys.com/topics/whats-the-deal-with-the-git-index/
 
@@ -79,7 +79,7 @@ History
 
 If you make some changes and commit again, the new commit will also point to the previous commit. So each new commit only knows about its previous commit (like a 'linked list' or 'tree'). When you keep changing files, a chain of commits maintains the `history` of what was done in each commit. You may load any previous commit any time.
 
-![history](../images/git/history1.png "Commits are connected in chain keeping history of changes")
+![history]({{ "/images/git/history1.png" | absolute_url }} "Commits are connected in chain keeping history of changes")
 
 You can see that we can have multiple commits (commit3 and commit4) pointing to same previous commit (commit2). This is called `branching`. 
 
@@ -90,11 +90,11 @@ We have seen earlier that chain of commits can go in multiple directions creatin
 
 A branch is just a *move-able* pointer which keeps pointing to latest commit in that branch. Everytime you commit, it moves to that newly made commit. Git names the default branch as `master`.
 
-![branch](../images/git/branch1.png "Branch is a pointer with a name, pointing to latest commit")
+![branch]({{ "/images/git/branch1.png" | absolute_url }} "Branch is a pointer with a name, pointing to latest commit")
 
 What branch or commit which you have currently loaded is tracking by the **HEAD**. Head always points to the commit or branch which you are on at that time.
 
-![head branch](../images/git/branch2.png "Head points to currently loaded branch")
+![head branch]({{ "/images/git/branch2.png" | absolute_url }} "Head points to currently loaded branch")
 
 You can work on each branch independently to work on different versions of your software independently e.g. for Windows XP and Windows 7. Imagine one base Linux with all different flavors as different branches. 
 
@@ -102,7 +102,7 @@ You can work on each branch independently to work on different versions of your 
 
 Many GIT Gui tools (like SmartGit) can show graph representation of branches and commits to easily see how they are connected.
 
-![visualize branches](../images/git/branch-visual.png "commits and branches visualized")
+![visualize branches]({{ "/images/git/branch-visual.png" | absolute_url }} "commits and branches visualized")
 
 
 More details Creating And Playing With Branches | Git Branch | GitGuys http://www.gitguys.com/topics/creating-and-playing-with-branches/
@@ -117,7 +117,7 @@ Tag (Bookmark)
 
 Think of `tag` as bookmark. Where branch is a *move-able* pointer, a tag is *immove-able* pointer which always points to one specific commit. Tags are useful to specify a version. e.g. after a lots of commits and fixes you can tag a commit where everything working fine as `version 1.0`. 
 
-![tag](../images/git/tag.png "Tag is a bookmark on the specified commit")
+![tag]({{ "/images/git/tag.png" | absolute_url }} "Tag is a bookmark on the specified commit")
 
 For more details Git Object: Tag | Git Tag | GitGuys.com http://www.gitguys.com/topics/git-object-tag/
 [Source: Git objects: the tag] http://365git.tumblr.com/post/497500602/git-objects-the-tag
