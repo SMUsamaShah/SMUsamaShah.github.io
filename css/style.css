@@ -20,6 +20,19 @@ img {
 	display: block;
 	height: auto;
 	max-width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+/* image caption */
+img + em {
+	display: block; 
+	text-align: center;
+}
+figcaption {
+	display: block; 
+	text-align: center;
+	font-style: italic;
 }
 		
 /* Custom container */
