@@ -29,7 +29,7 @@ Hash
 Tree
 ----
 
-Files are stored in folders, and a folder can have many folders and files. Like files are always in some directory, a `tree` in git represent directories for blobs and other trees. 
+Files are always stored in some directory or folder. Folders can can also contain more directories. Similarly, a `tree` in git represent directories for blobs and more trees. 
 
 There is always a tree on root, pointing to the tree wich contains stuff.
 
