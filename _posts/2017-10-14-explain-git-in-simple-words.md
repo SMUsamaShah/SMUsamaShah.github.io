@@ -1,7 +1,7 @@
 ---
 title: How to explain git in simple words?
 date: 2017-10-14
-layout: athena-post
+layout: post
 ---
 
 
