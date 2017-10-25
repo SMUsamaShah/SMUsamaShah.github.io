@@ -1,0 +1,42 @@
+<div class="sharing">
+    <br/>
+    <br/>
+    <ul>
+        {% if site.sharing.linkedin %}
+        <li><a href="http://www.linkedin.com/shareArticle?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on LinkedIn">
+                <i class="fa fa-linkedin-square"></i>
+        </a></li>
+        {% endif %}
+        
+        <li><i class="fa fa-share-square-o"></i></li>
+        {% if site.sharing.twitter %}
+        <li><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter">
+                <i class="fa fa-twitter-square"></i>
+        </a></li>
+        {% endif %}
+
+        {% if site.sharing.facebook %}
+        <li><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
+                <i class="fa fa-facebook-square"></i>
+        </a></li>
+        {% endif %}
+
+        {% if site.sharing.google_plus %}
+        <li><a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">
+                <i class="fa fa-google-plus-square"></i>
+        </a></li>
+        {% endif %}
+
+        {% if site.sharing.reddit %}
+        <li><a href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on Reddit">
+                <i class="fa fa-reddit-square"></i>
+        </a></li>
+        {% endif %}
+
+        {% if site.sharing.stumble %}
+        <li><a href="http://www.stumbleupon.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Stumble This Page" class="z-2 z-h social su">
+               <i class="fa fa-stumbleupon-square"></i>
+           </a>
+        {% endif %}
+    </ul>
+</div>

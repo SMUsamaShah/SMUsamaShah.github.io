@@ -8,4 +8,17 @@ plugins:
   - jekyll-sitemap
 
 feature:
-    disqus: true
+  disqus: true
+  sharing: true
+
+# Post sharing icons
+sharing:
+  twitter: true
+  linkedin: true
+  facebook: true
+  google_plus: true
+  reddit: true
+  stumble: true
+
+sass:
+  style: compressed
