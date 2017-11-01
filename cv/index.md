@@ -19,7 +19,7 @@ Muhammad Usama
 Work Experience
 --------------------
 
-Aug 2015-Oct 2017 
+Aug 2015 
 (2+ years)
 : **Software Engineer** @ [Gorillabox](https://www.gorillabox.net/) (Islamabad, Pakistan).  
 
