@@ -44,6 +44,12 @@ h2:before {
     background-color: #9CB770;
 }
 
+/* experience in number of years */
+dl:nth-of-type(1) dt:nth-of-type(even) {
+    font-size:  small;
+    font-variant-caps: all-petite-caps;
+}
+
 /* Definitions */
 dt {
     float: left;
