@@ -32,12 +32,12 @@ Aug 2015
 (2.5 years)
 : **Software Engineer** @ [Gorillabox](https://www.gorillabox.net/) (Islamabad, Pakistan).  
   
-  - Coding new features, bug fixes and performance improvements in G-Loader video streamer.
+  - Coding new features, bug fixes and performance improvements in video streamer.
   - Integration of many games including The Elder Scrolls Online, World of Airplanes, Dragon Prophet.
   - Integration and support of Fiesta Online with G-Loader for release as the first game.
-  - Reverse Engineering and DLL Injection, API Hooking, input hooking to support more games.
+  - Reverse Engineering and DLL Injection, API Hooking to support more games.
   - H264, H265 Hardware Encoder for DirectX 9(Ex), DirectX 10 based games.
-  - Hardware Encoder implementation in Google Chrome for WebRTC for in browser gaming.
+  - Hardware Encoder implementation in Google Chrome for WebRTC for browser gaming.
   - Multi-Streaming support as concurrent game instances on same machine.
   - Wrote generic desktop-based streaming for easier faster integration of any game.
   - Updates and fixes in android client with JNI.
@@ -46,7 +46,7 @@ Aug 2015
   - Wrote analytics with activity logging to check conversions of thousands of users.
   - Citrix XenServer, License Servers, VMs management and Git repo management.
   
-  Project: [GLoader](https://en.gamigo.com/corporate/gamigo-games/gorillabox-brings-its-successful-g-loader-technology-to-the-us-market-in-time-for-game-connection/)
+  Project: [G-Loader](https://en.gamigo.com/corporate/gamigo-games/gorillabox-brings-its-successful-g-loader-technology-to-the-us-market-in-time-for-game-connection/)
 
   Tools and Tech: 
   C/C++, Java Spring, MySQL, Hibernate, C#, Android, JNI, Win32, Windows API, AWS EC2 API, Windows Services, SDL2, CURL, H264 and H265 Hardware Encoders, WebRTC Native, FFmpeg, Nvidia NVENC, NvIFR, NvFBC, DirectX 9 and DirectX10, API Monitoring, API Hooking, DLL Injection, EasyHook, Live555, Citrix XenServer and XenCenter, Git
@@ -97,7 +97,7 @@ Projects
 --------
 C++ 
 
-: **FFmpeg Player ([GitHub](https://github.com/SMUsamaShah/FFmpegCapturePlayer))** *[C++, C#, Windows]* FFmpeg based video player with .net front-end
+: **FFmpeg Player ([GitHub](https://github.com/SMUsamaShah/FFmpegCapturePlayer))** *[C++, C#, Windows]* FFmpeg based video player with .net GUI
 
 : **Multi-Screen Mouse Snap ([GitHub](https://github.com/SMUsamaShah/WindowsMultiscreenMouseSnap))** *[Win32]* Avoid accidental mouse movements between monitors. 
 
