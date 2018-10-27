@@ -13,7 +13,7 @@ Link: https://smusamashah.github.io/VisualizingSorts/sorting.html
 
 <div class="video_container">
   <video playsinline autoplay allowfullscreen="true">
-    <source src="merge-vs-heap-512.webm" type="video/webm">
+    <source src="/VisualizingSorts/merge-vs-heap.webm" type="video/webm">
   </video> 
   Merge sort and Heap sort 512x512
 </div>
