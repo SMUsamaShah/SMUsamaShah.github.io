@@ -24,7 +24,7 @@ I used [CanvasRecorder.js](https://github.com/SMUsamaShah/CanvasRecorder) to rec
     <source src="/VisualizingSorts/merge-vs-heap.webm" type="video/webm">
   </video>
 </div>
-Merge sort and Heap sort
+{% include video_webm.html url="/VisualizingSorts/merge-vs-heap.webm" caption="Merge sort and Heap sort" %}
 
 <div class="video_container">
   <video loop autoplay controls>
