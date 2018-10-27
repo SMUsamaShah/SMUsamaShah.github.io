@@ -12,11 +12,11 @@ A youtube [video](https://www.youtube.com/watch?v=kPRA0W1kECg) where you can lis
 Link: https://smusamashah.github.io/VisualizingSorts/sorting.html
 
 <div class="video_container">
-  <video playsinline autoplay allowfullscreen="true">
+  <video playsinline loop autoplay allowfullscreen="true">
     <source src="/VisualizingSorts/merge-vs-heap.webm" type="video/webm">
-  </video> 
-  Merge sort and Heap sort 512x512
+  </video>
 </div>
+Merge sort and Heap sort 128x128
 
 
 ## What I learned
