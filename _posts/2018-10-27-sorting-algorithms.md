@@ -13,6 +13,8 @@ Link: https://smusamashah.github.io/VisualizingSorts/sorting.html
 
 ## What it looks like
 
+I used [CanvasRecorder.js](https://github.com/SMUsamaShah/CanvasRecorder) to record these videos.
+
 <div class="video_container">
   <video loop autoplay controls>
     <source src="/VisualizingSorts/merge-vs-heap.webm" type="video/webm">
