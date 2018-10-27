@@ -23,3 +23,6 @@ sharing:
 
 sass:
   style: compressed
+  
+# jekyl-seo-tag plugin
+image: /image.png
