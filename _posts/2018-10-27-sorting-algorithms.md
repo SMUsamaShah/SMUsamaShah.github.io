@@ -2,6 +2,7 @@
 title: Listen and visualize sorting algorithms
 author: Usama
 layout: post
+image: "/VisualizingSorts/screenshot3.png"
 date: 2018-10-26
 ---
 
