@@ -12,11 +12,75 @@ A youtube [video](https://www.youtube.com/watch?v=kPRA0W1kECg) where you can lis
 Link: https://smusamashah.github.io/VisualizingSorts/sorting.html
 
 <div class="video_container">
-  <video playsinline loop autoplay allowfullscreen="true">
+  <video loop autoplay controls>
     <source src="/VisualizingSorts/merge-vs-heap.webm" type="video/webm">
   </video>
 </div>
-Merge sort and Heap sort 128x128
+Merge sort and Heap sort
+
+<div class="video_container">
+  <video loop autoplay controls>
+    <source src="/VisualizingSorts/bubble-vs-cocktail-128.webm" type="video/webm">
+  </video>
+</div>
+Bubble sort and Cocktail sort
+
+<div class="video_container">
+  <video loop autoplay controls>
+    <source src="/VisualizingSorts/shell-vs-quick-512.webm" type="video/webm">
+  </video>
+</div>
+Shell sort and Quick sort
+
+Insertion and gnome sort look exactly same.
+
+<div class="video_container">
+  <video loop autoplay controls>
+    <source src="/VisualizingSorts/shell-vs-quick-512.webm" type="video/webm">
+  </video>
+</div>
+Insertion sort and Gnome sort
+
+<div class="video_container">
+  <video loop autoplay controls>
+    <source src="/VisualizingSorts/comb-vs-shell-vs-heap-128.webm" type="video/webm">
+  </video>
+</div>
+Comb sort and Shell sort
+
+<div class="video_container">
+  <video loop autoplay controls>
+    <source src="/VisualizingSorts/merge-vs-quick-vs-heap-512.webm" type="video/webm">
+  </video>
+</div>
+Merge, Quick and Heap sort
+
+Merge sort can easily be made to run parallel/asynchronusly because both recursive calls handle different data. Arrays are drawn from left to right and waves can be seen going because initially there are too many async calls which reduce with each merge.
+
+<div class="video_container">
+  <video loop autoplay controls>
+    <source src="/VisualizingSorts/merge_parallel-512.webm" type="video/webm">
+  </video>
+</div>
+Parallel Merge sort
+
+<div class="video_container">
+  <video loop autoplay controls>
+    <source src="/VisualizingSorts/merge_parallel-128.webm" type="video/webm">
+  </video>
+</div>
+On lesser data
+
+When compared with normal merge
+
+<div class="video_container">
+  <video loop autoplay controls>
+    <source src="/VisualizingSorts/merge-vs-merge_parallel-128.webm" type="video/webm">
+  </video>
+</div>
+Merge vs Parallel Merge sort
+
+Comb sort is the smoothest one
 
 
 ## What I learned
