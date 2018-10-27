@@ -19,62 +19,27 @@ Link: https://smusamashah.github.io/VisualizingSorts/sorting.html
 
 I used [CanvasRecorder.js](https://github.com/SMUsamaShah/CanvasRecorder) to record these videos.
 
-<div class="video_container">
-  <video loop autoplay controls>
-    <source src="/VisualizingSorts/merge-vs-heap.webm" type="video/webm">
-  </video>
-</div>
 {% include video_webm.html url="/VisualizingSorts/merge-vs-heap.webm" caption="Merge sort and Heap sort" %}
 
-<div class="video_container">
-  <video loop autoplay controls>
-    <source src="/VisualizingSorts/bubble-vs-cocktail-128.webm" type="video/webm">
-  </video>
-</div>
-Bubble sort and Cocktail sort
+{% include video_webm.html url="/VisualizingSorts/bubble-vs-cocktail-128.webm" caption="Bubble sort and Cocktail sort" %}
 
-<div class="video_container">
-  <video loop autoplay controls>
-    <source src="/VisualizingSorts/shell-vs-quick-512.webm" type="video/webm">
-  </video>
-</div>
-Shell sort and Quick sort
+{% include video_webm.html url="/VisualizingSorts/shell-vs-quick-512.webm" caption="Shell sort and Quick sort" %}
 
 Insertion and gnome sort look exactly same.
 
-<div class="video_container">
-  <video loop autoplay controls>
-    <source src="/VisualizingSorts/insertion-vs-gnome-128.webm" type="video/webm">
-  </video>
-</div>
-Insertion sort and Gnome sort
+{% include video_webm.html url="/VisualizingSorts/insertion-vs-gnome-128.webm" caption="Insertion sort and Gnome sort" %}
 
 Comb sort is the smoothest one
-<div class="video_container">
-  <video loop autoplay controls>
-    <source src="/VisualizingSorts/comb-vs-shell-vs-heap-128.webm" type="video/webm">
-  </video>
-</div>
-*Comb sort and Shell sort*
+
+{% include video_webm.html url="/VisualizingSorts/comb-vs-shell-vs-heap-128.webm" caption="Comb sort and Shell sort" %}
 
 Merge sort can easily be made to run parallel/asynchronusly because both recursive calls handle different data. Arrays are drawn from left to right and waves can be seen going because initially there are too many async calls which reduce with each merge.
 
-<div class="video_container">
-  <video loop autoplay controls>
-    <source src="/VisualizingSorts/merge_parallel-128.webm" type="video/webm">
-  </video>
-</div>
+{% include video_webm.html url="/VisualizingSorts/merge_parallel-128.webm" caption="Parallel Merge sort" %}
 
-When compared with normal merge
+When compared with normal merge, you can see how fast it is
 
-<div class="video_container">
-  <video loop autoplay controls>
-    <source src="/VisualizingSorts/merge-vs-merge_parallel-128.webm" type="video/webm">
-  </video>
-</div>
-*Merge vs Parallel Merge sort*
-
-
+{% include video_webm.html url="/VisualizingSorts/merge-vs-merge_parallel-128.webm" caption="Merge vs Parallel Merge sort" %}
 
 
 ## What I learned
