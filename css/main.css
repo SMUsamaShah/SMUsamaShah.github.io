@@ -41,3 +41,9 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
