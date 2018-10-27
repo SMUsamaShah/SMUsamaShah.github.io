@@ -11,6 +11,8 @@ A youtube [video](https://www.youtube.com/watch?v=kPRA0W1kECg) where you can lis
 
 Link: https://smusamashah.github.io/VisualizingSorts/sorting.html
 
+## What it looks like
+
 <div class="video_container">
   <video loop autoplay controls>
     <source src="/VisualizingSorts/merge-vs-heap.webm" type="video/webm">
@@ -36,11 +38,12 @@ Insertion and gnome sort look exactly same.
 
 <div class="video_container">
   <video loop autoplay controls>
-    <source src="/VisualizingSorts/shell-vs-quick-512.webm" type="video/webm">
+    <source src="/VisualizingSorts/insertion-vs-gnome-128.webm" type="video/webm">
   </video>
 </div>
 Insertion sort and Gnome sort
 
+Comb sort is the smoothest one
 <div class="video_container">
   <video loop autoplay controls>
     <source src="/VisualizingSorts/comb-vs-shell-vs-heap-128.webm" type="video/webm">
@@ -80,7 +83,7 @@ When compared with normal merge
 </div>
 Merge vs Parallel Merge sort
 
-Comb sort is the smoothest one
+
 
 
 ## What I learned
@@ -92,3 +95,7 @@ Very first and extremely horrible approach was to store the state of array on ea
 Next approach was to only store swap and write operations (only indexes) in the array. Although it didn't use as much memory, playing back was still very slow.
 
 Then I used `async/await` and a sleep function which waits on setTimeout. This gave more control over the detail of visualizations and made the code easier to work on. It was still not fast enough. Everything slowed down when I increased the data grid size to around 200 to 300. Another improvement was drawing only what's changed instead of whole array. That made a huge difference in speed. What *did it* in the end to display sorting on 512x512 smoothly was rendering on [`OffscreenCanvas`](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas) and keep copying back from it on the visible canvas.
+
+### What more
+
+More algorithms, plot in time domain to get the pattern in one picture like [this](https://medium.com/@dschnr/visualizing-sorting-algorithms-in-2d-space-c85dcda72f5c)
