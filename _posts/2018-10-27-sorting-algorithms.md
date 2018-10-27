@@ -53,30 +53,15 @@ Comb sort is the smoothest one
     <source src="/VisualizingSorts/comb-vs-shell-vs-heap-128.webm" type="video/webm">
   </video>
 </div>
-Comb sort and Shell sort
-
-<div class="video_container">
-  <video loop autoplay controls>
-    <source src="/VisualizingSorts/merge-vs-quick-vs-heap-512.webm" type="video/webm">
-  </video>
-</div>
-Merge, Quick and Heap sort
+*Comb sort and Shell sort*
 
 Merge sort can easily be made to run parallel/asynchronusly because both recursive calls handle different data. Arrays are drawn from left to right and waves can be seen going because initially there are too many async calls which reduce with each merge.
-
-<div class="video_container">
-  <video loop autoplay controls>
-    <source src="/VisualizingSorts/merge_parallel-512.webm" type="video/webm">
-  </video>
-</div>
-Parallel Merge sort
 
 <div class="video_container">
   <video loop autoplay controls>
     <source src="/VisualizingSorts/merge_parallel-128.webm" type="video/webm">
   </video>
 </div>
-On lesser data
 
 When compared with normal merge
 
@@ -85,7 +70,7 @@ When compared with normal merge
     <source src="/VisualizingSorts/merge-vs-merge_parallel-128.webm" type="video/webm">
   </video>
 </div>
-Merge vs Parallel Merge sort
+*Merge vs Parallel Merge sort*
 
 
 
