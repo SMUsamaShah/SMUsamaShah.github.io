@@ -3,6 +3,8 @@ title: How to explain git in simple words?
 date: 2017-10-14
 layout: post
 author: Usama
+image: https://smusamashah.github.io/images/git/history1.png
+description: Explaination of basic terminologies of git like commit, branch, tag, push and pull in simple words.
 ---
 
 
