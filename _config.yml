@@ -8,12 +8,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-gems:
-  - [jekyll-mermaid]
-  
-mermaid:
-  src: 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.js'
-
 feature:
   disqus: true
   sharing: true
