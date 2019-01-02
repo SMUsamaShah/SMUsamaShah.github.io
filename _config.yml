@@ -2,6 +2,7 @@ theme: jekyll-theme-midnight
 name: The Blog
 title: SM USAMA SHAH 
 markdown: kramdown
+highlighter:rouge
 permalink: /blog/:year/:month/:day/:title
 
 plugins:
