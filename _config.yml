@@ -3,9 +3,9 @@ name: The Blog
 title: SM USAMA SHAH 
 markdown: kramdown
 kramdown:
-  syntax_highlighter: rouge
+  syntax_highlighter: pygments
   
-highlighter: rouge
+highlighter: pygments
 permalink: /blog/:year/:month/:day/:title
 
 plugins:
