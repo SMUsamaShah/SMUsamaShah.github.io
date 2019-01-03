@@ -3,6 +3,7 @@ name: The Blog
 title: SM USAMA SHAH 
 markdown: kramdown
 kramdown:
+  input: GFM
   syntax_highlighter: rogue
   
 highlighter: rogue
