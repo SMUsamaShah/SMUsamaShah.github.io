@@ -12,7 +12,7 @@ A while ago (in 2013) I started hearing about Git here and there and its various
 
 ---
 
-**TL;DR;** Git is just a Singly Linked List where Nodes (Commits) are added on Head pointer instead of Tail. Multiple nodes are can point to same node, which creats multiple head pointers (Branches). You can create as many pointers (branches) as you like. You can even have constant pointers (Tags). Each node (commit) contains the SHA of contents of next node (previous commit) therefore if you modify contents of one node, you have to modify all nodes pointing to it. That's all git basically is.
+**TL;DR;** Git is just a Singly Linked List where Nodes (Commits) are added on Head pointer instead of Tail. Multiple nodes can point to the same node, which creats multiple head pointers (Branches). You can create as many pointers (branches) as you like. You can even have constant pointers (Tags). Each node (commit) contains the SHA of contents of next node (previous commit) therefore if you modify contents of one node, you have to modify all nodes pointing to it. That's all git basically is.
 
 ---
 
