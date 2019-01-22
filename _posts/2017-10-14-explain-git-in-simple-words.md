@@ -144,16 +144,16 @@ Multiple people can work on a git repository. Each person gets his/her own copy 
 
 ### Fetch
 
-The process of getting updates/changes from remote is called `pull`. When pulled, latest commits are download to the user's computer. These changes are then applied with a `merge` command.
+The process of getting updates/changes from remote is called `fetch` . When fetched, latest commits are download to the user's computer and stored in a separate branch which tracks remote changes. These changes can be then applied with a `merge` command. It's a common practice to fetch periodically to stay up to date with what everyone else is doing with the repository.
 
 ### Pull
 
-Pull downloads the changes and applies them in one go automatically.
+Pull downloads the changes and also applies them in one go automatically. Its basically `fetch` and `merge` in one step.
 
 
 ### Push
 
-Push is the process of uploading your changes to remote repository
+Push is the process of uploading your changes to remote repository.
 
 
 ---
