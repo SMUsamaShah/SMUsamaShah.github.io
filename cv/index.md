@@ -117,9 +117,9 @@ Java
 
 JavaScript
 
-: **ASA Film Crew** *[PhoneGap 3.3.0, Puship, jQuery]* Mobile application and PHP server for film crew recruiting business. Send film crew booking requests. Supports push notifications. 
-
 : **Procedural Trees ([GitHub](https://github.com/SMUsamaShah/ProceduralTrees))** *[HTML5 Canvas]* Generates beautiful fractals based trees on HTML5 Canvas. 
+
+: **ASA Film Crew** *[PhoneGap 3.3.0, Puship, jQuery, PHP]* Mobile App and PHP server for film crew recruiting business. Send film crew booking requests. Supports push notifications. 
 
 : **Friendly Clock ([Opera Addons](https://addons.opera.com/en/extensions/details/friendly-clock-speed-dial-extension-analog/))** *[Opera extension API]* speed dial extension for Opera. 
 
@@ -128,15 +128,29 @@ JavaScript
 Education
 ---------
 
-2011-2015
+2011 - 2015
 : MS in Computer Science @ SEECS, NUST (Islamabad, Pakistan)
 
     MS Thesis: “Multi Agent based Virtual Research Assistant for Scientific Workflows”. Dr. Peter Bloodsworth
 
-2005-2010
+2005 - 2010
 : BS in Computer Science @ Virtual University of Pakistan (Multan, Pakistan)
 
     FYP: Smart Cricket Scoreboard. [C#, XML] Live scores, offline scores, fixtures, notes, player comparison, team comparison, comparison charts.
+
+Certifications
+--------------
+
+Nov 2018 - Mar 2019
+
+ 1. **[Certified Professional Scrum Master Level I](https://www.scrum.org/user/418093)** - Nov 2018
+ 2. **[Certified Teradata Database Associate](https://www.youracclaim.com/badges/05ecd41b-9e04-4578-a3ca-e0fa2ed5d139/linked_in_profile)** - Dec 2018
+ 3. **[AWS Certified Cloud Practitioner](https://www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2018-12-12&ci=AWS00675761)** - Dec 2018
+ 4. **[Oracle Certified Associate, Java SE 8 Programmer I (OCA JP)](https://www.youracclaim.com/badges/75dbad93-d202-4096-8386-7f32d0bac43b/linked_in_profile)** - Jan 2019
+ 5. **[Certified Blockchain Expert - V2](https://www.credential.net/i08pekyn)** - Jan 2019
+ 6. **[Certified Associate in Python Programming](https://edu.openedg.org/certificates/verify/YoCN.Bwr9.fDC3)** - Jan 2019
+ 7. **[AWS Certified Developer Associate](https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2019-02-22&ci=AWS00675761)** - Feb 2019
+ 8. **[AWS Certified Architect Associate](https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2019-02-22&ci=AWS00675761)** - Mar 2019
 
 Hobbies and Interests
 ---------------------
