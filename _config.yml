@@ -4,9 +4,9 @@ title: SM USAMA SHAH
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rogue
+  syntax_highlighter: rouge
   
-highlighter: rogue
+highlighter: rouge
 permalink: /blog/:year/:month/:day/:title
 
 plugins:
