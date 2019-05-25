@@ -5,11 +5,12 @@ layout: post
 image: https://smusamashah.github.io/VisualizingSorts/screenshot3.png
 description: Visualization of many sorting algorithms which can be listened to and compared with each other side by side
 date: 2018-10-26
+excerpt_separator: <!--more-->
 ---
 
-![Quicksort](/VisualizingSorts/screenshot3.png)
-
 A few weeks ago I found out this [imgur gallery](https://imgur.com/a/voutF) of sorting algorithms through a reddit post. The patterns which emerged while sorting random data looked very beautiful and amazing with the only catch that they were not interactive. You can not play with them. I decided make them in JavaScript to see what many different sorting algorithms look like, the patterns they create, while also learning them in the process.
+
+<!--more-->
 
 A youtube [video](https://www.youtube.com/watch?v=kPRA0W1kECg) where you can listen to different sound patterns of various alogrithms. Same can be done in JavaScript using its [audio api](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext). I added it along with visualization and now you can listen to sorting algorithms :) 
 
@@ -43,7 +44,7 @@ These two look exactly same when visualized. You can only see the difference on 
 
 [**Merge Sort**](https://en.wikipedia.org/wiki/Merge_sort) is the basic divide and conquer algorithm. It splits an array recursively until it can not be further divided. Sorting happens on the merge step. Splitted arrays are merged in a way so that final array is sorted. This goes on until all pieces are merged together making a sorted array. I splitted the arrays in-place and only created copy of each split to put back in original array.
 
-[**Parallel Merge Sort**] is different only in that both recursive split calls are run in parallel instead of one after another. Arrays are drawn from left to right and waves can be seen going because initially there are too many async calls which reduce with each merge.
+**Parallel Merge Sort** is different only in that both recursive split calls are run in parallel instead of one after another. Arrays are drawn from left to right and waves can be seen going because initially there are too many async calls which reduce with each merge.
 
 {% include video_webm.html url="/VisualizingSorts/merge_parallel-128.webm" caption="Parallel Merge sort" %}
 

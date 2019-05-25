@@ -5,10 +5,13 @@ layout: post
 author: Usama
 image: https://smusamashah.github.io/images/git/history1.png
 description: A visual explaination of basic git terminologies like commit, branch, tag, push and pull in simple words.
+excerpt_separator: <!--more-->
 ---
 
 
-A while ago (in 2013) I started hearing about Git here and there and its various strange words like branch, index, tree, commit, clone, fork, master, origin, head, check out, check in, push and pull etc. Available tutorials were difficult to understand because they jumped straight to git commands. I approached [Quora](https://www.quora.com/How-do-you-explain-the-basics-of-Git-in-simple-words-What-does-branch-index-tree-commit-clone-fork-master-origin-head-check-out-check-in-etc-mean) in hope for something more visual and easier to understand, then answered it myself getting most upvotes. Now posting it here on my own blog with hopefully even better explanation :)
+A few years ago I started hearing about Git here and there and its various strange words like branch, index, tree, commit, clone, fork, master, origin, head, check out, check in, push and pull etc. Available tutorials were difficult to understand because they jumped straight to git commands. I approached [Quora](https://www.quora.com/How-do-you-explain-the-basics-of-Git-in-simple-words-What-does-branch-index-tree-commit-clone-fork-master-origin-head-check-out-check-in-etc-mean) in hope for something more visual and easier to understand, then answered it myself getting most upvotes. Now posting it here on my own blog with hopefully even better explanation :)
+
+<!--more-->
 
 ---
 
