@@ -8,11 +8,14 @@ notes: active
   <div class="note single">
     <h1 class="title">{{ page.title }}</h1>
     
-    <h2 class="date"><info datetime="{{ page.date }}">
+    <h2 class="date"><time datetime="{{ page.date }}">
       {{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
-    </info></h2>
+    </time></h2>
     <!-- Post content -->
     <div class="notebody">
+      {% if page.image %}
+      <p><img src="{{ page.image }}"></p>
+      {% endif %}
       {{ content }}
     </div>
     <!-- Post info -->

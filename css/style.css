@@ -19,6 +19,11 @@ video { margin-left: auto; margin-right: auto; display: block; }
 
 img.avatar { margin-bottom: 30px; }
 
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
 img {
 	display: block;
 	height: auto;
