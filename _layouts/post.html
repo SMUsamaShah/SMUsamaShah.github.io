@@ -6,10 +6,10 @@ notes: active
 
 <div class="notes">
   <div class="note single">
-    <h1 class="title">{{ page.title }}</h1>
+    {%- comment -%} <h1 class="title">{{ page.title }}</h1> {%- endcomment -%}
     
     <h2 class="date"><time datetime="{{ page.date }}">
-      {{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
+      {{ page.date | date_to_string }}
     </time></h2>
     <!-- Post content -->
     <div class="notebody">

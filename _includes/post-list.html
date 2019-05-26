@@ -5,7 +5,11 @@
       {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
       {% if thecycle == 'odd' %}
         <div class="col-md-3 d-flex flex-wrap align-items-center">
+          {% if post.image %}
           <img src="{{ post.image }}" class="card-img">
+          {% else %}
+          <div class="card-img" style="background-image: linear-gradient(#312b4e, #f5f5e5);height: 155px;"></div>
+          {% endif %}
         </div>
       {% endif %}
       <div class="col-md-9">
@@ -17,7 +21,11 @@
       </div>
       {% if thecycle == 'even' %}
       <div class="col-md-3 d-flex flex-wrap align-items-center">
+        {% if post.image %}
         <img src="{{ post.image }}" class="card-img">
+        {% else %}
+        <div class="card-img" style="background-image: linear-gradient(#312b4e, #f5f5e5);height: 155px;"></div>
+        {% endif %}
       </div>
       {% endif %}
     </div>
