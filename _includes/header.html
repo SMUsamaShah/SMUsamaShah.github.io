@@ -1,21 +1,56 @@
 <header {% if page.image %} style="background: linear-gradient(rgba(0,34,68,67%),rgba(0,34,68,67%)),url({{ page.image }}) 50%/cover" {% endif %} >
-  <nav class="header" >
+  {%- comment -%} <nav class="header" >
     <ul class="nav nav-pills pull-right">
-      <li class="nav-item"><a class="nav-link pt-3" href="/blog" title="Blog">
-        <button class="btn btn-light" type="button">Posts</button>
-      </a></li>
-      <li class="nav-item"><a class="nav-link pt-3" href="https://github.com/SMUsamaShah" title="Github">
-        <button class="btn btn-light" type="button">Open Source</button>
-      </a></li>
-      <li class="nav-item"><a class="nav-link pt-3" href="/cv" title="CV">
-        <button class="btn btn-light" type="button">CV</button>
-      </a></li>
-      <li class="nav-item"><a class="nav-link pt-3" href="https://www.linkedin.com/in/smusamashah/" title="LinkedIn">
-        <button class="btn btn-light" type="button">LinkedIn!</button>
-      </a></li>
+      <li class="nav-item">
+        <a class="nav-link pt-3" href="/blog" title="Blog"><button class="btn btn-light" type="button">Posts</button></a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link pt-3" href="https://github.com/SMUsamaShah" title="Github"><button class="btn btn-light" type="button">Open Source</button></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pt-3" href="/cv" title="CV"><button class="btn btn-light" type="button">CV</button></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pt-3" href="https://www.linkedin.com/in/smusamashah/" title="LinkedIn"><button class="btn btn-light" type="button">LinkedIn!</button></a>
+      </li>
     </ul>
     <h3 class="display-4 pt-3"><a href="/">{{ site.title }}</a></h3>
-  </nav> <!-- /header -->
+  </nav> <!-- /header --> {%- endcomment -%}
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand display-4" href="/">{{ site.title }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="/blog" title="Blog"><button class="btn btn-light" type="button">Posts</button></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://github.com/SMUsamaShah" title="Github"><button class="btn btn-light" type="button">Open Source</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cv" title="CV"><button class="btn btn-light" type="button">CV</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/smusamashah/" title="LinkedIn"><button class="btn btn-light" type="button">LinkedIn!</button></a>
+          </li>
+          {%- comment -%} <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> {%- endcomment -%}
+        </ul>
+      </div>
+    </nav>
 
   <div class="hp">
     <h1> {{ page.title }} </h1>
