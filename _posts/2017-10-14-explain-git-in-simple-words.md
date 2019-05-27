@@ -133,7 +133,16 @@ More details:
 [Git Object: Tag | Git Tag | GitGuys.com](http://www.gitguys.com/topics/git-object-tag/)
 
 
+Rebase (Move)
+--------------
+Each commit, other than the first one, is depends on previous commit, we can call that one the base commit. In simplest terms, rebasing moves all commits like a building to another point or another commit. 
 
+Usually you would rebase a branch to the head of your main branch. Note that when rebasing, whole set of moved commits will be recreated so that they can fit perfectly on top of the new base.
+
+
+Merge
+--------------
+Merge is usually an alternate of rebasing. Instead of moving that feature branch, a new "merge" commit is created which connects both branches. This new commit is made up of all changes done in both branches separately. Merge conflict can arise which must be resolved to succesfully create the merge commit. 
 
 
 Remote
