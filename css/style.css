@@ -47,7 +47,7 @@ header {
 	font-size: 4.84298em;
 	margin: 0 auto;
 	line-height: .8;
-	white-space: pre;
+/* 	white-space: pre; */
 	font-weight: 900;
 	text-shadow: 0 0.1ex 0.5ex rgba(0,34,68,50%), 0 0 0.1ex #012;
 }
