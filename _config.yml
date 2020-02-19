@@ -5,6 +5,8 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+repository: smusamashah/smusamashah.github.io
   
 highlighter: rouge
 permalink: /blog/:year/:month/:day/:title
@@ -13,6 +15,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-redirect-from
 
 feature:
   disqus: true
