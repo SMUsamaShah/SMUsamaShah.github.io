@@ -6,6 +6,9 @@ image: https://smusamashah.github.io/VisualizingSorts/screenshot3.png
 description: Visualization of many sorting algorithms which can be listened to and compared with each other side by side
 date: 2018-10-26
 excerpt_separator: <!--more-->
+permalink: /sorting-algorithms-visual-comparison
+redirect_from: 
+    - /blog/2018/10/26/sorting-algorithms
 ---
 
 A few weeks ago I found out this [imgur gallery](https://imgur.com/a/voutF) of sorting algorithms through a reddit post. The patterns which emerged while sorting random data looked very beautiful and amazing with the only catch that they were not interactive. You can not play with them. I decided make them in JavaScript to see what many different sorting algorithms look like, the patterns they create, while also learning them in the process.

@@ -2,6 +2,10 @@
 layout: post
 title: "How to get windows copy paste events with shell hook."
 date: 2017-10-11
+description: How to get windows copy paste events with shell hook.
+permalink: /catch-copy-paste-from-explorer-using-shell-extension
+redirect_from: 
+    - /blog/2017/10/11/catch-copy-paste-from-explorer-using-shell-extension
 ---
 
 This article was originally posted [here](http://www.mywingsoflove.com/2009/11/12/howto-handle-copy-paste-from-explorer-using-shell-extension-icopyhook-alternative/) by the author, that is [no longer available](https://web.archive.org/web/20120502020845/http://www.mywingsoflove.com/2009/11/12/howto-handle-copy-paste-from-explorer-using-shell-extension-icopyhook-alternative/).

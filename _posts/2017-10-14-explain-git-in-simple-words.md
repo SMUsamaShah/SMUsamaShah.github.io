@@ -4,8 +4,11 @@ date: 2017-10-14
 layout: post
 author: Usama
 image: https://smusamashah.github.io/images/git/history1.png
-description: A visual explaination of basic git terminologies like commit, branch, tag, push and pull in simple words.
+description: A visual explaination of basic git jargon like commit, branch, tag, push and pull in simple words.
 excerpt_separator: <!--more-->
+permalink: /explain-git-in-simple-words
+redirect_from: 
+    - /blog/2017/10/14/explain-git-in-simple-words
 ---
 
 

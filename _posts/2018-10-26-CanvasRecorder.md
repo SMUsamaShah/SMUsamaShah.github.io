@@ -3,9 +3,15 @@ title: CanvasRecorder.js
 author: Usama
 layout: post
 date: 2018-10-26
+description: A simple script to record canvas to webm
+permalink: /canvas-recorder
+redirect_from: 
+    - /blog/2018/10/26/CanvasRecorder
 ---
 
-I made some visualizations in HTML5 canvas and wanted to record them to display in blog. Could not find a simple way to do that. [CCapture.js](https://github.com/spite/ccapture.js) added too much performance overhead which made animations slow. Using built in [`MediaRecorder`](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder) is apparently the simplest and most effitient way to record whatever is happening on canvas.
+I made some visualizations in HTML5 canvas and wanted to record them to display in blog.
+Could not find a simple way to do that. [CCapture.js](https://github.com/spite/ccapture.js) added too much performance overhead which made animations slow. 
+CanvasRecorder.js uses built in [`MediaRecorder`](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder) which is apparently the simplest and most effitient way to record whatever is happening on canvas.
 
 NOTE: I have only tested it with Chrome and it should work fine with Firefox
 

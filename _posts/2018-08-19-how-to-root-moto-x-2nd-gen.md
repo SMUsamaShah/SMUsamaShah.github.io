@@ -3,11 +3,14 @@ title: How to Root Moto X (2nd Gen) XT1093-Victara
 author: Usama
 layout: post
 date: 2018-08-19
-description: Steps to unlock its boot loader and root Moto X 2nd Gen
+description: Steps to root and unlock Moto X (2nd Gen) boot loader
 excerpt_separator: <!--more-->
+permalink: /unlock-root-moto-x-2nd-gen
+redirect_from: 
+    - /blog/2018/08/19/how-to-root-moto-x-2nd-gen
 ---
 
-Steps to unlock its boot loader and root Moto X 2nd Gen.
+Steps to root and unlock Moto X (2nd Gen) boot loader.
 
 <!--more-->
 

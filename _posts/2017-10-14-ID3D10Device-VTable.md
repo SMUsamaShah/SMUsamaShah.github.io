@@ -3,6 +3,10 @@ layout: post
 title: "ID3D10Device and ID3D11DeviceContext VTable Indexes"
 date: 2017-09-30
 excerpt_separator: <!--more-->
+description: VTable listing of ID3D10Device and ID3D11DeviceContext
+permalink: /id3d10device-vtable
+redirect_from: 
+    - /blog/2017/09/30/ID3D10Device-VTable
 ---
 
 I had trouble finding the index of DirectX 10 method `OMGetRenderTargets` for hooking. I found these VTables (ID3D10Device and ID3D11DeviceContext) somewhere on the web. Putting these here to save the trouble for someone else.
