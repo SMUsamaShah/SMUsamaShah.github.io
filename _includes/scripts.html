@@ -7,7 +7,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
 <script>
   {% unless page.image %}
-    $("header").css('background-image', GeoPattern.generate("{{ page.title }}").toDataUrl());
+    $("header").css('background-image', GeoPattern.generate(`"{{ page.title }}"`).toDataUrl());
     $("header").css('background-size', "1000px");
   {% endunless %}
     $("body > div > section > article").each((_, e) => {
