@@ -4,7 +4,7 @@ notes: active
 ---
 
 
-<div class="notes">
+<main>
   <div class="note single">
     {%- comment -%} <h1 class="title">{{ page.title }}</h1> {%- endcomment -%}
     
@@ -12,21 +12,22 @@ notes: active
       {{ page.date | date_to_string }}
     </time></h2>
     <!-- Post content -->
-    <div class="notebody">
+    <article>
       {% if page.image %}
       <p><img src="{{ page.image }}"></p>
       {% endif %}
+
       {{ content }}
-    </div>
+    </article>
     <!-- Post info -->
-    <div class="noteinfo">
+    <!-- <div class="noteinfo"> -->
     <!-- include some categories and tags maybe? -->
-    </div>
+    <!-- </div> -->
 
     <hr>
 
     {% if site.feature.sharing %}
-    <!-- Post comments -->
+    <!-- Sharing buttons -->
     <div>
       {% include social-buttons.html %}	 
     </div>
@@ -38,5 +39,6 @@ notes: active
       {% include disqus.html %}	 
     </div>
     {% endif %}
+
   </div><!-- / .note .single -->
 </div><!-- /.notes -->
