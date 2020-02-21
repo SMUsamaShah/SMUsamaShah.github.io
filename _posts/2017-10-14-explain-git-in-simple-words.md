@@ -27,7 +27,7 @@ File OR Blob
 
 All contents of a file are stored in a thing called `blob`. When a file is changed, a new blob will store complete file with all new changes. Blob is one of the basic storage units in Git. Others units/object types are Commit and Tree.
 
-![blob]({{ "/images/git/blob.png" | absolute_url }} "A blob stores file contents")
+![blob]({{ "/images/git/blob.png" }} "A blob stores file contents")
 *A blob stores file contents*
 
 Hash
