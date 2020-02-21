@@ -1,34 +1,21 @@
-<div>
+<section class="card-columns">
   {% for post in site.posts %}
-  <div class="card mb-3 border-0">
-    <div class="row no-gutters">
-      {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-      {% if thecycle == 'odd' %}
-        <div class="col-md-3 d-flex flex-wrap align-items-center">
-          {% if post.image %}
-          <img src="{{ post.image }}" class="card-img">
-          {% else %}
-          <div class="card-img" style="background-image: linear-gradient(#312b4e, #f5f5e5);height: 155px;"></div>
-          {% endif %}
-        </div>
+  <article class="card mb-3">
+
+    <figure class="card-img-top p-1" style="background-color: hsla(0, 0%, 10%, 1);">
+      {% if post.image %}
+      <img src="{{ post.image }}">
+      {% else %}
+      <div style="background-image: linear-gradient(#367, #367);height: 200px;background-size: 1000px;"></div>
       {% endif %}
-      <div class="col-md-9">
-        <div class="card-body">
-          <h4 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
-          <p class="card-text"><small class="text-muted">{{ post.date | date_to_string }} &raquo;</small></p>
-          <p class="card-text">{{ post.excerpt }}</p>
-        </div>
-      </div>
-      {% if thecycle == 'even' %}
-      <div class="col-md-3 d-flex flex-wrap align-items-center">
-        {% if post.image %}
-        <img src="{{ post.image }}" class="card-img">
-        {% else %}
-        <div class="card-img" style="background-image: linear-gradient(#312b4e, #f5f5e5);height: 155px;"></div>
-        {% endif %}
-      </div>
-      {% endif %}
+    </figure>
+
+    <div class="card-body">
+      <h4 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+      <small class="text-muted"><time class="card-text" datetime="{{post.date}}">{{ post.date | date_to_string }}</time></small>
+      <p class="card-text">{{ post.description }}</p>
     </div>
-  </div>
+
+  </article>
   {% endfor %}
-</div><!--/.notelist -->
+</section>
