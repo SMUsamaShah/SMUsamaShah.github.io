@@ -13,9 +13,9 @@ redirect_from:
 
 A few weeks ago I found out this [imgur gallery](https://imgur.com/a/voutF) of sorting algorithms through a reddit post. The patterns which emerged while sorting random data looked very beautiful and amazing with the only catch that they were not interactive. You can not play with them. I decided make them in JavaScript to see what many different sorting algorithms look like, the patterns they create, while also learning them in the process.
 
-<!--more-->
+{% include figure.html url=page.image caption="Quick sort running on 512 arrays of size 512" %}
 
-A youtube [video](https://www.youtube.com/watch?v=kPRA0W1kECg) where you can listen to different sound patterns of various alogrithms. Same can be done in JavaScript using its [audio api](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext). I added it along with visualization and now you can listen to sorting algorithms :) 
+In this [video](https://www.youtube.com/watch?v=kPRA0W1kECg) you can listen to sound patterns of various alogrithms. Same can be done in JavaScript using its [audio api](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext). I added it along with visualization and now you can listen to sorting algorithms :) 
 
 ## [Demo](https://smusamashah.github.io/VisualizingSorts/sorting.html)
 
