@@ -6,13 +6,22 @@ title: Muhammad Usama
 Muhammad Usama
 =========================
 
-----
->  **Software Engineer**
+Skype:    | SMUsamaShah
+LinkedIn: | [linkedin.com/in/SMUsamaShah](https://linkedin.com/in/SMUsamaShah)
+GitHub:   | [github.com/SMUsamaShah](https://github.com/SMUsamaShah)
+Blog:     | [SMUsamaShah.github.io](https://SMUsamaShah.github.io)
+
+
+<!-- >  **Software Engineer**
 > 
 >  Specialties: C, C++, Java, C#, JavaScript, Windows
 >  Masters in Computer Science 
 > 
-> Software Developer with 3+ years of experience in languages including C/C++, C#, Java and JavaScript. Web development experience in Java Spring, ASP.net and PHP. My favorite development platform is Windows and I can also work on Linux distributions. I am very good at debugging and like solving problems.
+> Software Developer with 3+ years of experience in languages including C/C++, C#, Java and JavaScript. Web development experience in Java Spring, ASP.net and PHP. My favorite development platform is Windows and I can also work on Linux distributions. I am very good at debugging and like solving problems. -->
+
+> Programmer with 5 years of industry experience in domains including Cloud Gaming and DevOps.
+> Worked mostly in C/C++, C#, Java and JavaScript. Web development in Java, ASP.net and PHP. I work on
+> both Windows and Linux. I am very good at debugging and like solving problems.
 
 ----
 
