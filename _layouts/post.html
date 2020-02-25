@@ -4,37 +4,33 @@ notes: active
 ---
 
 
-<main>
-  <div class="note single">
-    {%- comment -%} <h1 class="title">{{ page.title }}</h1> {%- endcomment -%}
-    
-    <h2 class="date"><time datetime="{{ page.date | date_to_xmlschema }}">
-      {{ page.date | date_to_string }}
-    </time></h2>
-    <!-- Post content -->
-    <article>
-      {{ content }}
-    </article>
-    <!-- Post info -->
-    <!-- <div class="noteinfo"> -->
-    <!-- include some categories and tags maybe? -->
-    <!-- </div> -->
+<main class="note single">
+  <time class="text-secondary" datetime="{{ page.date | date_to_xmlschema }}">
+    {{ page.date | date_to_string }}
+  </time>
+  <!-- Post content -->
+  <article>
+    {{ content }}
+  </article>
+  
+  <!-- Post info -->
+  <!-- <div class="noteinfo"> -->
+  <!-- include some categories and tags maybe? -->
+  <!-- </div> -->
 
-    <hr>
+  <hr>
 
-    {% if site.feature.sharing %}
-    <!-- Sharing buttons -->
-    <div>
-      {% include social-buttons.html %}	 
-    </div>
-    {% endif %}
+  {% if site.feature.sharing %}
+  <!-- Sharing buttons -->
+  <div>
+    {% include social-buttons.html %}	 
+  </div>
+  {% endif %}
 
-    {% if site.feature.disqus %}
-    <!-- Post comments -->
-    <div class="notecomments">
-      {% include disqus.html %}	 
-    </div>
-    {% endif %}
-
-  </div><!-- / .note .single -->
+  {% if site.feature.disqus %}
+  <!-- Post comments -->
+  <div class="notecomments">
+    {% include disqus.html %}	 
+  </div>
+  {% endif %}
 </main>
