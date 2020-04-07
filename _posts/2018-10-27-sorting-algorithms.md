@@ -1,9 +1,9 @@
 ---
-title: Listen and visualize sorting algorithms
+title: Visualize sorting algorithms side by side
 author: Usama
 layout: post
 image: https://smusamashah.github.io/VisualizingSorts/screenshot3.png
-description: Visualization of many sorting algorithms which can be listened to and compared with each other side by side
+description: Visualization of many sorting algorithms and side by side comparison
 date: 2018-10-26
 excerpt_separator: <!--more-->
 permalink: /sorting-algorithms-visual-comparison
