@@ -50,7 +50,7 @@ header {
 	line-height: .8;
 /* 	white-space: pre; */
 	font-weight: 900;
-	text-shadow: 0 0.1ex 0.5ex rgba(0,34,68,50%), 0 0 0.1ex #012;
+/* 	text-shadow: 0 0.1ex 0.5ex rgba(0,34,68,50%), 0 0 0.1ex #012; */
 }
 
 img {
