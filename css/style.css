@@ -27,10 +27,10 @@ a {
 }
 
 header {
-	color: #fff;
+/* 	color: #fff; */
 	padding: 0 1em;
-	clip-path: polygon(0% 0%,100% 0%,100% 100%,0% calc(100% - 3rem));
-	background: radial-gradient(#367,#367 67%);
+/* 	clip-path: polygon(0% 0%,100% 0%,100% 100%,0% calc(100% - 3rem)); */
+/* 	background: radial-gradient(#367,#367 67%); */
 }
 
 .hp {
