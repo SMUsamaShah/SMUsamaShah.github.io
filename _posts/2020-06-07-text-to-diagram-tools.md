@@ -26,8 +26,8 @@ A comprehensive list of various text to diagram tools.
 : Source: <https://github.com/skanaar/nomnoml>
 : Diagrams: activity, class
 
-- **CodeUML** <http://codeuml.com/ (dead)>
-: Source: <https://github.com/oazabir/codeuml
+- **CodeUML** (dead) <http://codeuml.com/> 
+: Source: <https://github.com/oazabir/codeuml>
 : Diagrams: uml
 
 - **yuml** <https://yuml.me/diagram/scruffy/class/draw>
