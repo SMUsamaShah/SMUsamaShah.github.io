@@ -25,6 +25,9 @@ A comprehensive list of various text to diagram tools.
 - **ASCIIFlow** <http://asciiflow.com/>
 : Diagrams: ascii-drawing
 
+- **BPMN Sketch Miner** <https://www.bpmn-sketch-miner.ai/>
+: Diagrams: BPMN/flow
+
 - **Webgraphviz** <http://www.webgraphviz.com/>
 : Diagrams: graphviz
 
