@@ -1,6 +1,6 @@
 # theme: jekyll-theme-midnight
-name: The Blog
-title: SM USAMA SHAH 
+name: The SUS Blog
+title: SUS
 markdown: kramdown
 kramdown:
   input: GFM
