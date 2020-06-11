@@ -16,11 +16,20 @@ A comprehensive list of various text to diagram tools.
 - **Svgbob** <https://ivanceras.github.io/svgbob-editor/>
 : Diagrams: ascii-to-all
 
+- **Archetype** <https://fatiherikli.github.io/archetype/>
+: Diagrams: ascii-drawing
+
 - **Textik** <https://textik.com/>
 : Diagrams: ascii-drawing
 
 - **ASCIIFlow** <http://asciiflow.com/>
 : Diagrams: ascii-drawing
+
+- **Webgraphviz** <http://www.webgraphviz.com/>
+: Diagrams: graphviz
+
+- **Edotor** <https://edotor.net/>
+: Diagrams: graphviz
 
 - **nomnoml** <http://www.nomnoml.com/>
 : Source: <https://github.com/skanaar/nomnoml>
