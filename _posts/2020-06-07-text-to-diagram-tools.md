@@ -126,3 +126,11 @@ A comprehensive list of various text to diagram tools.
 
 - **WaveDrom** <https://wavedrom.com/editor.html>
 : Diagrams: timing
+
+
+CLI Tools
+
+- **perl graph-easy** <http://bloodgate.com/perl/graph/index.html>
+: Diagrams: flow
+: Doc: <https://developpaper.com/recommend-a-tool-for-making-ascii-flow-chart-graph-easy>
+: Example: graph-easy <<< [node 1]->[some text]-[this][node 1]->[branch]
