@@ -21,6 +21,10 @@ video { margin-left: auto; margin-right: auto; display: block; }
 
 img.avatar { margin-bottom: 30px; }
 
+h4 a {
+  color: inherit;
+}
+
 a {
   color: #428bca;
   text-decoration: none;
