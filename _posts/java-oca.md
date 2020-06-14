@@ -1,5 +1,5 @@
 ---
-title: Java OCA Braindump
+title: Java notes
 author: Usama
 layout: post
 description: Braindump for OCAJP, Oracle Certified Associate, Java SE 8 Programmer I
@@ -1301,7 +1301,7 @@ public class TestClass {
 
 ### Exceptions Tree Diagram
 
-<div class="mermaid">
+```mermaid
 graph LR
 
 th("Throwable [Checked]")
@@ -1345,7 +1345,7 @@ io --> fnf
 
 classDef unchecked fill:#f9f,stroke:#333,stroke-width:4px;
 class err,rt,so,asrt,ncd,np,cc,arth,iob,aiob,sec,iarg,nfmt,istate unchecked;
-</div>
+```
 
 Errors are thrown by JVM and should not be handled or declared.
 Some known errors are `ExceptionInInitializerError`, `StackOverflowError`, `NoClassDefFoundError`
