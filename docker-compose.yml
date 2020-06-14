@@ -2,8 +2,12 @@ version: '2'
 
 services:
   jekyll:
-    image: bretfisher/jekyll-serve
+    image: jekyll/jekyll:3.8
     volumes:
-      - .:/site
+      - .:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
     ports:
-      - '8080:4000'
+      - '4000:4000'
+    environment:
+      - JEKYLL_ENV=development
+    command: jekyll serve --force-polling
