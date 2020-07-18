@@ -1,8 +1,5 @@
 name: CI
 on: push
-  branches:
-    - master
-
 jobs:
   deploy:
     runs-on: ubuntu-18.04
