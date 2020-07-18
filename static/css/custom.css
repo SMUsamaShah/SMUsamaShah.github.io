@@ -1,0 +1,63 @@
+body {
+  /* line-height: 1.3em; */
+  font-family: Baskerville, "Times New Roman", serif; 
+  /* font-family: 'Merriweather', Georgia, Times; */
+  
+}
+
+main {
+  /* max-width: 800px; */
+  line-height: 1.3em;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  font: 1em sans-serif;
+  text-align: center;
+}
+
+img, iframe, video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+code {
+  font-size: .84vw;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  line-height: 0px;
+}
+
+h1, h2 {
+  font-style: italic;
+  margin-top: 60px; 
+}
+
+h3 {
+  color: #222;
+}
+
+header a {
+  font-size: 18px;
+}
+
+main a {
+  color: #555;
+  border-bottom: 1px solid #ccc;
+  -webkit-transition: all ease-out 0.2s;
+  font-weight: normal;
+}
+
+footer a {
+  color: #555;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-wrapper ul li a {
+  font-size: 20px;
+}

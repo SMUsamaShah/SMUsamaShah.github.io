@@ -1,0 +1,92 @@
+baseURL: "http://smusamashah.github.io/"
+languageCode: "en-us"
+title: "My New Blog"
+theme: "hugo-classic"
+
+googleAnalytics: UA-8113893-21
+footnotereturnlinkcontents: "↩"
+
+
+outputs:
+  home:
+  - HTML
+  - AMP
+  - RSS
+  page:
+  - HTML
+
+author:
+  name: "Usama"
+
+# seo
+params:
+  description: Text about my cool site
+  footer: "[Github](https://github.com/smusamashah) | [LinkedIn](https://www.linkedin.com/in/smusamashah/) | [Resume](/cv)"
+  custom_css: ["css/custom.css"]
+  images:
+  - site-feature-image.jpg
+  title: My cool site
+
+# following taxonomies are enabled by default by hugo
+taxonomies:
+  category: categories
+  tag: tags
+
+# sectionPagesMenu: "main"
+menu:
+  
+  main:
+    - identifier: tags
+      name: "Tags"
+      url: "/tags/"
+      weight: 2
+  # - identifier: about
+  #   name: cv
+  #   pre: <i class='fa fa-heart'></i>
+  #   url: /about/
+  #   weight: -110
+  # - name: getting started
+  #   post: <span class='alert'>New!</span>
+  #   pre: <i class='fa fa-road'></i>
+  #   url: /getting-started/
+  #   weight: -100
+  feed:
+    - name: "rss"
+      url: "/index.xml"
+  
+    
+# Enable for syntax highlighting
+# pygmentsUseClasses: true
+# pygmentsCodeFences: true
+
+# markdown
+markup:
+  highlight:
+  #   codeFences: true
+  #   guessSyntax: false
+  #   hl_Lines: ""
+  #   lineNoStart: 1
+    # lineNos: true
+    # lineNumbersInTable: true
+    # noClasses: false
+    style: monokai
+    tabWidth: 4
+    
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: false
+      xhtml: false
+      
