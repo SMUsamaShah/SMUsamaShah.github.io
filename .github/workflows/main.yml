@@ -24,11 +24,11 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.TOKEN }}
+          personal_token: ${{ secrets.REPO_ACCESS }}
           external_repository: smusamashah/smusamashah.github.io
           publish_dir: ./public
           #   keep_files: true
           user_name: SMUsamaShah
           user_email: <lifeh2o@gmail.com>
-          publish_branch: master
+          publish_branch: gh-pages
         #   cname: example.com
