@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
       # - name: Update theme
