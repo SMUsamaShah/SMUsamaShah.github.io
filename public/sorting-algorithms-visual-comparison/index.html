@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<title>Visualize sorting algorithms side by side | XOSH.ORG</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Visualization of many sorting algorithms and side by side comparison">
+
+	<meta property="og:title" content="Visualize sorting algorithms side by side" />
+<meta property="og:description" content="Visualization of many sorting algorithms and side by side comparison" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://smusamashah.github.io/sorting-algorithms-visual-comparison/" />
+<meta property="og:image" content="http://smusamashah.github.io/site-feature-image.jpg"/>
+<meta property="article:published_time" content="2018-10-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-10-26T00:00:00+00:00" /><meta property="og:site_name" content="My cool site" />
+
+	<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://smusamashah.github.io/site-feature-image.jpg"/>
+
+<meta name="twitter:title" content="Visualize sorting algorithms side by side"/>
+<meta name="twitter:description" content="Visualization of many sorting algorithms and side by side comparison"/>
+
+	
+	<meta name="google-site-verification" content="fcsy6xwzGDIwyzoNhlebWTJvbkmQNzPNwrpy0YpIqHI"/>
+	
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-8113893-21', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+	
+	
+    
+    
+        <script type="application/ld+json">
+        
+        { 
+          "@context": "http://schema.org", 
+          "@type": "WebSite", 
+          "url": "http:\/\/smusamashah.github.io\/sorting-algorithms-visual-comparison\/", 
+          "name": "Visualize sorting algorithms side by side",
+           "author": {
+              "@type": "Person",
+              "name": "{ .Site.Params.author }}"
+            },
+          "description": "{ .Site.Params.description }}",
+        }
+        
+        </script>
+    
+	
+	
+	<link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="http://smusamashah.github.io/css/custom.css">
+    <header>
+
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="http://smusamashah.github.io/">~/xosh.org</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/tags/">~/tags</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/index.xml">~/rss</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+  </head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">Visualize sorting algorithms side by side</span></h1>
+
+<date class="date">2018/10/26</date>
+<p class="terms">
+  
+  
+  
+  
+  
+</p>
+</div>
+
+
+<div class="content-wrapper">
+  <main>
+    <p>A few weeks ago I found out this <a href="https://imgur.com/a/voutF">imgur gallery</a> of sorting algorithms through a reddit post. The patterns which emerged while sorting random data looked very beautiful and amazing with the only catch that they were not interactive. You can not play with them. I decided make them in JavaScript to see what many different sorting algorithms look like, the patterns they create, while also learning them in the process.</p>
+<figure>
+    <img src="https://smusamashah.github.io/VisualizingSorts/screenshot3.png"/> <figcaption>
+            <h4>Quick sort running on 512 arrays of size 512</h4>
+        </figcaption>
+</figure>
+
+<p>In this <a href="https://www.youtube.com/watch?v=kPRA0W1kECg">video</a> you can listen to sound patterns of various alogrithms. Same can be done in JavaScript using its <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext">audio api</a>. I added it along with visualization and now you can listen to sorting algorithms :)</p>
+<h2 id="demohttpssmusamashahgithubiovisualizingsortssortinghtml"><a href="https://smusamashah.github.io/VisualizingSorts/sorting.html">Demo</a></h2>
+<p>Works on Chrome Desktop and Chrome Mobile</p>
+<h2 id="what-it-looks-like">What it looks like</h2>
+<p>I used <a href="https://github.com/SMUsamaShah/CanvasRecorder">CanvasRecorder.js</a> to record these videos.</p>
+<p><a href="https://en.wikipedia.org/wiki/Bubble_sort"><strong>Bubble Sort</strong></a> is kind of Hello world of sorting algorithms. To perform bubble sort, loop through array while keeping an eye on current and next element and swap these two whenever current one is bigger until you reach the end. Keep repeating this process until no swap is done in a loop.</p>
+<p><a href="https://en.wikipedia.org/wiki/Cocktail_shaker_sort"><strong>Cocktail Sort</strong></a> is bubble sort which bounces back and forth instead of going in only one direction. To do this, instead of starting from the beginning on every iteration, start swapping in reverse when you reach the end.</p>
+<p><a href="https://en.wikipedia.org/wiki/Odd%E2%80%93even_sort"><strong>Odd-Even Sort</strong></a> is a modification of bubble sort with two loops, one for even indexes and one for odd.</p>
+<figure>
+    <video loop autoplay playsinline aria-label='Bubble sort and Cocktail sort'>
+        
+        <source src="//smusamashah.github.io/VisualizingSorts/bubble-vs-cocktail-128.webm" type="video/webm">
+        <p> Your browser does not support video. </p>
+    </video>
+    <figcaption>Bubble sort and Cocktail sort</figcaption>
+</figure>
+<p><a href="https://en.wikipedia.org/wiki/Insertion_sort"><strong>Insertion Sort</strong></a> bubbles each item back to its correct position: Start from second item, and loop back to first item while swapping where required. Pick next item and repeat til end of array.</p>
+<p><a href="https://en.wikipedia.org/wiki/Gnome_sort"><strong>Gnome Sort</strong></a> (Stupid Sort) is similar to insertion sort. Unlike insertion sort, which even after correctly positioning the selected item still runs upto first item, skips those comparisons but has to iterate back to next item which needs to be sorted.</p>
+<p>These two look exactly same when visualized. You can only see the difference on lower detail levels.</p>
+<figure>
+    <video loop autoplay playsinline aria-label='Insertion sort and Gnome sort'>
+        
+        <source src="//smusamashah.github.io/VisualizingSorts/insertion-vs-gnome-128.webm" type="video/webm">
+        <p> Your browser does not support video. </p>
+    </video>
+    <figcaption>Insertion sort and Gnome sort</figcaption>
+</figure>
+<p><a href="https://en.wikipedia.org/wiki/Comb_sort"><strong>Comb Sort</strong></a> is like bubble sort with varying swap item distance. Bubble sort always swap adjacent items, while Comb Sort starts swapping very distant items and gradually narrows the distance on each iteration. This also increases the number of comparisons on each iteration.</p>
+<p><a href="https://en.wikipedia.org/wiki/Selection_sort"><strong>Selection Sort</strong></a> is a simple algorithm. It starts from first item and iterate through remaining list to find a smaller item and, when found, swap with it and move to next item and repeat the process.</p>
+<p><a href="https://en.wikipedia.org/wiki/Merge_sort"><strong>Merge Sort</strong></a> is the basic divide and conquer algorithm. It splits an array recursively until it can not be further divided. Sorting happens on the merge step. Splitted arrays are merged in a way so that final array is sorted. This goes on until all pieces are merged together making a sorted array. I splitted the arrays in-place and only created copy of each split to put back in original array.</p>
+<p><strong>Parallel Merge Sort</strong> is different only in that both recursive split calls are run in parallel instead of one after another. Arrays are drawn from left to right and waves can be seen going because initially there are too many async calls which reduce with each merge.</p>
+<figure>
+    <video loop autoplay playsinline aria-label='Parallel Merge sort'>
+        
+        <source src="//smusamashah.github.io/VisualizingSorts/merge_parallel-128.webm" type="video/webm">
+        <p> Your browser does not support video. </p>
+    </video>
+    <figcaption>Parallel Merge sort</figcaption>
+</figure>
+<p>When compared with normal merge sort, you can see how fast it is</p>
+<figure>
+    <video loop autoplay playsinline aria-label='Merge vs Parallel Merge sort'>
+        
+        <source src="//smusamashah.github.io/VisualizingSorts/merge-vs-merge_parallel-128.webm" type="video/webm">
+        <p> Your browser does not support video. </p>
+    </video>
+    <figcaption>Merge vs Parallel Merge sort</figcaption>
+</figure>
+<p><a href="https://en.wikipedia.org/wiki/Radix_sort"><strong>Radix Sort</strong></a> is a weird sorting method. It sorts without doing comparisons. It put items in buckets based on their last digits, then empty the buckets back into the list. This is repeated for the second last digit and so one until the last digit where it will be all sorted. e.g. If largest number in an array has 4 digits, it will iterate only 4 times.</p>
+<p><a href="https://en.wikipedia.org/wiki/Quicksort"><strong>Quicksort</strong></a> is a little different. It puts all smaller and all greater items on left and right of a selected pivot in any order. Start by selecting right most as pivot. Compare with first item, if bigger, move it to right side of pivot by shifting pivot to left. Continue moving right and shifting pivot to left until all bigger items are on its right. Repeat on both sides of pivot.</p>
+<figure>
+    <video loop autoplay playsinline aria-label='Merge sort and Heap sort'>
+        
+        <source src="//smusamashah.github.io/VisualizingSorts/merge-vs-heap.webm" type="video/webm">
+        <p> Your browser does not support video. </p>
+    </video>
+    <figcaption>Merge sort and Heap sort</figcaption>
+</figure>
+<figure>
+    <video loop autoplay playsinline aria-label='Shell sort and Quick sort'>
+        
+        <source src="//smusamashah.github.io/VisualizingSorts/shell-vs-quick-512.webm" type="video/webm">
+        <p> Your browser does not support video. </p>
+    </video>
+    <figcaption>Shell sort and Quick sort</figcaption>
+</figure>
+<p>Comb sort is the smoothest one</p>
+<figure>
+    <video loop autoplay playsinline aria-label='Comb sort and Shell sort'>
+        
+        <source src="//smusamashah.github.io/VisualizingSorts/comb-vs-shell-vs-heap-128.webm" type="video/webm">
+        <p> Your browser does not support video. </p>
+    </video>
+    <figcaption>Comb sort and Shell sort</figcaption>
+</figure>
+<h2 id="what-i-learned">What I learned</h2>
+<p>I learned some algorithms plus a few other things while doing it. <code>setTimeout</code> and <code>setInteral</code> are costly. When used inside a loop, which completes within a millisecond even after doing thousands of swaps, these calls increased the time to ~20ms.</p>
+<p>Very first and extremely horrible approach was to store the state of array on each step and play it back on canvas. It used way too much memory to even think about using bigger (greater than 100 elements) array.</p>
+<p>Next approach was to only store swap and write operations (only indexes) in the array. Although it didn&rsquo;t use as much memory, playing back was still very slow.</p>
+<p>Then I used <code>async/await</code> and a sleep function which waits on setTimeout. This gave more control over the detail of visualizations and made the code easier to work on. It was still not fast enough. Everything slowed down when I increased the data grid size to around 200 to 300. Another improvement was drawing only what&rsquo;s changed instead of whole array. That made a huge difference in speed. What <em>did it</em> in the end to display sorting on 512x512 smoothly was rendering on <a href="https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas"><code>OffscreenCanvas</code></a> and keep copying back from it on the visible canvas.</p>
+<h3 id="what-more">What more</h3>
+<p>More algorithms, plot in time domain to get the pattern in one picture like <a href="https://medium.com/@dschnr/visualizing-sorting-algorithms-in-2d-space-c85dcda72f5c">this</a></p>
+
+    <a href="/"> >> Home</a>
+  </main>
+</div>
+    <footer>
+      
+<script>
+(function() {
+  function center_el(tagName) {
+    var tags = document.getElementsByTagName(tagName), i, tag;
+    for (i = 0; i < tags.length; i++) {
+      tag = tags[i];
+      var parent = tag.parentElement;
+      
+      if (parent.childNodes.length === 1) {
+        
+        if (parent.nodeName === 'A') {
+          parent = parent.parentElement;
+          if (parent.childNodes.length != 1) continue;
+        }
+        if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+      }
+    }
+  }
+  var tagNames = ['img', 'embed', 'object'];
+  for (var i = 0; i < tagNames.length; i++) {
+    center_el(tagNames[i]);
+  }
+})();
+</script>
+
+      
+      <hr/>
+      <a href="https://github.com/smusamashah">Github</a> | <a href="https://www.linkedin.com/in/smusamashah/">LinkedIn</a> | <a href="/cv">Resume</a>
+      
+    </footer>
+  </body>
+</html>
+
