@@ -6,6 +6,8 @@ theme: "hugo-classic"
 googleAnalytics: UA-8113893-21
 footnotereturnlinkcontents: "↩"
 
+disqusShortname: smusamashah
+
 
 outputs:
   home:
