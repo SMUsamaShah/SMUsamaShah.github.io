@@ -1,8 +1,0 @@
-<figure>
-    <video loop autoplay playsinline aria-label='{{ .Get "label"}}'>
-        {{ with .Get "mp4" }}<source src="{{ . }}" type="video/mp4">{{ end }}
-        {{ with .Get "webm" }}<source src="{{ . }}" type="video/webm">{{ end }}
-        <p> Your browser does not support video. </p>
-    </video>
-    <figcaption>{{ .Get "label" }}</figcaption>
-</figure>
