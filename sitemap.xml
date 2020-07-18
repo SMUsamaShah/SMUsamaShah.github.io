@@ -1,1 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>http://smusamashah.github.io/blog/</loc><lastmod>2020-06-07T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/text-to-diagram/</loc><lastmod>2020-06-07T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/</loc><lastmod>2020-06-07T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/canvas-recorder/</loc><lastmod>2018-10-26T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/categories/</loc><lastmod>2018-10-26T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/categories/code/</loc><lastmod>2018-10-26T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/tags/js/</loc><lastmod>2018-10-26T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/tags/</loc><lastmod>2018-10-26T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/sorting-algorithms-visual-comparison/</loc><lastmod>2018-10-26T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/unlock-root-moto-x-2nd-gen/</loc><lastmod>2018-08-19T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/explain-git-in-simple-words/</loc><lastmod>2017-10-14T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/catch-copy-paste-from-explorer-using-shell-extension/</loc><lastmod>2017-10-11T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/id3d10device-vtable/</loc><lastmod>2017-09-30T00:00:00+00:00</lastmod></url><url><loc>http://smusamashah.github.io/cv/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://smusamashah.github.io/blog/</loc>
+    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/text-to-diagram/</loc>
+    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/</loc>
+    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/canvas-recorder/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/categories/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/categories/code/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/tags/js/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/tags/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/sorting-algorithms-visual-comparison/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/unlock-root-moto-x-2nd-gen/</loc>
+    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/explain-git-in-simple-words/</loc>
+    <lastmod>2017-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/catch-copy-paste-from-explorer-using-shell-extension/</loc>
+    <lastmod>2017-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/id3d10device-vtable/</loc>
+    <lastmod>2017-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://smusamashah.github.io/cv/</loc>
+  </url>
+  
+</urlset>
