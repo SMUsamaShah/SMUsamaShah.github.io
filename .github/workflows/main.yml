@@ -1,5 +1,9 @@
 name: CI
 on: push
+  push:
+    branches:
+      - master
+
 jobs:
   deploy:
     runs-on: ubuntu-18.04
@@ -14,7 +18,7 @@ jobs:
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.64.0"
+          hugo-version: "latest"
 
       - name: Build
         # remove --minify tag if you do not need it
@@ -26,7 +30,7 @@ jobs:
         with:
           personal_token: ${{ secrets.REPO_ACCESS }}
           external_repository: smusamashah/smusamashah.github.io
-          publish_dir: /docs
+          publish_dir: ./docs
           #   keep_files: true
           user_name: SMUsamaShah
           user_email: <lifeh2o@gmail.com>
