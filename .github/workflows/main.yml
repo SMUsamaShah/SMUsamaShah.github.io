@@ -1,5 +1,8 @@
 name: CI
-on: push
+on:
+  push:
+    branches:
+      - source  # default branch
 jobs:
   deploy:
     runs-on: ubuntu-18.04
@@ -26,7 +29,7 @@ jobs:
         with:
           personal_token: ${{ secrets.REPO_ACCESS }}
           external_repository: smusamashah/smusamashah.github.io
-          publish_dir: ./docs
+          publish_dir: ./public # this directory will be published on the pubish branch
           #   keep_files: true
           user_name: SMUsamaShah
           user_email: <lifeh2o@gmail.com>
