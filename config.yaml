@@ -22,12 +22,12 @@ author:
 
 # seo
 params:
-  description: Text about my cool site
+  title: My cool site
+  description: with cool stuff
   footer: "[Github](https://github.com/smusamashah) | [LinkedIn](https://www.linkedin.com/in/smusamashah/) | [Resume](/cv)"
   custom_css: ["css/custom.css"]
   images:
   - site-feature-image.jpg
-  title: My cool site
 
 # following taxonomies are enabled by default by hugo
 taxonomies:
