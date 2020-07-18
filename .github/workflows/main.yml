@@ -1,8 +1,7 @@
 name: CI
 on: push
-  push:
-    branches:
-      - master
+  branches:
+    - master
 
 jobs:
   deploy:
