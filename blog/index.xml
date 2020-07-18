@@ -2,78 +2,78 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on XOSH.ORG</title>
-    <link>http://smusamashah.github.io/blog/</link>
+    <link>https://smusamashah.github.io/blog/</link>
     <description>Recent content in Blogs on XOSH.ORG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://smusamashah.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://smusamashah.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Online text to diagram tools</title>
-      <link>http://smusamashah.github.io/text-to-diagram/</link>
+      <link>https://smusamashah.github.io/text-to-diagram/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://smusamashah.github.io/text-to-diagram/</guid>
+      <guid>https://smusamashah.github.io/text-to-diagram/</guid>
       <description>A comprehensive list of various text to diagram tools.
    Markdeep https://casual-effects.com/markdeep/ Diagrams: markdown, ascii-to-all     Svgbob https://ivanceras.github.io/svgbob-editor/ Diagrams: ascii-to-all     Archetype https://fatiherikli.github.io/archetype/ Diagrams: ascii-drawing     Textik https://textik.com/ Diagrams: ascii-drawing     ASCIIFlow http://asciiflow.com/ Diagrams: ascii-drawing     BPMN Sketch Miner https://www.bpmn-sketch-miner.ai/ Diagrams: BPMN/flow     Webgraphviz http://www.webgraphviz.com/ Diagrams: graphviz     Edotor https://edotor.</description>
     </item>
     
     <item>
       <title>CanvasRecorder.js</title>
-      <link>http://smusamashah.github.io/canvas-recorder/</link>
+      <link>https://smusamashah.github.io/canvas-recorder/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://smusamashah.github.io/canvas-recorder/</guid>
+      <guid>https://smusamashah.github.io/canvas-recorder/</guid>
       <description>I made some visualizations in HTML5 canvas and wanted to record them to display in blog. Could not find a simple way to do that. CCapture.js added too much performance overhead which made animations slow. CanvasRecorder.js uses built in MediaRecorder which is apparently the simplest and most effitient way to record whatever is happening on canvas.
 NOTE: I have only tested it with Chrome and it should work fine with Firefox</description>
     </item>
     
     <item>
       <title>Visualize sorting algorithms side by side</title>
-      <link>http://smusamashah.github.io/sorting-algorithms-visual-comparison/</link>
+      <link>https://smusamashah.github.io/sorting-algorithms-visual-comparison/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://smusamashah.github.io/sorting-algorithms-visual-comparison/</guid>
+      <guid>https://smusamashah.github.io/sorting-algorithms-visual-comparison/</guid>
       <description>A few weeks ago I found out this imgur gallery of sorting algorithms through a reddit post. The patterns which emerged while sorting random data looked very beautiful and amazing with the only catch that they were not interactive. You can not play with them. I decided make them in JavaScript to see what many different sorting algorithms look like, the patterns they create, while also learning them in the process.</description>
     </item>
     
     <item>
       <title>How to Root Moto X (2nd Gen) XT1093-Victara</title>
-      <link>http://smusamashah.github.io/unlock-root-moto-x-2nd-gen/</link>
+      <link>https://smusamashah.github.io/unlock-root-moto-x-2nd-gen/</link>
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://smusamashah.github.io/unlock-root-moto-x-2nd-gen/</guid>
+      <guid>https://smusamashah.github.io/unlock-root-moto-x-2nd-gen/</guid>
       <description>&lt;p&gt;Steps to root and unlock Moto X (2nd Gen) boot loader.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to explain git in simple words?</title>
-      <link>http://smusamashah.github.io/explain-git-in-simple-words/</link>
+      <link>https://smusamashah.github.io/explain-git-in-simple-words/</link>
       <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://smusamashah.github.io/explain-git-in-simple-words/</guid>
+      <guid>https://smusamashah.github.io/explain-git-in-simple-words/</guid>
       <description>&lt;p&gt;A few years ago I started hearing about Git here and there and its various strange words like branch, index, tree, commit, clone, fork, master, origin, head, check out, check in, push and pull etc. Available tutorials were difficult to understand because they jumped straight to git commands. I approached &lt;a href=&#34;https://www.quora.com/How-do-you-explain-the-basics-of-Git-in-simple-words-What-does-branch-index-tree-commit-clone-fork-master-origin-head-check-out-check-in-etc-mean&#34;&gt;Quora&lt;/a&gt; in hope for something more visual and easier to understand, then answered it myself getting most upvotes. Now posting it here on my own blog with hopefully even better explanation :)&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to get windows copy paste events with shell hook.</title>
-      <link>http://smusamashah.github.io/catch-copy-paste-from-explorer-using-shell-extension/</link>
+      <link>https://smusamashah.github.io/catch-copy-paste-from-explorer-using-shell-extension/</link>
       <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://smusamashah.github.io/catch-copy-paste-from-explorer-using-shell-extension/</guid>
+      <guid>https://smusamashah.github.io/catch-copy-paste-from-explorer-using-shell-extension/</guid>
       <description>This article was originally posted here by the author, that is no longer available.
 How to catch copy paste from explorer using shell extension? ICopyHook alternative for files and folder How to catch copy paste from explorer using shell extension? ICopyHook alternative for files and folder Howto trap copy paste event from explorer to do your custom processing or even Howto replace/substitute the copy-paste/cut-paste operation with your own copy or move or anything else?</description>
     </item>
     
     <item>
       <title>ID3D10Device and ID3D11DeviceContext VTable Indexes</title>
-      <link>http://smusamashah.github.io/id3d10device-vtable/</link>
+      <link>https://smusamashah.github.io/id3d10device-vtable/</link>
       <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://smusamashah.github.io/id3d10device-vtable/</guid>
+      <guid>https://smusamashah.github.io/id3d10device-vtable/</guid>
       <description>&lt;p&gt;I had trouble finding the index of DirectX 10 method &lt;code&gt;OMGetRenderTargets&lt;/code&gt; for hooking. I found these VTables (ID3D10Device and ID3D11DeviceContext) somewhere on the web. Putting these here to save the trouble for someone else.&lt;/p&gt;</description>
     </item>
     
