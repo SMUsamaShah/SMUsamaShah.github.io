@@ -26,9 +26,9 @@ jobs:
         with:
           personal_token: ${{ secrets.REPO_ACCESS }}
           external_repository: smusamashah/smusamashah.github.io
-          publish_dir: ./public
+          publish_dir: /docs
           #   keep_files: true
           user_name: SMUsamaShah
           user_email: <lifeh2o@gmail.com>
-          publish_branch: gh-pages
+          publish_branch: master
         #   cname: example.com
