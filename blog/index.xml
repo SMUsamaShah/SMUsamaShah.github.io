@@ -6,10 +6,21 @@
     <description>Recent content in Blogs on XOSH.ORG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://smusamashah.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>All chatbots fail this simple question</title>
+      <link>https://smusamashah.github.io/dumb-chatbots/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://smusamashah.github.io/dumb-chatbots/</guid>
+      <description>Try asking any chatbot something along the lines of
+ What did I just ask/tell you? What was my last/previous message?  All of them fail. All of them.
+GPT-3 is equally dumb smooth talker who can jump into any discussion, clever to detect the pattern of discussion and generate next sentences.</description>
+    </item>
     
     <item>
       <title>Online text to diagram tools</title>
