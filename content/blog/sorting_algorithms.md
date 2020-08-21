@@ -21,6 +21,20 @@ In this [video](https://www.youtube.com/watch?v=kPRA0W1kECg) you can listen to s
 
 Works on Chrome Desktop and Chrome Mobile
 
+## Embeded example
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tweakpane@1.5.3/dist/tweakpane.min.js"></script>
+<script src="/script/wizsort.js"></script>
+<script src="/script/algos.js"></script>
+<figure id="bubble_sort_canvas"></figure>
+
+<script type="text/javascript">
+const algos = [
+    { name: "Bubble Sort", fn: bubbleSort }
+];
+let wizSorting = new WizSorting(document.getElementById("bubble_sort_canvas"), algos);
+</script>
+
 ## What it looks like
 
 I used [CanvasRecorder.js](https://github.com/SMUsamaShah/CanvasRecorder) to record these videos.

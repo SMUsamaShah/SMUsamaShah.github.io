@@ -18,7 +18,11 @@ figcaption {
   text-align: center;
 }
 
-img, iframe, video {
+figure canvas { 
+  max-width: 100%;
+}
+
+img, iframe, video, figure canvas {
   display: block;
   margin-left: auto;
   margin-right: auto;
