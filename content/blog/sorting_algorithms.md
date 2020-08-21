@@ -24,8 +24,8 @@ Works on Chrome Desktop and Chrome Mobile
 ## Embeded example
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tweakpane@1.5.3/dist/tweakpane.min.js"></script>
-<script src="/script/wizsort.js"></script>
-<script src="/script/algos.js"></script>
+<script src="https://smusamashah.github.io/VisualizingSorts/wizsort.js"></script>
+<script src="https://smusamashah.github.io/VisualizingSorts/algos.js"></script>
 <figure id="bubble_sort_canvas"></figure>
 
 <script type="text/javascript">
