@@ -126,6 +126,18 @@ if (!doNotTrack) {
 <p>In this <a href="https://www.youtube.com/watch?v=kPRA0W1kECg">video</a> you can listen to sound patterns of various alogrithms. Same can be done in JavaScript using its <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext">audio api</a>. I added it along with visualization and now you can listen to sorting algorithms :)</p>
 <h2 id="demohttpssmusamashahgithubiovisualizingsortssortinghtml"><a href="https://smusamashah.github.io/VisualizingSorts/sorting.html">Demo</a></h2>
 <p>Works on Chrome Desktop and Chrome Mobile</p>
+<h2 id="embeded-example">Embeded example</h2>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tweakpane@1.5.3/dist/tweakpane.min.js"></script>
+<script src="/script/wizsort.js"></script>
+<script src="/script/algos.js"></script>
+<figure id="bubble_sort_canvas"></figure>
+<script type="text/javascript">
+const algos = [
+    { name: "Bubble Sort", fn: bubbleSort }
+];
+let wizSorting = new WizSorting(document.getElementById("bubble_sort_canvas"), algos);
+</script>
 <h2 id="what-it-looks-like">What it looks like</h2>
 <p>I used <a href="https://github.com/SMUsamaShah/CanvasRecorder">CanvasRecorder.js</a> to record these videos.</p>
 <p><a href="https://en.wikipedia.org/wiki/Bubble_sort"><strong>Bubble Sort</strong></a> is kind of Hello world of sorting algorithms. To perform bubble sort, loop through array while keeping an eye on current and next element and swap these two whenever current one is bigger until you reach the end. Keep repeating this process until no swap is done in a loop.</p>
