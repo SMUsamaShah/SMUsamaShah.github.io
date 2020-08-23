@@ -29,10 +29,14 @@ Works on Chrome Desktop and Chrome Mobile
 <figure id="bubble_sort_canvas"></figure>
 
 <script type="text/javascript">
-const algos = [
-    { name: "Bubble Sort", fn: bubbleSort }
-];
-let wizSorting = new WizSorting(document.getElementById("bubble_sort_canvas"), algos);
+const params = {
+    container: document.getElementById("bubble_sort_canvas"),
+    algos: [
+        { name: "Bubble Sort", fn: bubbleSort, enabled: true },
+    ],
+    settingsPosition: "inside" // "auto" or "inside"
+}
+let wizSorting = new WizSorting(params);
 </script>
 
 ## What it looks like
