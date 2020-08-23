@@ -133,10 +133,14 @@ if (!doNotTrack) {
 <script src="https://smusamashah.github.io/VisualizingSorts/algos.js"></script>
 <figure id="bubble_sort_canvas"></figure>
 <script type="text/javascript">
-const algos = [
-    { name: "Bubble Sort", fn: bubbleSort }
-];
-let wizSorting = new WizSorting(document.getElementById("bubble_sort_canvas"), algos);
+const params = {
+    container: document.getElementById("bubble_sort_canvas"),
+    algos: [
+        { name: "Bubble Sort", fn: bubbleSort, enabled: true },
+    ],
+    settingsPosition: "inside" // "auto" or "inside"
+}
+let wizSorting = new WizSorting(params);
 </script>
 <h2 id="what-it-looks-like">What it looks like</h2>
 <p>I used <a href="https://github.com/SMUsamaShah/CanvasRecorder">CanvasRecorder.js</a> to record these videos.</p>
