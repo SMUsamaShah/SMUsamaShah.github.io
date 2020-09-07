@@ -107,5 +107,16 @@ How to catch copy paste from explorer using shell extension? ICopyHook alternati
       <description>&lt;p&gt;I had trouble finding the index of DirectX 10 method &lt;code&gt;OMGetRenderTargets&lt;/code&gt; for hooking. I found these VTables (ID3D10Device and ID3D11DeviceContext) somewhere on the web. Putting these here to save the trouble for someone else.&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://smusamashah.github.io/blog/filename/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://smusamashah.github.io/blog/filename/</guid>
+      <description>&lt;p&gt;date: 2020-09-07
+description: Test
+excerpt_separator:&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>
