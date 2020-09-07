@@ -13,7 +13,7 @@ const github = require('@actions/github');
 const articles = require('./articles.json');
 
 const readDynalistFileURL = "https://dynalist.io/api/v1/doc/read";
-const dynalistToken = core.getInput('DYNALIST_TOKEN');
+let dynalistToken = core.getInput('DYNALIST_TOKEN');
 core.setSecret(dynalistToken);
 
 // https://dynalist.io/d/arYPsTPWYxTQ0exGcIX-onPE#z=DtixSbw8DyzSLtZmjLwA8_EB
@@ -29,6 +29,9 @@ if (args[0]) {
 if (args[1]) {
     nodeID = args[1];
 }
+if (args[2]) {
+    dynalistToken = args[2];
+}
 
 for (let article of articles.dynalist) {
     fetchDynalistNode(article.fileID, article.nodeID, (parentNode, childNodes) => {
@@ -38,11 +41,13 @@ for (let article of articles.dynalist) {
         }
         frontMatter += "---\n";
 
-        const title = `# ${parentNode.content}`;
+        const title = ""; //`# ${parentNode.content}`;
         const description = `${parentNode.note}`;
         const body = toMarkdownList(childNodes);
 
-        const articleContent = `${frontMatter}\n${title}\n${description}\n\n${body}`;
+        const dynalistWatermark = "---\nThis article is generated from a list on Dynalist";
+        const articleContent = `${frontMatter}\n${title}\n${description}\n\n${body}\n\n${dynalistWatermark}`;
+        console.log(articleContent);
 
         let markdownArticle = "./content/blog/" + article.outputFile;
         fs.writeFile(markdownArticle, articleContent, (err) => {
@@ -139,8 +144,7 @@ function toMarkdownList(nodesArray) {
     }
     let text = "";
     for (const node of nodesArray) {
-        text += "- ";
-        text += node.content + "  \n"; // title
+        text += `1. ${node.content}  \n`; // title
         text += node.note.replace(/[\n\r]/g, "  \n"); // description, append double space in lines in description
         text += "\n";
     }

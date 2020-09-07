@@ -48,6 +48,6 @@ jobs:
           publish_dir: ./public # this directory will be published on the pubish branch
           #   keep_files: true
           # user_name: SMUsamaShah
-          # user_email: <lifeh2o@gmail.com>
+          # user_email: <l**@gmail.com>
           publish_branch: master
         #   cname: example.com
