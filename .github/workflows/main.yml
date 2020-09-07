@@ -31,7 +31,12 @@ jobs:
           DYNALIST_TOKEN: ${{ secrets.DYNALIST_TOKEN }}
 
       - name: commit changes
-        uses: zwaldowski/git-commit-action@v1
+        # uses: zwaldowski/git-commit-action@v1
+        uses: EndBug/add-and-commit@v4
+        with:
+          ref: 'source'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
