@@ -6,10 +6,38 @@
     <description>Recent content in Blogs on XOSH.ORG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://smusamashah.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>test article from dynalist</title>
+      <link>https://smusamashah.github.io/test/</link>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://smusamashah.github.io/test/</guid>
+      <description>Text to Diagram A comprehensive list of various text to diagram tools.
+  Markdeep https://casual-effects.com/markdeep/
+Diagrams: markdown, ascii-to-all
+  Svgbob https://ivanceras.github.io/svgbob-editor/
+Diagrams: ascii-to-all
+  Archetype https://fatiherikli.github.io/archetype/
+Diagrams: ascii-drawing
+  Textik https://textik.com/
+Diagrams: ascii-drawing
+  ASCIIFlow http://asciiflow.com/
+Diagrams: ascii-drawing
+  BPMN Sketch Miner https://www.bpmn-sketch-miner.ai/
+Diagrams: BPMN/flow
+  Webgraphviz http://www.webgraphviz.com/
+Diagrams: graphviz
+  Edotor https://edotor.net/
+Diagrams: graphviz
+  nomnoml http://www.nomnoml.com/
+Source: https://github.com/skanaar/nomnoml
+Diagrams: activity, class</description>
+    </item>
     
     <item>
       <title>All chatbots fail this simple question</title>
@@ -105,17 +133,6 @@ How to catch copy paste from explorer using shell extension? ICopyHook alternati
       
       <guid>https://smusamashah.github.io/id3d10device-vtable/</guid>
       <description>&lt;p&gt;I had trouble finding the index of DirectX 10 method &lt;code&gt;OMGetRenderTargets&lt;/code&gt; for hooking. I found these VTables (ID3D10Device and ID3D11DeviceContext) somewhere on the web. Putting these here to save the trouble for someone else.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://smusamashah.github.io/blog/filename/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://smusamashah.github.io/blog/filename/</guid>
-      <description>&lt;p&gt;date: 2020-09-07
-description: Test
-excerpt_separator:&lt;/p&gt;</description>
     </item>
     
   </channel>
