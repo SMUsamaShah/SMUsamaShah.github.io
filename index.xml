@@ -6,38 +6,10 @@
     <description>Recent content on XOSH.ORG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://smusamashah.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>test article from dynalist</title>
-      <link>https://smusamashah.github.io/test/</link>
-      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://smusamashah.github.io/test/</guid>
-      <description>Text to Diagram A comprehensive list of various text to diagram tools.
-  Markdeep https://casual-effects.com/markdeep/
-Diagrams: markdown, ascii-to-all
-  Svgbob https://ivanceras.github.io/svgbob-editor/
-Diagrams: ascii-to-all
-  Archetype https://fatiherikli.github.io/archetype/
-Diagrams: ascii-drawing
-  Textik https://textik.com/
-Diagrams: ascii-drawing
-  ASCIIFlow http://asciiflow.com/
-Diagrams: ascii-drawing
-  BPMN Sketch Miner https://www.bpmn-sketch-miner.ai/
-Diagrams: BPMN/flow
-  Webgraphviz http://www.webgraphviz.com/
-Diagrams: graphviz
-  Edotor https://edotor.net/
-Diagrams: graphviz
-  nomnoml http://www.nomnoml.com/
-Source: https://github.com/skanaar/nomnoml
-Diagrams: activity, class</description>
-    </item>
     
     <item>
       <title>All chatbots fail this simple question</title>
@@ -76,7 +48,7 @@ Diagrams: graphviz
   nomnoml http://www.nomnoml.com/
 Source: https://github.com/skanaar/nomnoml
 Diagrams: activity, class
-  CodeUML (dead) http://codeuml.</description>
+  CodeUML http://codeuml.</description>
     </item>
     
     <item>
