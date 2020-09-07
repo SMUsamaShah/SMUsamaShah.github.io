@@ -3506,7 +3506,7 @@ for (let article of articles.dynalist) {
 
         const articleContent = `${frontMatter}\n${title}\n${description}\n\n${body}`;
 
-        fs.writeFile("../../content/blog/" + article.outputFile, articleContent, (err) => {
+        fs.writeFile("./content/blog/" + article.outputFile, articleContent, (err) => {
             if (err) throw err;
             console.log("file created");
         });
