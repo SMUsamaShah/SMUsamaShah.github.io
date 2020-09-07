@@ -1,0 +1,16 @@
+name: "Dynalist"
+description: "Dynalist"
+author: "smusamashah@github.com"
+
+inputs:
+  DYNALIST_TOKEN:
+    description: "Dynalist Token"
+    required: true
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
+
+branding:
+  icon: "mic"
+  color: "purple"

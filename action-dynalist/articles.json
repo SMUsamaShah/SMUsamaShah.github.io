@@ -1,0 +1,16 @@
+{
+    "dynalist": [
+        {
+            "frontMatter": [
+                "date: 2020-09-07",
+                "description: Test",
+                "excerpt_separator: <!--more-->",
+                "url: /test",
+                "title: test article from dynalist"
+            ],
+            "fileID": "arYPsTPWYxTQ0exGcIX-onPE",
+            "nodeID": "DtixSbw8DyzSLtZmjLwA8_EB",
+            "outputFile": "filename.md"
+        }
+    ]
+}
