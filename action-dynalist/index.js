@@ -46,7 +46,7 @@ for (let article of articles.dynalist) {
             if (err) throw err;
             console.log("file created");
         });
-        console.log(txt);
+        console.log(articleContent);
     });
 }
 

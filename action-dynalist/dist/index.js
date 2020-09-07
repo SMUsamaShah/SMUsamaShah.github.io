@@ -2638,16 +2638,14 @@ function addHook (state, kind, name, hook) {
 /***/ 325:
 /***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
 
-// Write Javascript code!
-// const appDiv = document.getElementById('app');
-// const dynalistToken = document.createElement("input");
-// appDiv.appendChild(dynalistToken);
-
-// const fetchButton = document.createElement("button");
-// appDiv.appendChild(fetchButton);
-// fetchButton.onclick = fetchDynalistNode;
-// fetchButton.textContent = "get data"
-
+/**
+ * Retrieve dynalist node from a file and convert it to text
+ * 
+ * > Install zeit/ncc by running this command in your terminal. npm i -g @zeit/ncc
+ * > Compile your index.js file. ncc build index.js
+ * 
+ * author: smusamashah
+ */
 const https = __webpack_require__(211);
 const fs = __webpack_require__(747);
 const core = __webpack_require__(524);
@@ -2688,7 +2686,7 @@ for (let article of articles.dynalist) {
             if (err) throw err;
             console.log("file created");
         });
-        console.log(txt);
+        console.log(articleContent);
     });
 }
 
