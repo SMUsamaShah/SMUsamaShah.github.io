@@ -30,6 +30,9 @@ jobs:
         with:
           DYNALIST_TOKEN: ${{ secrets.DYNALIST_TOKEN }}
 
+      - name: commit changes
+        uses: zwaldowski/git-commit-action@v1
+
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
         with:
