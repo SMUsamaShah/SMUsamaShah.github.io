@@ -32,21 +32,23 @@ if (args[1]) {
 
 for (let article of articles.dynalist) {
     fetchDynalistNode(article.fileID, article.nodeID, (parentNode, childNodes) => {
-        let frontMatter = "";
+        let frontMatter = "---\n";
         for (let txt of article.frontMatter) {
             frontMatter += txt + "\n";
         }
+        frontMatter += "---\n";
+
         const title = `# ${parentNode.content}`;
         const description = `${parentNode.note}`;
         const body = toMarkdownList(childNodes);
 
         const articleContent = `${frontMatter}\n${title}\n${description}\n\n${body}`;
 
-        fs.writeFile("./content/blog/" + article.outputFile, articleContent, (err) => {
+        let markdownArticle = "./content/blog/" + article.outputFile;
+        fs.writeFile(markdownArticle, articleContent, (err) => {
             if (err) throw err;
-            console.log("file created");
+            console.log("file created: " + markdownArticle);
         });
-        console.log(articleContent);
     });
 }
 
