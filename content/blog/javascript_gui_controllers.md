@@ -7,6 +7,7 @@ title: List of JavaScript GUI Control libraries (dat.GUI alternatives)
 
 
 These libraries can be used to quickly create a GUI for configureable parameters using sliders, checkboxes, colors pickers etc. dat.GUI is the most famous one and can be found in many canvas based demos. This is a list of dat.GUI and it's alternatives.
+
 To view preview HTML directly from Github you can use https://htmlpreview.github.io/ or https://raw.githack.com/ (rawgit [bookmarklet](https://gist.github.com/martianyi/eac629487bdcc3665fc9e7a9aabfbea6))
 I have added raw.githack links for some demos.
 
