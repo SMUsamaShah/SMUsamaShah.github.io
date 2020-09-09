@@ -11,6 +11,17 @@
             "fileID": "arYPsTPWYxTQ0exGcIX-onPE",
             "nodeID": "DtixSbw8DyzSLtZmjLwA8_EB",
             "outputFile": "text_to_diagram_tools.md"
+        },
+        {
+            "frontMatter": [
+                "date: 2020-09-09",
+                "description: List of JavaScript GUI Control libraries (dat.GUI alternatives)",
+                "url: /javascript-control-ui",
+                "title: List of JavaScript GUI Control libraries (dat.GUI alternatives)"
+            ],
+            "fileID": "arYPsTPWYxTQ0exGcIX-onPE",
+            "nodeID": "dKNDz7vd6CUv9G79aYAg7FZg",
+            "outputFile": "javascript_gui_controllers.md"
         }
     ]
 }
