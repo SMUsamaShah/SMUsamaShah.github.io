@@ -45,7 +45,7 @@ function generateArticle(article, parentNode, childNodes) {
     const description = `${parentNode.note}`;
     const body = toMarkdownList(childNodes);
 
-    const dynalistWatermark = "---\nThis article is generated from a list on Dynalist";
+    const dynalistWatermark = "---\n<small>This list is being maintained with Dynalist</small>";
 
     return `${frontMatter}\n${heading}\n${description}\n\n${body}\n\n${dynalistWatermark}`;
 }
