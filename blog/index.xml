@@ -18,7 +18,7 @@
       
       <guid>https://smusamashah.github.io/javascript-control-ui/</guid>
       <description>These libraries can be used to quickly create a GUI for configureable parameters using sliders, checkboxes, colors pickers etc. dat.GUI is the most famous one and can be found in many canvas based demos. This is a list of dat.GUI and it&amp;rsquo;s alternatives.
-To view preview HTML directly from Github you can use https://htmlpreview.github.io/ or https://raw.githack.com/ (rawgit bookmarklet) I have added raw.githack links for some demos.
+To view preview HTML directly from Github you can use https://htmlpreview.github.io/ or https://raw.githack.com/ (rawgit bookmarklet). I have added raw.githack links for some demos.
   dat.GUI https://github.com/dataarts/dat.gui</description>
     </item>
     
