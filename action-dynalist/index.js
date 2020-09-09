@@ -10,8 +10,8 @@ const https = require("https");
 const fs = require("fs");
 const core = require('@actions/core');
 const github = require('@actions/github');
-const articles = require('./articles.json');
-//let articles = JSON.parse(fs.readFileSync("articles.json", "utf8"));
+const { log } = require("console");
+const articles = JSON.parse(fs.readFileSync("./articles.json", "utf8"));
 
 const readDynalistFileURL = "https://dynalist.io/api/v1/doc/read";
 const dynalistToken = core.getInput('DYNALIST_TOKEN');
@@ -20,15 +20,16 @@ core.setSecret(dynalistToken);
 // https://dynalist.io/d/arYPsTPWYxTQ0exGcIX-onPE#z=DtixSbw8DyzSLtZmjLwA8_EB
 let fileData = {}; // file data from dynalist
 
+log(`Procesing ${articles.dynalist.length} articles from dynalist`);
 for (let article of articles.dynalist) {
     fetchDynalistNode(article.fileID, article.nodeID, (parentNode, childNodes) => {
         let txt = generateArticle(article, parentNode, childNodes);
-        console.log(txt);
+        log(txt);
 
         let blogpostFile = "./content/blog/" + article.outputFile;
         fs.writeFile(blogpostFile, txt, (err) => {
             if (err) throw err;
-            console.log("file created: " + blogpostFile);
+            log("file created: " + blogpostFile);
         });
     });
 }
@@ -88,7 +89,7 @@ function fetchDynalistNode(fileID, nodeID, nodesCallback) {
 // convert nodes array to map of key value where key will be "id".
 function arrayToMap(nodes) {
     if (!nodes) {
-        console.log("no nodes provided to convert")
+        log("no nodes provided to convert")
         return [];
     }
 
