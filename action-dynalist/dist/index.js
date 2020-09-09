@@ -2658,8 +2658,7 @@ const fs = __webpack_require__(747);
 const core = __webpack_require__(524);
 const github = __webpack_require__(663);
 const { log } = __webpack_require__(82);
-log(fs.readdirSync("./"));
-const articles = JSON.parse(fs.readFileSync("articles.json", "utf8"));
+const articles = JSON.parse(fs.readFileSync("action-dynalist/articles.json", "utf8"));
 
 const readDynalistFileURL = "https://dynalist.io/api/v1/doc/read";
 const dynalistToken = core.getInput('DYNALIST_TOKEN');

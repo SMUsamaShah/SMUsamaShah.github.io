@@ -11,8 +11,7 @@ const fs = require("fs");
 const core = require('@actions/core');
 const github = require('@actions/github');
 const { log } = require("console");
-log(fs.readdirSync("./"));
-const articles = JSON.parse(fs.readFileSync("articles.json", "utf8"));
+const articles = JSON.parse(fs.readFileSync("action-dynalist/articles.json", "utf8"));
 
 const readDynalistFileURL = "https://dynalist.io/api/v1/doc/read";
 const dynalistToken = core.getInput('DYNALIST_TOKEN');
