@@ -11,50 +11,42 @@ const fs = require("fs");
 const core = require('@actions/core');
 const github = require('@actions/github');
 const articles = require('./articles.json');
+//let articles = JSON.parse(fs.readFileSync("articles.json", "utf8"));
 
 const readDynalistFileURL = "https://dynalist.io/api/v1/doc/read";
-let dynalistToken = core.getInput('DYNALIST_TOKEN');
+const dynalistToken = core.getInput('DYNALIST_TOKEN');
 core.setSecret(dynalistToken);
 
 // https://dynalist.io/d/arYPsTPWYxTQ0exGcIX-onPE#z=DtixSbw8DyzSLtZmjLwA8_EB
-let fileID = "";
-let nodeID = "";
 let fileData = {}; // file data from dynalist
-//let articles = JSON.parse(fs.readFileSync("articles.json", "utf8"));
-
-const args = process.argv.slice(2);
-if (args[0]) {
-    fileID = args[0];
-}
-if (args[1]) {
-    nodeID = args[1];
-}
-if (args[2]) {
-    dynalistToken = args[2];
-}
 
 for (let article of articles.dynalist) {
     fetchDynalistNode(article.fileID, article.nodeID, (parentNode, childNodes) => {
-        let frontMatter = "---\n";
-        for (let txt of article.frontMatter) {
-            frontMatter += txt + "\n";
-        }
-        frontMatter += "---\n";
+        let txt = generateArticle(article, parentNode, childNodes);
+        console.log(txt);
 
-        const title = ""; //`# ${parentNode.content}`;
-        const description = `${parentNode.note}`;
-        const body = toMarkdownList(childNodes);
-
-        const dynalistWatermark = "---\nThis article is generated from a list on Dynalist";
-        const articleContent = `${frontMatter}\n${title}\n${description}\n\n${body}\n\n${dynalistWatermark}`;
-        console.log(articleContent);
-
-        let markdownArticle = "./content/blog/" + article.outputFile;
-        fs.writeFile(markdownArticle, articleContent, (err) => {
+        let blogpostFile = "./content/blog/" + article.outputFile;
+        fs.writeFile(blogpostFile, txt, (err) => {
             if (err) throw err;
-            console.log("file created: " + markdownArticle);
+            console.log("file created: " + blogpostFile);
         });
     });
+}
+
+function generateArticle(article, parentNode, childNodes) {
+    let frontMatter = "---\n";
+    for (let txt of article.frontMatter) {
+        frontMatter += txt + "\n";
+    }
+    frontMatter += "---\n";
+
+    const heading = ""; //`# ${parentNode.content}`;
+    const description = `${parentNode.note}`;
+    const body = toMarkdownList(childNodes);
+
+    const dynalistWatermark = "---\nThis article is generated from a list on Dynalist";
+
+    return `${frontMatter}\n${heading}\n${description}\n\n${body}\n\n${dynalistWatermark}`;
 }
 
 
