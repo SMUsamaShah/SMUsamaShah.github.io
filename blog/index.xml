@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on XOSH.ORG</title>
-    <link>https://xosh.org/blog/</link>
+    <link>https://smusamashah.github.io/blog/</link>
     <description>Recent content in Blogs on XOSH.ORG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xosh.org/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://smusamashah.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>List of JavaScript GUI Control libraries (dat.GUI alternatives)</title>
-      <link>https://xosh.org/javascript-control-ui/</link>
+      <link>https://smusamashah.github.io/javascript-control-ui/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xosh.org/javascript-control-ui/</guid>
+      <guid>https://smusamashah.github.io/javascript-control-ui/</guid>
       <description>These libraries can be used to quickly create a GUI for configureable parameters using sliders, checkboxes, colors pickers etc. dat.GUI is the most famous one and can be found in many canvas based demos. This is a list of dat.GUI and it&amp;rsquo;s alternatives.
 To view preview HTML directly from Github you can use https://htmlpreview.github.io/ or https://raw.githack.com/ (rawgit bookmarklet). I have added raw.githack links for some demos.
   dat.GUI https://github.com/dataarts/dat.gui</description>
@@ -24,10 +24,10 @@ To view preview HTML directly from Github you can use https://htmlpreview.github
     
     <item>
       <title>All chatbots fail this simple question</title>
-      <link>https://xosh.org/dumb-chatbots/</link>
+      <link>https://smusamashah.github.io/dumb-chatbots/</link>
       <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xosh.org/dumb-chatbots/</guid>
+      <guid>https://smusamashah.github.io/dumb-chatbots/</guid>
       <description>Try asking any chatbot something along the lines of
  What did I just ask/tell you? What was my last/previous message?  All of them fail. All of them.
 GPT-3 is equally dumb smooth talker who can jump into any discussion, clever to detect the pattern of discussion and generate next sentences.</description>
@@ -35,10 +35,10 @@ GPT-3 is equally dumb smooth talker who can jump into any discussion, clever to 
     
     <item>
       <title>Online text to diagram tools</title>
-      <link>https://xosh.org/text-to-diagram/</link>
+      <link>https://smusamashah.github.io/text-to-diagram/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xosh.org/text-to-diagram/</guid>
+      <guid>https://smusamashah.github.io/text-to-diagram/</guid>
       <description>A comprehensive list of various text to diagram tools.
   Markdeep https://casual-effects.com/markdeep/
 Diagrams: markdown, ascii-to-all
@@ -64,57 +64,57 @@ Diagrams: activity, class
     
     <item>
       <title>CanvasRecorder.js</title>
-      <link>https://xosh.org/canvas-recorder/</link>
+      <link>https://smusamashah.github.io/canvas-recorder/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xosh.org/canvas-recorder/</guid>
+      <guid>https://smusamashah.github.io/canvas-recorder/</guid>
       <description>I made some visualizations in HTML5 canvas and wanted to record them to display in blog. Could not find a simple way to do that. CCapture.js added too much performance overhead which made animations slow. CanvasRecorder.js uses built in MediaRecorder which is apparently the simplest and most effitient way to record whatever is happening on canvas.
 NOTE: I have only tested it with Chrome and it should work fine with Firefox</description>
     </item>
     
     <item>
       <title>Visualize sorting algorithms side by side</title>
-      <link>https://xosh.org/sorting-algorithms-visual-comparison/</link>
+      <link>https://smusamashah.github.io/sorting-algorithms-visual-comparison/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xosh.org/sorting-algorithms-visual-comparison/</guid>
+      <guid>https://smusamashah.github.io/sorting-algorithms-visual-comparison/</guid>
       <description>A few weeks ago I found out this imgur gallery of sorting algorithms through a reddit post. The patterns which emerged while sorting random data looked very beautiful and amazing with the only catch that they were not interactive. You can not play with them. I decided make them in JavaScript to see what many different sorting algorithms look like, the patterns they create, while also learning them in the process.</description>
     </item>
     
     <item>
       <title>How to Root Moto X (2nd Gen) XT1093-Victara</title>
-      <link>https://xosh.org/unlock-root-moto-x-2nd-gen/</link>
+      <link>https://smusamashah.github.io/unlock-root-moto-x-2nd-gen/</link>
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xosh.org/unlock-root-moto-x-2nd-gen/</guid>
+      <guid>https://smusamashah.github.io/unlock-root-moto-x-2nd-gen/</guid>
       <description>&lt;p&gt;Steps to root and unlock Moto X (2nd Gen) boot loader.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to explain git in simple words?</title>
-      <link>https://xosh.org/explain-git-in-simple-words/</link>
+      <link>https://smusamashah.github.io/explain-git-in-simple-words/</link>
       <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://xosh.org/explain-git-in-simple-words/</guid>
+      <guid>https://smusamashah.github.io/explain-git-in-simple-words/</guid>
       <description>&lt;p&gt;A few years ago I started hearing about Git here and there and its various strange words like branch, index, tree, commit, clone, fork, master, origin, head, check out, check in, push and pull etc. Available tutorials were difficult to understand because they jumped straight to git commands. I approached &lt;a href=&#34;https://www.quora.com/How-do-you-explain-the-basics-of-Git-in-simple-words-What-does-branch-index-tree-commit-clone-fork-master-origin-head-check-out-check-in-etc-mean&#34;&gt;Quora&lt;/a&gt; in hope for something more visual and easier to understand, then answered it myself getting most upvotes. Now posting it here on my own blog with hopefully even better explanation :)&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to get windows copy paste events with shell hook.</title>
-      <link>https://xosh.org/catch-copy-paste-from-explorer-using-shell-extension/</link>
+      <link>https://smusamashah.github.io/catch-copy-paste-from-explorer-using-shell-extension/</link>
       <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://xosh.org/catch-copy-paste-from-explorer-using-shell-extension/</guid>
+      <guid>https://smusamashah.github.io/catch-copy-paste-from-explorer-using-shell-extension/</guid>
       <description>This article was originally posted here by the author, that is no longer available.
 How to catch copy paste from explorer using shell extension? ICopyHook alternative for files and folder How to catch copy paste from explorer using shell extension? ICopyHook alternative for files and folder Howto trap copy paste event from explorer to do your custom processing or even Howto replace/substitute the copy-paste/cut-paste operation with your own copy or move or anything else?</description>
     </item>
     
     <item>
       <title>ID3D10Device and ID3D11DeviceContext VTable Indexes</title>
-      <link>https://xosh.org/id3d10device-vtable/</link>
+      <link>https://smusamashah.github.io/id3d10device-vtable/</link>
       <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://xosh.org/id3d10device-vtable/</guid>
+      <guid>https://smusamashah.github.io/id3d10device-vtable/</guid>
       <description>&lt;p&gt;I had trouble finding the index of DirectX 10 method &lt;code&gt;OMGetRenderTargets&lt;/code&gt; for hooking. I found these VTables (ID3D10Device and ID3D11DeviceContext) somewhere on the web. Putting these here to save the trouble for someone else.&lt;/p&gt;</description>
     </item>
     

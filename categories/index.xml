@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on XOSH.ORG</title>
-    <link>https://xosh.org/categories/</link>
+    <link>https://smusamashah.github.io/categories/</link>
     <description>Recent content in Categories on XOSH.ORG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xosh.org/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://smusamashah.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Code</title>
-      <link>https://xosh.org/categories/code/</link>
+      <link>https://smusamashah.github.io/categories/code/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xosh.org/categories/code/</guid>
+      <guid>https://smusamashah.github.io/categories/code/</guid>
       <description></description>
     </item>
     
