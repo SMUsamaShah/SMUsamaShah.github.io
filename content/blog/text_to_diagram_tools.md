@@ -98,4 +98,4 @@ Example: graph-easy `<<< [node 1]->[some text]-[this][node 1]->[branch]`
 
 
 ---
-This article is generated from a list on Dynalist
+<small>This list is being maintained with Dynalist</small>
