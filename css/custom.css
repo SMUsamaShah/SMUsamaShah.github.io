@@ -29,7 +29,7 @@ img, iframe, video, figure canvas {
 }
 
 code {
-  font-size: .84vw;
+  font-size: 16px;
 }
 
 h1, h2, h3 {
@@ -51,7 +51,7 @@ header a {
 }
 
 main a {
-  color: #555;
+  /* color: #555; */
   border-bottom: 1px solid #ccc;
   -webkit-transition: all ease-out 0.2s;
   font-weight: normal;

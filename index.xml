@@ -6,11 +6,7 @@
     <description>Recent content on XOSH.ORG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://xosh.org/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://xosh.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>List of JavaScript GUI Control libraries (dat.GUI alternatives)</title>
       <link>https://xosh.org/javascript-control-ui/</link>
