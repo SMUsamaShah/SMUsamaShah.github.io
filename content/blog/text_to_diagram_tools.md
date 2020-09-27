@@ -91,10 +91,12 @@ Diagrams: penrose
 Diagrams: flow
 1. **WaveDrom** https://wavedrom.com/editor.html  
 Diagrams: timing
-1. **perl graph-easy** http://bloodgate.com/perl/graph/index.html #cli  
-Diagrams: flow  
+1. CLI Text to Diagram Tools  
+
+   1. **perl graph-easy** http://bloodgate.com/perl/graph/index.html #cli  
+   Diagrams: flow  
 Doc: https://developpaper.com/recommend-a-tool-for-making-ascii-flow-chart-graph-easy  
-Example: graph-easy `<<< [node 1]->[some text]-[this][node 1]->[branch]`
+Example: `graph-easy <<< [node 1]->[some text]-[this][node 1]->[branch]`
 
 
 ---
