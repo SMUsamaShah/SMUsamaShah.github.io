@@ -11,135 +11,161 @@ const fs = require("fs");
 const core = require('@actions/core');
 const github = require('@actions/github');
 const { log } = require("console");
-const articles = JSON.parse(fs.readFileSync("action-dynalist/articles.json", "utf8"));
 
 const readDynalistFileURL = "https://dynalist.io/api/v1/doc/read";
 const dynalistToken = core.getInput('DYNALIST_TOKEN');
 core.setSecret(dynalistToken);
 
-// https://dynalist.io/d/arYPsTPWYxTQ0exGcIX-onPE#z=DtixSbw8DyzSLtZmjLwA8_EB
-let fileData = {}; // file data from dynalist
+const dl = new Dynalist(dynalistToken);
 
-log(`Procesing ${articles.dynalist.length} articles from dynalist`);
-for (let article of articles.dynalist) {
-    fetchDynalistNode(article.fileID, article.nodeID, (parentNode, childNodes) => {
-        let txt = generateArticle(article, parentNode, childNodes);
-        log(txt);
+const articles = JSON.parse(fs.readFileSync("action-dynalist/articles.json", "utf8"));
+// https://dynalist.io/d/arYPsTPWYxTQ0exGcIX-onPE#z=DtixSbw8DyzSLtZmjLwA8_EB
+
+(async function main(){
+    log(`Procesing ${articles.dynalist.length} articles from dynalist`);
+    for (let article of articles.dynalist) {
+        let node = await dl.findNode(article.nodeID, article.fileID);
+        let list = await dl.toMarkdownList(node, article.fileID);
+
+        let txt = generateArticle(article.frontMatter, node, list);
 
         let blogpostFile = "./content/blog/" + article.outputFile;
         fs.writeFile(blogpostFile, txt, (err) => {
             if (err) throw err;
             log("file created: " + blogpostFile);
         });
-    });
-}
+    }
+})();
 
-function generateArticle(article, parentNode, childNodes) {
+function generateArticle(frontMatterData, mainNode, body) {
     let frontMatter = "---\n";
-    for (let txt of article.frontMatter) {
+    for (let txt of frontMatterData) {
         frontMatter += txt + "\n";
     }
     frontMatter += "---\n";
 
     const heading = ""; //`# ${parentNode.content}`;
-    const description = `${parentNode.note}`;
-    const body = toMarkdownList(childNodes);
+    const description = `${mainNode.note}`;
 
     const dynalistWatermark = "---\n<small>This list is being maintained with Dynalist</small>";
 
     return `${frontMatter}\n${heading}\n${description}\n\n${body}\n\n${dynalistWatermark}`;
 }
 
+function Dynalist(token) {
+    const TOKEN = token;
+    const readURL = "https://dynalist.io/api/v1/doc/read";
+    const editURL = "https://dynalist.io/api/v1/doc/edit";
+    const dlFiles = {};
 
-function fetchDynalistNode(fileID, nodeID, nodesCallback) {
-    // create request object
-    const requestOptions = {
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        method: 'POST'
-    };
+    async function fetchFile(dlFileID) {
+        if (!dlFiles[dlFileID]) {
+            const dynFile = await requestFileJson(dlFileID);
+            dlFiles[dlFileID] = transformDLFile(dynFile);
+        }
 
-    const requestBody = JSON.stringify({
-        "token": dynalistToken,
-        "file_id": fileID
-    });
+        return dlFiles[dlFileID];
+    }
 
-    const req = https.request(readDynalistFileURL, requestOptions, function (res) {
-        const chunks = [];
-        res.on("data", function (chunk) {
-            chunks.push(chunk);
+    this.findNode = async function(dlNodeID, dlFileID) {
+        let dlFile = await fetchFile(dlFileID);
+        let resultNode = dlFile.nodes[dlNodeID];
+        return resultNode;
+    }
+
+    this.toMarkdownList = async function(dlNode, dlFileID, level = 0) {
+        let str = '';
+        let indent = "";
+
+        for (let i = 0; i < level; i++) {
+            indent += "   "; // 3 spaces
+        }
+
+        for (let nodeID of dlNode.children) {
+            let node = await this.findNode(nodeID, dlFileID);
+            str += indent + "1. " + node.content + "  \n";
+            str += indent + node.note.replace(/[\n\r]/g, "  \n");
+            str += "\n";
+
+            if (node.children) {
+                str += await this.toMarkdownList(node, dlFileID, level + 1);
+            }
+        }
+        return str;
+    }
+
+    function transformDLFile(dlFileObject) {
+        dlFileObject.nodes = arrayToMap(dlFileObject.nodes);
+        return dlFileObject;
+    }
+
+    // convert nodes array to map of key value where key will be "id".
+    function arrayToMap(nodes) {
+        if (!nodes) {
+            log("no nodes provided to convert")
+            return [];
+        }
+
+        let fileNodes = {};
+        for (let node of nodes) {
+            // node id as key
+            fileNodes[node.id] = node;
+            delete node.id; // because now its a key of this object
+        }
+        return fileNodes;
+    }
+
+    // convert each string id in idArray to respective object from dataSource
+    function expandIDList(idArray, db) {
+        for (let i = 0; i < idArray.length; i++) {
+            let id = idArray[i];
+            idArray[i] = db[id]; // replace id with actual retreived node
+        }
+    }
+
+    function requestFileJson(dlFileID) {
+        return httpRequestJson(readURL, JSON.stringify({
+            "token": TOKEN,
+            "file_id": dlFileID
+        }));
+    }
+
+    function httpRequestJson(url, postData) {
+        return new Promise((resolve, reject) => {
+            const params = {
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                method: 'POST'
+            };
+
+            const req = https.request(url, params, function (res) {
+                 // reject on bad status
+                if (res.statusCode < 200 || res.statusCode >= 300) {
+                    return reject(new Error('statusCode=' + res.statusCode));
+                }
+
+                // collect response
+                const responseChunks = [];
+                res.on("data", function (chunk) {
+                    responseChunks.push(chunk);
+                });
+
+                // 
+                res.on("end", function () {
+                    let json;
+                    try {
+                        json = JSON.parse(Buffer.concat(responseChunks).toString());
+                    } catch (e) {
+                        reject(e);
+                    }
+                    resolve(json);
+                });
+            });
+            if (postData) {
+                req.write(postData);
+            }
+            req.end();
         });
-        res.on("end", function () {
-            const responsebody = Buffer.concat(chunks);
-            fileData = JSON.parse(responsebody.toString());
-
-            // transform data converting [items, ...] to separate objects (itemId: data, ...)
-            fileData.nodes = arrayToMap(fileData.nodes);
-
-            let parentNode = getNode(nodeID);
-            let childNodes = expandChildren(nodeID);
-            nodesCallback(parentNode, childNodes);
-        });
-    });
-    req.write(requestBody);
-    req.end();
-}
-
-// convert nodes array to map of key value where key will be "id".
-function arrayToMap(nodes) {
-    if (!nodes) {
-        log("no nodes provided to convert")
-        return [];
     }
-
-    let fileNodes = {};
-    for (let i = 0; i < nodes.length; i++) {
-        let node = nodes[i];
-        // node id to key
-        fileNodes[node.id] = node;
-        delete node.id; // because now its a key of this object
-    }
-    return fileNodes;
-}
-
-// convert each string id in idArray to respective object from dataSource
-function expandIDList(idArray, db) {
-    for (let i = 0; i < idArray.length; i++) {
-        let id = idArray[i];
-        idArray[i] = db[id]; // replace id with actual retreived node
-    }
-}
-
-function getNode(nodeID) {
-    return fileData.nodes[nodeID];
-}
-
-function expandChildren(nodeID) {
-    const node = getNode(nodeID);
-    if (!node || !node.children) {
-        console.error('no node found for given node ID: '+nodeID);
-        return null;
-    }
-
-    if (node.children.length > 0 && typeof node.children[1] === 'string') {
-        // expand children ids to their objects
-        expandIDList(node.children, fileData.nodes);
-    }
-
-    return node.children;
-}
-
-function toMarkdownList(nodesArray) {
-    if (!nodesArray) {
-        console.error('no nodes to convert to text');
-        return null;
-    }
-    let text = "";
-    for (const node of nodesArray) {
-        text += `1. ${node.content}  \n`; // title
-        text += node.note.replace(/[\n\r]/g, "  \n"); // description, append double space in lines in description
-        text += "\n";
-    }
-    return text;
 }
