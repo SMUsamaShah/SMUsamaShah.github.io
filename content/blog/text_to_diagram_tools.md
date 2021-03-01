@@ -19,6 +19,8 @@ Diagrams: ascii-drawing
 Diagrams: ascii-drawing
 1. **ASCIIFlow** http://asciiflow.com/  
 Diagrams: ascii-drawing
+1. **Pikchr** https://pikchr.org/home/pikchrshow  
+Diagrams: all
 1. **BPMN Sketch Miner** https://www.bpmn-sketch-miner.ai/  
 Diagrams: BPMN/flow
 1. **Webgraphviz** http://www.webgraphviz.com/  
