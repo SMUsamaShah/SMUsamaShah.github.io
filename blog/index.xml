@@ -50,12 +50,11 @@ Diagrams: ascii-drawing
 Diagrams: BPMN/flow
   Webgraphviz http://www.webgraphviz.com/
 Diagrams: graphviz
+  Viz.js http://viz-js.com/
+Diagrams: graphviz
   Edotor https://edotor.net/
 Diagrams: graphviz
-  nomnoml http://www.nomnoml.com/
-Source: https://github.com/skanaar/nomnoml
-Diagrams: activity, class
-  CodeUML http://codeuml.</description>
+  nomnoml http://www.nomnoml.com/</description>
     </item>
     
     <item>
