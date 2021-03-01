@@ -30,6 +30,10 @@ Demo: https://raw.githack.com/lehni/palette.js/master/example/index.html
 1. **PaperGUI** https://github.com/google/paper-gui   
 dat.GUI clone by Google.   
 Demo: https://raw.githack.com/google/paper-gui/gh-pages/demo.html
+1. **yagui** https://github.com/stephomi/yagui  
+Demo: https://stephaneginier.com/archive/yagui/
+1. **guigui** https://github.com/superguigui/guigui  
+
 
 
 ---

@@ -23,6 +23,8 @@ Diagrams: ascii-drawing
 Diagrams: BPMN/flow
 1. **Webgraphviz** http://www.webgraphviz.com/  
 Diagrams: graphviz
+1. **Viz.js** http://viz-js.com/  
+Diagrams: graphviz
 1. **Edotor** https://edotor.net/  
 Diagrams: graphviz
 1. **nomnoml** http://www.nomnoml.com/  
@@ -44,7 +46,7 @@ Diagrams: sequence
 1. **DotUML** https://dotuml.com/playground.html  
 Diagrams: class, use case, sequence, state, deployment, graphviz
 1. **dbdiagram** https://dbdiagram.io/home  
-Diagrams: sequence
+Diagrams: entity-relationship
 1. **WebSequenceDiagrams** https://www.websequencediagrams.com/  
 Diagrams: sequence
 1. **SVG Sequence Diagram** http://sullerandras.github.io/SVG-Sequence-Diagram/  
@@ -88,6 +90,8 @@ Diagrams: architecture
 1. **Penrose** https://github.com/penrose/penrose  
 Diagrams: penrose
 1. **code2flow** https://app.code2flow.com/  
+Diagrams: flow
+1. **flowchart.fun** https://flowchart.fun/  
 Diagrams: flow
 1. **WaveDrom** https://wavedrom.com/editor.html  
 Diagrams: timing
