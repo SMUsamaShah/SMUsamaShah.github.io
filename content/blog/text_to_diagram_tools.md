@@ -21,6 +21,8 @@ Diagrams: ascii-drawing
 Diagrams: ascii-drawing
 1. **Pikchr** https://pikchr.org/home/pikchrshow  
 Diagrams: all
+1. **Kroki** https://kroki.io/  
+Diagrams: Render with many other tools online in one place
 1. **BPMN Sketch Miner** https://www.bpmn-sketch-miner.ai/  
 Diagrams: BPMN/flow
 1. **Webgraphviz** http://www.webgraphviz.com/  
@@ -87,8 +89,8 @@ Diagrams: block, activity, network, rack/stack, packet
 Diagrams: railroad/syntax
 1. **Gleek** https://www.gleek.io/  
 Diagrams: architecture
-1. **Kroki** https://kroki.io/  
-
+1. **Ilograph** https://app.ilograph.com/  
+Diagrams: architecture
 1. **Penrose** https://github.com/penrose/penrose  
 Diagrams: penrose
 1. **code2flow** https://app.code2flow.com/  
