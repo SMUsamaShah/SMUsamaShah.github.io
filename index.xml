@@ -37,22 +37,20 @@ GPT-3 is equally dumb smooth talker who can jump into any discussion, clever to 
       <guid>https://xosh.org/text-to-diagram/</guid>
       <description>A comprehensive list of various text to diagram tools.
   Markdeep https://casual-effects.com/markdeep/
-Diagrams: markdown, ascii-to-all
+markdown, ascii-to-all
   Svgbob https://ivanceras.github.io/svgbob-editor/
-Diagrams: ascii-to-all
+ascii-to-all
   Archetype https://fatiherikli.github.io/archetype/
-Diagrams: ascii-drawing
+ascii-drawing
   Textik https://textik.com/
-Diagrams: ascii-drawing
+ascii-drawing
   ASCIIFlow http://asciiflow.com/
-Diagrams: ascii-drawing
+ascii-drawing
   Pikchr https://pikchr.org/home/pikchrshow
-Diagrams: all
+all
   Kroki https://kroki.io/
-Diagrams: Render with many other tools online in one place
-  BPMN Sketch Miner https://www.bpmn-sketch-miner.ai/
-Diagrams: BPMN/flow
-  Webgraphviz http://www.</description>
+BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, PlantUML, Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, PlantUML, SvgBob, UMLet, Vega, Vega-Lite, WaveDrom
+  BPMN Sketch Miner https://www.</description>
     </item>
     
     <item>
