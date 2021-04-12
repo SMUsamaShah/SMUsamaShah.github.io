@@ -49,7 +49,7 @@ class, state, composite
 sequence
 1. **DotUML** https://dotuml.com/playground.html  
 class, use case, sequence, state, deployment, graphviz
-1. QuickDBD https://app.quickdatabasediagrams.com/#/  
+1. **QuickDBD** https://app.quickdatabasediagrams.com/#/  
 entity-relationship
 1. **dbdiagram** https://dbdiagram.io/d  
 entity-relationship
