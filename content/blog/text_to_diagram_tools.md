@@ -23,8 +23,13 @@ ascii-drawing
 all
 1. **Kroki** https://kroki.io/  
 BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, PlantUML, Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, PlantUML, SvgBob, UMLet, Vega, Vega-Lite, WaveDrom
+1. **mscgen_js** https://mscgen.js.org/  
+sequence
 1. **BPMN Sketch Miner** https://www.bpmn-sketch-miner.ai/  
 BPMN/flow
+1. **dagre-svg** https://andrewfulrich.gitlab.io/dagre-svg/  
+graph  
+Source: https://gitlab.com/andrewfulrich/dagre-svg
 1. **Webgraphviz** http://www.webgraphviz.com/  
 graphviz
 1. **Viz.js** http://viz-js.com/  
@@ -68,6 +73,8 @@ sequence
 sequence
 1. **GraphUp** https://graphup.co/ (broken)  
 sequence, gantt
+1. **Diagwiz** https://diagwiz.io/playground/  
+ascii sequence
 1. **Text Diagram** http://weidagang.github.io/text-diagram/  
 ascii sequence  
 Source: https://github.com/weidagang/text-diagram
@@ -89,6 +96,9 @@ block, activity, network, rack/stack, packet
 1. **state machine cat** https://state-machine-cat.js.org/  
 state  
 Source: https://github.com/sverweij/state-machine-cat
+1. **XState Visualizer** https://xstate.js.org/viz/  
+state  
+Source: https://github.com/davidkpiano/xstate
 1. **MetaUML** https://metauml.denksoft.com (dead)  
 
 1. **Railroad Diagram Generator** http://www.bottlecaps.de/rr/ui#_StringLiteral  
