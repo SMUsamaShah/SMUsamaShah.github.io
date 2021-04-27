@@ -50,7 +50,8 @@ ascii-drawing
 all
   Kroki https://kroki.io/
 BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, PlantUML, Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, PlantUML, SvgBob, UMLet, Vega, Vega-Lite, WaveDrom
-  BPMN Sketch Miner https://www.</description>
+  mscgen_js https://mscgen.js.org/
+sequence</description>
     </item>
     
     <item>
