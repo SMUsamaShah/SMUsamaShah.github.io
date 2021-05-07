@@ -30,6 +30,16 @@ Hiren’s BootCD 10.4 https://www.hirensbootcd.org/hbcd-v104/ https://www.hirens
     </item>
     
     <item>
+      <title>Split String in Java vs C#, Python, JavaScript</title>
+      <link>https://xosh.org/split-string/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xosh.org/split-string/</guid>
+      <description>// C# Console.WriteLine(&amp;#34;&amp;#34;.Split(&amp;#39;=&amp;#39;).Length); // 1 Console.WriteLine(&amp;#34;=&amp;#34;.Split(&amp;#39;=&amp;#39;).Length); // 2 // Python print ( len(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;)) ); // 1 print ( len(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;)) ); // 2 // JavaScript console.log(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 1 console.log(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 2 then there is Java
+// Java System.out.println(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 1 System.out.println(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 0 </description>
+    </item>
+    
+    <item>
       <title>List of JavaScript GUI Control libraries (dat.GUI alternatives)</title>
       <link>https://xosh.org/javascript-control-ui/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>

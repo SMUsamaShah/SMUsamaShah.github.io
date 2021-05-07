@@ -8,6 +8,15 @@
     <loc>https://xosh.org/blog/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://xosh.org/categories/</loc>
+    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xosh.org/categories/code/</loc>
+    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xosh.org/split-string/</loc>
+    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xosh.org/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -21,12 +30,6 @@
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xosh.org/canvas-recorder/</loc>
-    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xosh.org/categories/</loc>
-    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xosh.org/categories/code/</loc>
     <lastmod>2018-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xosh.org/tags/js/</loc>
