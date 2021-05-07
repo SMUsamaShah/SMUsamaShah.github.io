@@ -13,11 +13,18 @@ A comprehensive list of various text to diagram tools.
 markdown, ascii-to-all
 1. **Svgbob** https://ivanceras.github.io/svgbob-editor/  
 ascii-to-all
+1. **asciigrid** https://mbarkhau.keybase.pub/asciigrid/  
+ascii-to-all  
+draw in ascii in left panel and see the diagram in right panel. uses svgbob
 1. **Archetype** https://fatiherikli.github.io/archetype/  
 ascii-drawing
 1. **Textik** https://textik.com/  
 ascii-drawing
 1. **ASCIIFlow** http://asciiflow.com/  
+ascii-drawing
+1. **textik** https://textik.com/  
+ascii-drawing
+1. **fsymbols** https://fsymbols.com/draw/  
 ascii-drawing
 1. **Pikchr** https://pikchr.org/home/pikchrshow  
 all
@@ -104,7 +111,7 @@ Source: https://github.com/davidkpiano/xstate
 1. **Railroad Diagram Generator** http://www.bottlecaps.de/rr/ui#_StringLiteral  
 railroad/syntax
 1. **Gleek** https://www.gleek.io/  
-architecture
+architecture, sequence, entity-relationship, class
 1. **Ilograph** https://app.ilograph.com/  
 architecture
 1. **Structurizr** https://structurizr.com/dsl  
