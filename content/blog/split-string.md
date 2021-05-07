@@ -1,6 +1,6 @@
 ---
 author: Usama
-date: 2021-05-15
+date: 2021-05-07
 description: Split String in Java vs C#, Python, JavaScript
 url: /split-string
 title: Split String in Java vs C#, Python, JavaScript
