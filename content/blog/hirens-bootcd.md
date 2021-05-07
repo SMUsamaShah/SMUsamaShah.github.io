@@ -190,8 +190,8 @@ https://www.hirensbootcd.org/hbcd-v70/
 https://www.hirensbootcd.org/files/Hirens.BootCD.7.0.zip  
 
 Hiren’s BootCD 6.0  
-https://www.hirensbootcd.org/hirens-bootcd-6- 
-0/ https://www.hirensbootcd.org/files/Hirens.BootCD.6.0.zip  
+https://www.hirensbootcd.org/hirens-bootcd-6-0/  
+https://www.hirensbootcd.org/files/Hirens.BootCD.6.0.zip  
 
 Hiren’s BootCD 5.0  
 https://www.hirensbootcd.org/hbcd-v50/  
