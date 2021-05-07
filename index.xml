@@ -6,7 +6,29 @@
     <description>Recent content on XOSH.ORG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://xosh.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xosh.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>All Hirens BootCD Versions</title>
+      <link>https://xosh.org/hirens-bootcd/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xosh.org/hirens-bootcd/</guid>
+      <description>Hiren’s BootCD 15.2 https://www.hirensbootcd.org/hbcd-v152/ https://www.hirensbootcd.org/files/Hirens.BootCD.15.2.zip
+Hiren’s BootCD 15.1 https://www.hirensbootcd.org/hbcd-v151/ https://www.hirensbootcd.org/files/Hirens.BootCD.15.1.zip
+Hiren’s BootCD 15.0 https://www.hirensbootcd.org/hbcd-v150/ https://www.hirensbootcd.org/files/Hirens.BootCD.15.0.zip
+Hiren’s BootCD 14.1 https://www.hirensbootcd.org/hbcd-v141/ https://www.hirensbootcd.org/files/Hirens.BootCD.14.1.zip
+Hiren’s BootCD 14.0 https://www.hirensbootcd.org/hbcd-v140/ https://www.hirensbootcd.org/files/Hirens.BootCD.14.0.zip
+Hiren’s BootCD 13.2 https://www.hirensbootcd.org/hbcd-v132/ https://www.hirensbootcd.org/files/Hirens.BootCD.13.2.zip
+Hiren’s BootCD 13.1 https://www.hirensbootcd.org/hbcd-v131/ https://www.hirensbootcd.org/files/Hirens.BootCD.13.1.zip
+Hiren’s BootCD 13.0 https://www.hirensbootcd.org/hbcd-v130/ https://www.hirensbootcd.org/files/Hirens.BootCD.13.0.zip
+Hiren’s BootCD 12.0 https://www.hirensbootcd.org/hbcd-v120/ https://www.hirensbootcd.org/files/Hirens.BootCD.12.0.zip
+Hiren’s BootCD 11.1 https://www.hirensbootcd.org/hbcd-v111/ https://www.hirensbootcd.org/files/Hirens.BootCD.11.1.zip
+Hiren’s BootCD 11.0 https://www.hirensbootcd.org/hbcd-v110/ https://www.hirensbootcd.org/files/Hirens.BootCD.11.0.zip
+Hiren’s BootCD 10.6 https://www.hirensbootcd.org/hbcd-v106/ https://www.hirensbootcd.org/files/Hirens.BootCD.10.6.zip
+Hiren’s BootCD 10.5 https://www.hirensbootcd.org/hbcd-v105/ https://www.hirensbootcd.org/files/Hirens.BootCD.10.5.zip
+Hiren’s BootCD 10.4 https://www.hirensbootcd.org/hbcd-v104/ https://www.hirensbootcd.org/files/Hirens.BootCD.10.4.zip</description>
+    </item>
+    
     <item>
       <title>List of JavaScript GUI Control libraries (dat.GUI alternatives)</title>
       <link>https://xosh.org/javascript-control-ui/</link>
