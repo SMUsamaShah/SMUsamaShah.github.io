@@ -40,18 +40,21 @@ GPT-3 is equally dumb smooth talker who can jump into any discussion, clever to 
 markdown, ascii-to-all
   Svgbob https://ivanceras.github.io/svgbob-editor/
 ascii-to-all
+  asciigrid https://mbarkhau.keybase.pub/asciigrid/
+ascii-to-all
+draw in ascii in left panel and see the diagram in right panel. uses svgbob
   Archetype https://fatiherikli.github.io/archetype/
 ascii-drawing
   Textik https://textik.com/
 ascii-drawing
   ASCIIFlow http://asciiflow.com/
 ascii-drawing
+  textik https://textik.com/
+ascii-drawing
+  fsymbols https://fsymbols.com/draw/
+ascii-drawing
   Pikchr https://pikchr.org/home/pikchrshow
-all
-  Kroki https://kroki.io/
-BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, PlantUML, Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, PlantUML, SvgBob, UMLet, Vega, Vega-Lite, WaveDrom
-  mscgen_js https://mscgen.js.org/
-sequence</description>
+all</description>
     </item>
     
     <item>
