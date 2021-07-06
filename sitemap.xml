@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xosh.org/hirens-bootcd/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xosh.org/blog/</loc>
+    <lastmod>2021-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xosh.org/p2p-tools/</loc>
+    <lastmod>2021-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xosh.org/</loc>
+    <lastmod>2021-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xosh.org/hirens-bootcd/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xosh.org/categories/</loc>
@@ -15,9 +21,6 @@
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xosh.org/split-string/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xosh.org/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xosh.org/javascript-control-ui/</loc>

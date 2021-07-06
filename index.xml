@@ -6,7 +6,29 @@
     <description>Recent content on XOSH.ORG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xosh.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xosh.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>List of P2P File Sending Tools</title>
+      <link>https://xosh.org/p2p-tools/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xosh.org/p2p-tools/</guid>
+      <description>Browser based
+  FilePizza https://file.pizza/
+  SnapDrop https://snapdrop.net/
+  Instant.io https://instant.io/
+  file ai http://fileai.com/
+  Send Anywhere https://send-anywhere.com/
+  Just Beaam it https://www.justbeamit.com/
+  Yt2fb.in https://yt2fb.in/file-transfer/
+    CLI
+  croc https://github.com/schollz/croc
+  p2pcopy https://github.com/psantosl/p2pcopy
+  pcp https://github.com/dennis-tra/pcp
+  wormhole-william https://github.com/psanford/wormhole-william
+     This list is being maintained with Dynalist</description>
+    </item>
+    
     <item>
       <title>All Hirens BootCD Versions</title>
       <link>https://xosh.org/hirens-bootcd/</link>
