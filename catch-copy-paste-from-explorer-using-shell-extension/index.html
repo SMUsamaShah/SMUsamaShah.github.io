@@ -129,7 +129,7 @@ Howto replace/substitute the copy-paste/cut-paste operation with your own copy o
 <li>In IContextMenu::InvokeCommand write your implementation for copy-paste/cut-paste event from explorer.</li>
 </ol>
 <p>The code snippet below shows how to get source file names, destination folder name involved in copy paste operation (see TrapCopy::Initialize method below), how to direct the default copy paste event to your custom one (see TrapCopy::QueryContextMenu and TrapCopy::InvokeCommand)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">    STDMETHODIMP TrapCopy<span style="color:#f92672">::</span>Initialize(LPCITEMIDLIST pidlFolder,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">    STDMETHODIMP TrapCopy<span style="color:#f92672">::</span>Initialize(LPCITEMIDLIST pidlFolder,
                                       LPDATAOBJECT pDO,
                                       HKEY hProgID)
     {

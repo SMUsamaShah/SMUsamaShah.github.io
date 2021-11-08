@@ -1,61 +1,103 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>https://xosh.org/blog/</loc>
     <lastmod>2021-07-06T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/p2p-tools/</loc>
     <lastmod>2021-07-06T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/</loc>
     <lastmod>2021-07-06T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/hirens-bootcd/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/categories/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/categories/code/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/split-string/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/javascript-control-ui/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/dumb-chatbots/</loc>
     <lastmod>2020-08-13T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/text-to-diagram/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/canvas-recorder/</loc>
     <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/tags/js/</loc>
     <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/tags/</loc>
     <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/sorting-algorithms-visual-comparison/</loc>
     <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/unlock-root-moto-x-2nd-gen/</loc>
     <lastmod>2018-08-19T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/explain-git-in-simple-words/</loc>
     <lastmod>2017-10-14T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/catch-copy-paste-from-explorer-using-shell-extension/</loc>
     <lastmod>2017-10-11T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/id3d10device-vtable/</loc>
     <lastmod>2017-09-30T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://xosh.org/cv/</loc>
   </url>
+  
+<url>
+<loc>https://xosh.org/VisualizingSorts/sorting.html</loc>
+<lastmod>2021-08-06T00:00:00+00:00</lastmod>
+</url>
 </urlset>
