@@ -9,6 +9,11 @@ title: Online text to diagram tools
 
 A comprehensive list of various text to diagram tools.
 
+1. **Diagon** https://arthursonzogni.com/Diagon  
+markdown-to-ascii  
+Source: https://github.com/ArthurSonzogni/Diagon
+1. **Typograms** https://code.sgo.to/typograms/  
+markdown, ascii-to-all
 1. **Markdeep** https://casual-effects.com/markdeep/  
 markdown, ascii-to-all
 1. **Svgbob** https://ivanceras.github.io/svgbob-editor/  
