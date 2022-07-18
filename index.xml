@@ -14,19 +14,19 @@
       
       <guid>https://xosh.org/p2p-tools/</guid>
       <description>Browser based
-  FilePizza https://file.pizza/
-  SnapDrop https://snapdrop.net/
-  Instant.io https://instant.io/
-  file ai http://fileai.com/
-  Send Anywhere https://send-anywhere.com/
-  Just Beaam it https://www.justbeamit.com/
-  Yt2fb.in https://yt2fb.in/file-transfer/
-    CLI
-  croc https://github.com/schollz/croc
-  p2pcopy https://github.com/psantosl/p2pcopy
-  pcp https://github.com/dennis-tra/pcp
-  wormhole-william https://github.com/psanford/wormhole-william
-     This list is being maintained with Dynalist</description>
+FilePizza https://file.pizza/
+SnapDrop https://snapdrop.net/
+Instant.io https://instant.io/
+file ai http://fileai.com/
+Send Anywhere https://send-anywhere.com/
+Just Beaam it https://www.justbeamit.com/
+Yt2fb.in https://yt2fb.in/file-transfer/
+CLI
+croc https://github.com/schollz/croc
+p2pcopy https://github.com/psantosl/p2pcopy
+pcp https://github.com/dennis-tra/pcp
+wormhole-william https://github.com/psanford/wormhole-william
+This list is being maintained with Dynalist</description>
     </item>
     
     <item>
@@ -97,7 +97,8 @@ https://www.hirensbootcd.org/files/Hirens.BootCD.10.4.zip</description>
       <guid>https://xosh.org/javascript-control-ui/</guid>
       <description>These libraries can be used to quickly create a GUI for configureable parameters using sliders, checkboxes, colors pickers etc. dat.GUI is the most famous one and can be found in many canvas based demos. This is a list of dat.GUI and it&amp;rsquo;s alternatives.
 To view preview HTML directly from Github you can use https://htmlpreview.github.io/ or https://raw.githack.com/ (rawgit bookmarklet). I have added raw.githack links for some demos.
-  dat.GUI https://github.com/dataarts/dat.gui</description>
+dat.GUI https://github.com/dataarts/dat.gui
+Tweakpane https://cocopon.github.io/tweakpane/</description>
     </item>
     
     <item>
@@ -107,7 +108,7 @@ To view preview HTML directly from Github you can use https://htmlpreview.github
       
       <guid>https://xosh.org/dumb-chatbots/</guid>
       <description>Try asking any chatbot something along the lines of
- What did I just ask/tell you? What was my last/previous message?  All of them fail. All of them.
+What did I just ask/tell you? What was my last/previous message? All of them fail. All of them.
 GPT-3 is equally dumb smooth talker who can jump into any discussion, clever to detect the pattern of discussion and generate next sentences.</description>
     </item>
     
@@ -118,25 +119,32 @@ GPT-3 is equally dumb smooth talker who can jump into any discussion, clever to 
       
       <guid>https://xosh.org/text-to-diagram/</guid>
       <description>A comprehensive list of various text to diagram tools.
-  Markdeep https://casual-effects.com/markdeep/
+Diagon https://arthursonzogni.com/Diagon
+markdown-to-ascii
+Source: https://github.com/ArthurSonzogni/Diagon
+Typograms https://code.sgo.to/typograms/
 markdown, ascii-to-all
-  Svgbob https://ivanceras.github.io/svgbob-editor/
+Markdeep https://casual-effects.com/markdeep/
+markdown, ascii-to-all
+Svgbob https://ivanceras.github.io/svgbob-editor/
 ascii-to-all
-  asciigrid https://mbarkhau.keybase.pub/asciigrid/
+asciigrid https://mbarkhau.keybase.pub/asciigrid/
 ascii-to-all
 draw in ascii in left panel and see the diagram in right panel. uses svgbob
-  Archetype https://fatiherikli.github.io/archetype/
+Archetype https://fatiherikli.github.io/archetype/
 ascii-drawing
-  Textik https://textik.com/
+Textik https://textik.com/
 ascii-drawing
-  ASCIIFlow http://asciiflow.com/
+ASCIIFlow http://asciiflow.com/
 ascii-drawing
-  textik https://textik.com/
+textik https://textik.com/
 ascii-drawing
-  fsymbols https://fsymbols.com/draw/
+fsymbols https://fsymbols.com/draw/
 ascii-drawing
-  Pikchr https://pikchr.org/home/pikchrshow
-all</description>
+Pikchr https://pikchr.org/home/pikchrshow
+all
+Kroki https://kroki.io/
+BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, PlantUML, Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, PlantUML, SvgBob, UMLet, Vega, Vega-Lite, WaveDrom</description>
     </item>
     
     <item>
@@ -201,7 +209,8 @@ How to catch copy paste from explorer using shell extension? ICopyHook alternati
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://xosh.org/cv/</guid>
-      <description>Muhammad Usama          Skype: SMUsamaShah   LinkedIn: linkedin.com/in/SMUsamaShah   GitHub: github.com/SMUsamaShah   Blog: SMUsamaShah.github.io    **Software Engineer**   Specialties: C, C++, Java, C#, JavaScript, Windows  Masters in Computer Science   Software Developer with 3+ years of experience in languages including C/C++, C#, Java and JavaScript. Web development experience in Java Spring, ASP.net and PHP. My favorite development platform is Windows and I can also work on Linux distributions.</description>
+      <description>Muhammad Usama Skype: SMUsamaShah LinkedIn: linkedin.com/in/SMUsamaShah GitHub: github.com/SMUsamaShah Blog: SMUsamaShah.github.io Programmer with 5 years of industry experience in domains including Cloud Gaming and DevOps. Worked mostly in C/C++, C#, Java and JavaScript. Web development in Java, ASP.net and PHP. I work on both Windows and Linux. I am very good at debugging and like solving problems.
+Work Experience Dec 2017 (8 months) Application Developer @ Teradata (Islamabad, Pakistan). Java, NodeJS, C++, CPPUNIT Deployment, configuration and integration of tools on AWS and Linux.</description>
     </item>
     
   </channel>
