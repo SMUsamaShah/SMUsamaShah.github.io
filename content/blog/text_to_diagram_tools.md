@@ -9,6 +9,10 @@ title: Online text to diagram tools
 
 A comprehensive list of various text to diagram tools.
 
+1. **D2** https://play.d2lang.com/  
+all
+1. **Pikchr** https://pikchr.org/home/pikchrshow  
+all
 1. **Diagon** https://arthursonzogni.com/Diagon  
 markdown-to-ascii  
 Source: https://github.com/ArthurSonzogni/Diagon
@@ -31,10 +35,6 @@ ascii-drawing
 ascii-drawing
 1. **fsymbols** https://fsymbols.com/draw/  
 ascii-drawing
-1. **D2** https://play.d2lang.com/  
-all
-1. **Pikchr** https://pikchr.org/home/pikchrshow  
-all
 1. **Kroki** https://kroki.io/  
 BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, PlantUML, Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, PlantUML, SvgBob, UMLet, Vega, Vega-Lite, WaveDrom
 1. **Cascade.page** https://cascade.page/  
