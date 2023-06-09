@@ -71,10 +71,16 @@ class, state, composite
 sequence
 1. **DotUML** https://dotuml.com/playground.html  
 class, use case, sequence, state, deployment, graphviz
+1. **Database Diagram Tool** https://databasediagram.com/app  
+entity-relationship
 1. **QuickDBD** https://app.quickdatabasediagrams.com/#/  
 entity-relationship
 1. **dbdiagram** https://dbdiagram.io/d  
-entity-relationship
+entity-relationship  
+(Requires Login to Export)
+1. **ERD Lab** https://app.erdlab.io/designer/guest  
+entity-relationship  
+(Requires Login to Export)
 1. **WebSequenceDiagrams** https://www.websequencediagrams.com/  
 sequence
 1. **SVG Sequence Diagram** http://sullerandras.github.io/SVG-Sequence-Diagram/  
