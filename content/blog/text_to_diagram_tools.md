@@ -7,7 +7,7 @@ title: Online text to diagram tools
 ---
 
 
-A comprehensive list of various text to diagram tools.
+A comprehensive list of various text to diagram tools which you can use directly from your web-browser.
 
 1. **D2** https://play.d2lang.com/  
 all
@@ -36,10 +36,10 @@ ascii-drawing
 1. **fsymbols** https://fsymbols.com/draw/  
 ascii-drawing
 1. **Kroki** https://kroki.io/  
-BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, PlantUML, Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, PlantUML, SvgBob, UMLet, Vega, Vega-Lite, WaveDrom
-1. **Cascade.page** https://cascade.page/  
+BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, C4 (with PlantUML), D2, DBML, Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, Pikchr, PlantUML, Structurizr, SvgBob, TikZ, UMLet, Vega, Vega-Lite, WaveDrom, WireViz
+1. **Markwhen** https://markwhen.com/  
 timeline  
-Source: https://github.com/kochrt/cascade.page
+Source: https://github.com/mark-when/markwhen
 1. **mscgen_js** https://mscgen.js.org/  
 sequence
 1. **BPMN Sketch Miner** https://www.bpmn-sketch-miner.ai/  
