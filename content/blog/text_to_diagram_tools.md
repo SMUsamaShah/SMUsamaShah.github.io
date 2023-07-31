@@ -7,14 +7,14 @@ title: Online text to diagram tools
 ---
 
 
-A comprehensive list of various text to diagram tools which you can use directly from your web-browser.
+A comprehensive list of various text to diagram tools which you can use directly from your web-browser. Ordered roughly by recency and similarity.
 
 1. **D2** https://play.d2lang.com/  
 all
 1. **Pikchr** https://pikchr.org/home/pikchrshow  
 all
 1. **Diagon** https://arthursonzogni.com/Diagon  
-markdown-to-ascii  
+text-to-ascii, sequence, tree, table, syntax, flow, graph, frame  
 Source: https://github.com/ArthurSonzogni/Diagon
 1. **Typograms** https://code.sgo.to/typograms/  
 markdown, ascii-to-all
@@ -94,7 +94,7 @@ sequence
 sequence
 1. **SequenceDiagram** https://sequencediagram.org/  
 sequence
-1. **GraphUp** https://graphup.co/ (broken)  
+1. **GraphUp** https://graphup.co/ (dead)  
 sequence, gantt
 1. **Diagwiz** https://diagwiz.io/playground/  
 ascii sequence
@@ -123,11 +123,18 @@ Source: https://github.com/sverweij/state-machine-cat
 state  
 Source: https://github.com/davidkpiano/xstate
 1. **MetaUML** https://metauml.denksoft.com (dead)  
-
+Source: https://github.com/ogheorghies/MetaUML
 1. **Railroad Diagram Generator** http://www.bottlecaps.de/rr/ui#_StringLiteral  
 railroad/syntax
+1. **Syntax Diagram Generator** https://lukaslueg.github.io/macro_railroad_wasm_demo/  
+railroad/syntax
+1. **GrammKit** https://dundalek.com/grammkit/  
+railroad/syntax
+1. **DrawGrammar** https://jacquev6.github.io/DrawGrammar/  
+railroad/syntax
 1. **Gleek** https://www.gleek.io/  
-architecture, sequence, entity-relationship, class
+architecture, sequence, entity-relationship, class  
+(Requires login)
 1. **Ilograph** https://app.ilograph.com/  
 architecture
 1. **Structurizr** https://structurizr.com/dsl  
@@ -139,7 +146,8 @@ flow
 1. **flowchart.fun** https://flowchart.fun/  
 flow
 1. **WaveDrom** https://wavedrom.com/editor.html  
-timing
+timing  
+Source: https://github.com/wavedrom/wavedrom
 1. CLI Text to Diagram Tools  
 
    1. **perl graph-easy** http://bloodgate.com/perl/graph/index.html #cli  
