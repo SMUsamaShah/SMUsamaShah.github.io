@@ -118,13 +118,13 @@ GPT-3 is equally dumb smooth talker who can jump into any discussion, clever to 
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xosh.org/text-to-diagram/</guid>
-      <description>A comprehensive list of various text to diagram tools which you can use directly from your web-browser.
+      <description>A comprehensive list of various text to diagram tools which you can use directly from your web-browser. Ordered roughly by recency and similarity.
 D2 https://play.d2lang.com/
 all
 Pikchr https://pikchr.org/home/pikchrshow
 all
 Diagon https://arthursonzogni.com/Diagon
-markdown-to-ascii
+text-to-ascii, sequence, tree, table, syntax, flow, graph, frame
 Source: https://github.com/ArthurSonzogni/Diagon
 Typograms https://code.sgo.to/typograms/
 markdown, ascii-to-all
@@ -134,16 +134,7 @@ Svgbob https://ivanceras.github.io/svgbob-editor/
 ascii-to-all
 asciigrid https://mbarkhau.keybase.pub/asciigrid/
 ascii-to-all
-draw in ascii in left panel and see the diagram in right panel. uses svgbob
-Archetype https://fatiherikli.github.io/archetype/
-ascii-drawing
-Textik https://textik.com/
-ascii-drawing
-ASCIIFlow http://asciiflow.com/
-ascii-drawing
-textik https://textik.com/
-ascii-drawing
-fsymbols https://fsymbols.</description>
+draw in ascii in left panel and see the diagram in right panel. uses svgbob</description>
     </item>
     
     <item>
