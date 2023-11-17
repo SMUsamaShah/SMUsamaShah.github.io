@@ -6,16 +6,15 @@
     <description>Recent content in js on XOSH.ORG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://xosh.org/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xosh.org/tags/js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CanvasRecorder.js</title>
       <link>https://xosh.org/canvas-recorder/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://xosh.org/canvas-recorder/</guid>
       <description>I made some visualizations in HTML5 canvas and wanted to record them to display in blog. Could not find a simple way to do that. CCapture.js added too much performance overhead which made animations slow. CanvasRecorder.js uses built in MediaRecorder which is apparently the simplest and most effitient way to record whatever is happening on canvas.
 NOTE: I have only tested it with Chrome and it should work fine with Firefox</description>
     </item>
-    
   </channel>
 </rss>
