@@ -20,7 +20,7 @@ Source: https://github.com/ArthurSonzogni/Diagon
 markdown, ascii-to-all
 1. **Markdeep** https://casual-effects.com/markdeep/  
 markdown, ascii-to-all
-1. **Svgbob** https://ivanceras.github.io/svgbob-editor/  
+1. **Svgbob** https://ivanceras.github.io/bob-editor/ https://ivanceras.github.io/svgbob-editor/  
 ascii-to-all
 1. **asciigrid** https://mbarkhau.keybase.pub/asciigrid/  
 ascii-to-all  
@@ -40,8 +40,41 @@ BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, C4 (
 1. **Markwhen** https://markwhen.com/  
 timeline  
 Source: https://github.com/mark-when/markwhen
+1. **flowchart.fun** https://flowchart.fun/  
+flow
+1. **flowchart.js** http://flowchart.js.org/  
+flow
+1. **code2flow** https://app.code2flow.com/  
+flow
+1. **JSSM** https://stonecypher.github.io/jssm-viz-demo/graph_explorer.html  
+flow, state  
+Source: https://github.com/StoneCypher/jssm
+1. **SequenceDiagram** https://sequencediagram.org/  
+sequence
+1. **WebSequenceDiagrams** https://www.websequencediagrams.com/  
+sequence
+1. **SVG Sequence Diagram** http://sullerandras.github.io/SVG-Sequence-Diagram/  
+sequence
+1. **JUMLY** http://jumly.tmtk.net (dead)  
+sequence  
+Source: https://github.com/tmtk75/jumly
+1. **js sequence diagrams** http://bramp.github.io/js-sequence-diagrams/  
+sequence
+1. **swimlanes** https://swimlanes.io/   
+sequence
 1. **mscgen_js** https://mscgen.js.org/  
 sequence
+1. **GraphUp** https://graphup.co/ (dead)  
+sequence, gantt
+1. **Diagwiz** https://diagwiz.io/playground/  
+ascii sequence
+1. **Text Diagram** http://weidagang.github.io/text-diagram/  
+ascii sequence  
+Source: https://github.com/weidagang/text-diagram
+1. **ASCII Sequence Diagram Creator** https://textart.io/sequence  
+ascii sequence
+1. **Chart Mage** http://chartmage.com/index.html  
+sequence, flow
 1. **BPMN Sketch Miner** https://www.bpmn-sketch-miner.ai/  
 BPMN/flow
 1. **dagre-svg** https://andrewfulrich.gitlab.io/dagre-svg/  
@@ -52,6 +85,10 @@ graphviz
 1. **Viz.js** http://viz-js.com/  
 graphviz
 1. **Edotor** https://edotor.net/  
+graphviz
+1. **Graphviz Online** https://dreampuf.github.io/GraphvizOnline/  
+graphviz
+1. **Sketchviz** https://sketchviz.com/new  
 graphviz
 1. **nomnoml** http://www.nomnoml.com/  
 activity, class  
@@ -81,32 +118,6 @@ entity-relationship
 1. **ERD Lab** https://app.erdlab.io/designer/guest  
 entity-relationship  
 (Requires Login to Export)
-1. **WebSequenceDiagrams** https://www.websequencediagrams.com/  
-sequence
-1. **SVG Sequence Diagram** http://sullerandras.github.io/SVG-Sequence-Diagram/  
-sequence
-1. **JUMLY** http://jumly.tmtk.net (dead)  
-sequence  
-Source: https://github.com/tmtk75/jumly
-1. **js sequence diagrams** http://bramp.github.io/js-sequence-diagrams/  
-sequence
-1. **swimlanes** https://swimlanes.io/   
-sequence
-1. **SequenceDiagram** https://sequencediagram.org/  
-sequence
-1. **GraphUp** https://graphup.co/ (dead)  
-sequence, gantt
-1. **Diagwiz** https://diagwiz.io/playground/  
-ascii sequence
-1. **Text Diagram** http://weidagang.github.io/text-diagram/  
-ascii sequence  
-Source: https://github.com/weidagang/text-diagram
-1. **ASCII Sequence Diagram Creator** https://textart.io/sequence  
-ascii sequence
-1. **Chart Mage** http://chartmage.com/index.html  
-sequence, flow
-1. **flowchart.js** http://flowchart.js.org/  
-flow
 1. **drawthe** http://go.drawthe.net/  
 network  
 Source: https://github.com/cidrblock/drawthe.net
@@ -141,10 +152,6 @@ architecture
 architecture
 1. **Penrose** https://github.com/penrose/penrose  
 penrose
-1. **code2flow** https://app.code2flow.com/  
-flow
-1. **flowchart.fun** https://flowchart.fun/  
-flow
 1. **WaveDrom** https://wavedrom.com/editor.html  
 timing  
 Source: https://github.com/wavedrom/wavedrom
