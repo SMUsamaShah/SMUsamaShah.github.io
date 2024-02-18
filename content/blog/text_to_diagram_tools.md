@@ -25,8 +25,10 @@ ascii-to-all
 1. **asciigrid** https://mbarkhau.keybase.pub/asciigrid/  
 ascii-to-all  
 draw in ascii in left panel and see the diagram in right panel. uses svgbob
-1. **Archetype** https://fatiherikli.github.io/archetype/  
-ascii-drawing
+1. **Archetype** https://fatiherikli.github.io/archetype/ (wayback: https://web.archive.org/web/20210503172024/https://fatiherikli.github.io/archetype/)  
+ascii-drawing  
+Forked Source:  https://github.com/cagataycali/archetype  
+Backup: https://smusamashah.github.io/archetype/
 1. **Textik** https://textik.com/  
 ascii-drawing
 1. **ASCIIFlow** http://asciiflow.com/  
@@ -143,6 +145,9 @@ railroad/syntax
 railroad/syntax
 1. **DrawGrammar** https://jacquev6.github.io/DrawGrammar/  
 railroad/syntax
+1. **Railroad Diagram Generator** https://tabatkins.github.io/railroad-diagrams/generator.html  
+railroad/syntax  
+Source: https://github.com/tabatkins/railroad-diagrams
 1. **Gleek** https://www.gleek.io/  
 architecture, sequence, entity-relationship, class  
 (Requires login)
