@@ -6,8 +6,15 @@
     <description>Recent content in Blogs on XOSH.ORG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xosh.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Online text to diagram tools</title>
+      <link>https://xosh.org/text-to-diagram/</link>
+      <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xosh.org/text-to-diagram/</guid>
+      <description>A comprehensive list of various text to diagram tools which you can use directly from your web-browser. Ordered roughly by recency and similarity.&#xA;D2 https://play.d2lang.com/&#xA;all&#xA;Pikchr https://pikchr.org/home/pikchrshow&#xA;all&#xA;Diagon https://arthursonzogni.com/Diagon&#xA;text-to-ascii, sequence, tree, table, syntax, flow, graph, frame&#xA;Source: https://github.com/ArthurSonzogni/Diagon&#xA;Typograms https://code.sgo.to/typograms/&#xA;markdown, ascii-to-all&#xA;Markdeep https://casual-effects.com/markdeep/&#xA;markdown, ascii-to-all&#xA;Svgbob https://ivanceras.github.io/bob-editor/ https://ivanceras.github.io/svgbob-editor/&#xA;ascii-to-all&#xA;asciigrid https://mbarkhau.keybase.pub/asciigrid/&#xA;ascii-to-all&#xA;draw in ascii in left panel and see the diagram in right panel. uses svgbob</description>
+    </item>
     <item>
       <title>List of P2P File Sending Tools</title>
       <link>https://xosh.org/p2p-tools/</link>
@@ -42,13 +49,6 @@
       <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://xosh.org/dumb-chatbots/</guid>
       <description>Try asking any chatbot something along the lines of&#xA;What did I just ask/tell you? What was my last/previous message? All of them fail. All of them.&#xA;GPT-3 is equally dumb smooth talker who can jump into any discussion, clever to detect the pattern of discussion and generate next sentences.</description>
-    </item>
-    <item>
-      <title>Online text to diagram tools</title>
-      <link>https://xosh.org/text-to-diagram/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://xosh.org/text-to-diagram/</guid>
-      <description>A comprehensive list of various text to diagram tools which you can use directly from your web-browser. Ordered roughly by recency and similarity.&#xA;D2 https://play.d2lang.com/&#xA;all&#xA;Pikchr https://pikchr.org/home/pikchrshow&#xA;all&#xA;Diagon https://arthursonzogni.com/Diagon&#xA;text-to-ascii, sequence, tree, table, syntax, flow, graph, frame&#xA;Source: https://github.com/ArthurSonzogni/Diagon&#xA;Typograms https://code.sgo.to/typograms/&#xA;markdown, ascii-to-all&#xA;Markdeep https://casual-effects.com/markdeep/&#xA;markdown, ascii-to-all&#xA;Svgbob https://ivanceras.github.io/bob-editor/ https://ivanceras.github.io/svgbob-editor/&#xA;ascii-to-all&#xA;asciigrid https://mbarkhau.keybase.pub/asciigrid/&#xA;ascii-to-all&#xA;draw in ascii in left panel and see the diagram in right panel. uses svgbob</description>
     </item>
     <item>
       <title>CanvasRecorder.js</title>
