@@ -25,10 +25,10 @@ jobs:
       # - name: Update theme
       #   run: git submodule update --init --recursive
 
-      - name: Update articles from dynalist
-        uses: ./action-dynalist
-        with:
-          DYNALIST_TOKEN: ${{ secrets.DYNALIST_TOKEN }}
+      # - name: Update articles from dynalist
+      #   uses: ./action-dynalist
+      #   with:
+      #     DYNALIST_TOKEN: ${{ secrets.DYNALIST_TOKEN }}
 
       - name: commit changes
         # uses: zwaldowski/git-commit-action@v1
