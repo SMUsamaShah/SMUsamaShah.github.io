@@ -1,5 +1,5 @@
 ---
-date: 2020-06-07
+date: 2024-03-07
 description: List of text to diagram tools
 excerpt_separator: <!--more-->
 url: /text-to-diagram
@@ -40,7 +40,7 @@ ascii-drawing
 1. **Kroki** https://kroki.io/  
 BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, C4 (with PlantUML), D2, DBML, Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, Pikchr, PlantUML, Structurizr, SvgBob, TikZ, UMLet, Vega, Vega-Lite, WaveDrom, WireViz
 1. **Markwhen** https://markwhen.com/  
-timeline  
+timeline/gantt  
 Source: https://github.com/mark-when/markwhen
 1. **flowchart.fun** https://flowchart.fun/  
 flow
