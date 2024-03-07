@@ -169,4 +169,4 @@ Example: `graph-easy <<< [node 1]->[some text]-[this][node 1]->[branch]`
 
 
 ---
-<small>This list is being maintained with Dynalist</small>
+<small>This list is being maintained manually</small>
