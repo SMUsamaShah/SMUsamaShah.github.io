@@ -167,8 +167,11 @@ Source: https://github.com/wavedrom/wavedrom
 
    1. **perl graph-easy** http://bloodgate.com/perl/graph/index.html #cli  
    flow  
-Doc: https://developpaper.com/recommend-a-tool-for-making-ascii-flow-chart-graph-easy  
-Example: `graph-easy <<< [node 1]->[some text]-[this][node 1]->[branch]`
+   Doc: https://developpaper.com/recommend-a-tool-for-making-ascii-flow-chart-graph-easy  
+   Example: `graph-easy <<< [node 1]->[some text]-[this][node 1]->[branch]`
+
+   1. **GoAT: Go ASCII Tool** https://github.com/blampe/goat
+   ascii-to-all
 
 
 ---
