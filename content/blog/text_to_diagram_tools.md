@@ -170,10 +170,10 @@ Source: https://github.com/wavedrom/wavedrom
    Doc: https://developpaper.com/recommend-a-tool-for-making-ascii-flow-chart-graph-easy  
    Example: `graph-easy <<< [node 1]->[some text]-[this][node 1]->[branch]`
 
-   1. **GoAT: Go ASCII Tool** https://github.com/blampe/goat
+   1. **GoAT: Go ASCII Tool** https://github.com/blampe/goat  
    ascii-to-all  
 
-   1. protocol https://www.luismg.com/protocol/
+   1. protocol https://www.luismg.com/protocol/  
    ascii-packet  
    Source: https://github.com/luismartingarcia/protocol  
    Doc: https://www.luismg.com/protocol/  
