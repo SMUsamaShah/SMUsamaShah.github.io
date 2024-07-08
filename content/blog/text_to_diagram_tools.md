@@ -7,7 +7,11 @@ title: Online text to diagram tools
 ---
 
 
-A comprehensive list of various text to diagram tools which you can use directly from your web-browser. Ordered roughly by recency and similarity.
+A comprehensive list of various text to diagram tools. Ordered roughly by recency and similarity. CTRL+F on this page to find required tool for specific needs.
+
+# Online/Browser Based Text-to-Diagram tools
+
+These tools don't need to be downloaded or installed. Open the URL and start writing text to generate diagrams right from your web-browser.
 
 1. **D2** https://play.d2lang.com/  
 all
@@ -163,21 +167,25 @@ penrose
 1. **WaveDrom** https://wavedrom.com/editor.html  
 timing  
 Source: https://github.com/wavedrom/wavedrom
-1. CLI Text to Diagram Tools  
 
-   1. **perl graph-easy** http://bloodgate.com/perl/graph/index.html #cli  
-   flow  
-   Doc: https://developpaper.com/recommend-a-tool-for-making-ascii-flow-chart-graph-easy  
-   Example: `graph-easy <<< [node 1]->[some text]-[this][node 1]->[branch]`
 
-   1. **GoAT: Go ASCII Tool** https://github.com/blampe/goat  
-   ascii-to-all  
+# CLI Text-to-Diagram Tools  
 
-   1. protocol https://www.luismg.com/protocol/  
-   ascii-packet  
-   Source: https://github.com/luismartingarcia/protocol  
-   Doc: https://www.luismg.com/protocol/  
-   Example: `python protocol.py "time: 4, x: 6, y: 6" --bits 8`  
+These tools need to be downloaded. Pass diagram text as arguments on the CLI to get the diagram.
+
+1. **perl graph-easy** http://bloodgate.com/perl/graph/index.html #cli  
+flow  
+Doc: https://developpaper.com/recommend-a-tool-for-making-ascii-flow-chart-graph-easy  
+Example: `graph-easy <<< [node 1]->[some text]-[this][node 1]->[branch]`
+
+1. **GoAT: Go ASCII Tool** https://github.com/blampe/goat  
+ascii-to-all  
+
+1. protocol https://www.luismg.com/protocol/  
+ascii-packet  
+Source: https://github.com/luismartingarcia/protocol  
+Doc: https://www.luismg.com/protocol/  
+Example: `python protocol.py "time: 4, x: 6, y: 6" --bits 8`  
 
 
 ---
