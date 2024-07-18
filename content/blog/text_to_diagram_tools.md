@@ -122,6 +122,10 @@ BPMN/flow
 graph  
 Source: https://gitlab.com/andrewfulrich/dagre-svg
 
+1. **Graphviz Visual Editor** http://magjac.com/graphviz-visual-editor/  
+graphviz  
+Source: https://github.com/magjac/graphviz-visual-editor
+
 1. **Webgraphviz** http://www.webgraphviz.com/  
 graphviz
 
