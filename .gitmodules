@@ -1,3 +1,6 @@
 [submodule "themes/hugo-classic"]
 	path = themes/hugo-classic
 	url = https://github.com/SMUsamaShah/hugo-classic
+[submodule "master"]
+	branch = master
+
