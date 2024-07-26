@@ -25,6 +25,7 @@ Source: https://github.com/ArthurSonzogni/Diagon
 
 1. **Typograms** https://code.sgo.to/typograms/  
 markdown, ascii-to-all
+Source: https://github.com/samuelgoto/typograms
 
 1. **Markdeep** https://casual-effects.com/markdeep/  
 markdown, ascii-to-all
