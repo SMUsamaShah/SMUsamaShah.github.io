@@ -32,9 +32,14 @@ markdown, ascii-to-all
 1. **Svgbob** https://ivanceras.github.io/bob-editor/ https://ivanceras.github.io/svgbob-editor/  
 ascii-to-all
 
-1. **asciigrid** https://mbarkhau.keybase.pub/asciigrid/  
+1. **asciigrid** https://mbarkhau.github.io/asciigrid  
 ascii-to-all  
-draw in ascii in left panel and see the diagram in right panel. uses svgbob
+draw in ascii in left panel and see the diagram in right panel. uses svgbob  
+Source: https://github.com/mbarkhau/asciigrid
+
+1. **shaky** https://shaky.github.bushong.net/
+ascii-to-all  
+Source: https://github.com/dbushong/shaky
 
 1. **MonoSketch** https://app.monosketch.io  
 asii-drawing  
@@ -243,10 +248,13 @@ Source: https://github.com/wavedrom/wavedrom
 
 These tools need to be downloaded. Pass diagram text as arguments on the CLI to get the diagram.
 
+1. **ditaa** https://ditaa.sourceforge.net/
+ascii-to-all  
+
 1. **perl graph-easy** http://bloodgate.com/perl/graph/index.html #cli  
 flow  
 Doc: https://developpaper.com/recommend-a-tool-for-making-ascii-flow-chart-graph-easy  
-Example: `graph-easy <<< [node 1]->[some text]-[this][node 1]->[branch]`
+Example: `graph-easy <<< [node 1]->[some text]-[this][node 1]->[branch]`  
 
 1. **GoAT: Go ASCII Tool** https://github.com/blampe/goat  
 ascii-to-all  
