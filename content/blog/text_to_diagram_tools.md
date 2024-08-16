@@ -227,15 +227,19 @@ railroad/syntax
 railroad/syntax  
 Source: https://github.com/tabatkins/railroad-diagrams
 
-1. **Gleek** https://www.gleek.io/  
-architecture, sequence, entity-relationship, class  
-(Requires login)
+1. **LikeC4** https://template.likec4.dev/view/cloud
+architecture
+Source: https://github.com/likec4/likec4
 
 1. **Ilograph** https://app.ilograph.com/  
 architecture
 
 1. **Structurizr** https://structurizr.com/dsl  
 architecture
+
+1. **Gleek** https://www.gleek.io/  
+architecture, sequence, entity-relationship, class  
+(Requires login)
 
 1. **Penrose** https://github.com/penrose/penrose  
 penrose
