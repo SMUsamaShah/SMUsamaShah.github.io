@@ -227,8 +227,8 @@ railroad/syntax
 railroad/syntax  
 Source: https://github.com/tabatkins/railroad-diagrams
 
-1. **LikeC4** https://template.likec4.dev/view/cloud
-architecture
+1. **LikeC4** https://template.likec4.dev/view/cloud  
+architecture  
 Source: https://github.com/likec4/likec4
 
 1. **Ilograph** https://app.ilograph.com/  
