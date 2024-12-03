@@ -9,12 +9,12 @@ Muhammad Usama
 
 
 
-| | |
-| --- | ----------- |
-| Skype:    | SMUsamaShah |
+|           |                                                                    |
+| --------- | ------------------------------------------------------------------ |
+| Skype:    | SMUsamaShah                                                        |
 | LinkedIn: | [linkedin.com/in/SMUsamaShah](https://linkedin.com/in/SMUsamaShah) |
-| GitHub:   | [github.com/SMUsamaShah](https://github.com/SMUsamaShah) |
-| Blog:     | [SMUsamaShah.github.io](https://SMUsamaShah.github.io) |
+| GitHub:   | [github.com/SMUsamaShah](https://github.com/SMUsamaShah)           |
+| Blog:     | [SMUsamaShah.github.io](https://SMUsamaShah.github.io)             |
 
 
 <!-- >  **Software Engineer**
@@ -22,10 +22,10 @@ Muhammad Usama
 >  Specialties: C, C++, Java, C#, JavaScript, Windows
 >  Masters in Computer Science 
 > 
-> Software Developer with 3+ years of experience in languages including C/C++, C#, Java and JavaScript. Web development experience in Java Spring, ASP.net and PHP. My favorite development platform is Windows and I can also work on Linux distributions. I am very good at debugging and like solving problems. -->
+> Software Engineer with 10 years of experience in languages including Java, C/C++, C#, and JavaScript. Web development experience in Java Spring, ASP.net and PHP. Favorite development platform is Windows and I can also work on Linux distributions. I am very good at debugging and like solving problems. -->
 
-> Programmer with 5 years of industry experience in domains including Cloud Gaming and DevOps.
-> Worked mostly in C/C++, C#, Java and JavaScript. Web development in Java, ASP.net and PHP. I work on
+> Engineer with 10 years of experience mostly in gaming industry as a backend developer.
+> Have worked Java, C/C++, C# and JavaScript. Have done some web development in Java, ASP.net and PHP. I work on
 > both Windows and Linux. I am very good at debugging and like solving problems.
 
 ----
@@ -33,10 +33,18 @@ Muhammad Usama
 Work Experience
 --------------------
 
+March 2020
+(5 Years)
+: **Game Systems Engineer** @ [Jagex](https://www.jagex.com/) (Cambridge, United Kingdom).  
+  
+  - Java, C++
+
+
 Dec 2017 
-(8 months)
+(2.5 months)
 : **Application Developer** @ [Teradata](https://www.teradata.com/) (Islamabad, Pakistan).  
   
+  - DevOps
   - Java, NodeJS, C++, CPPUNIT
   -	Deployment, configuration and integration of tools on AWS and Linux. 
   -	Docker, Jenkins, Icinga 2, ELK, Elasticsearch, Logstash, Kibana, ANTLR
