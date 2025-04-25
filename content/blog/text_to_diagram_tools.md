@@ -9,7 +9,7 @@ title: Online text to diagram tools
 
 A comprehensive list of various text to diagram tools. Ordered roughly by recency and similarity. CTRL+F on this page to find required tool for specific needs.
 
-## Best for:
+## My choice of tool for a job:
 ### Sequence Diagrams:
 https://sequencediagram.org/ 
 
