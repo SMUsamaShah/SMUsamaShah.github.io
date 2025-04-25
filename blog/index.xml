@@ -4,93 +4,186 @@
     <title>Blogs on XOSH.ORG</title>
     <link>https://xosh.org/blog/</link>
     <description>Recent content in Blogs on XOSH.ORG</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xosh.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://xosh.org/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Online text to diagram tools</title>
       <link>https://xosh.org/text-to-diagram/</link>
-      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/text-to-diagram/</guid>
-      <description>A comprehensive list of various text to diagram tools. Ordered roughly by recency and similarity. CTRL+F on this page to find required tool for specific needs.&#xA;Online/Browser Based Text-to-Diagram tools These tools don&amp;rsquo;t need to be downloaded or installed. Open the URL and start writing text to generate diagrams right from your web-browser.&#xA;D2 https://play.d2lang.com/&#xA;all&#xA;Pikchr https://pikchr.org/home/pikchrshow&#xA;all&#xA;Diagon https://arthursonzogni.com/Diagon&#xA;text-to-ascii, sequence, tree, table, syntax, flow, graph, frame&#xA;Source: https://github.</description>
+      <description>A comprehensive list of various text to diagram tools. Ordered roughly by recency and similarity. CTRL+F on this page to find required tool for specific needs.
+Best for: Sequence Diagrams: https://sequencediagram.org/
+Online/Browser Based Text-to-Diagram tools These tools don&amp;rsquo;t need to be downloaded or installed. Open the URL and start writing text to generate diagrams right from your web-browser.
+Pikchr https://pikchr.org/home/pikchrshow
+all
+D2 https://play.d2lang.com/
+all
+Diagon https://arthursonzogni.com/Diagon
+text-to-ascii, sequence, tree, table, syntax, flow, graph, frame</description>
     </item>
+    
     <item>
       <title>List of P2P File Sending Tools</title>
       <link>https://xosh.org/p2p-tools/</link>
       <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/p2p-tools/</guid>
-      <description>Browser based&#xA;FilePizza https://file.pizza/&#xA;SnapDrop https://snapdrop.net/&#xA;Instant.io https://instant.io/&#xA;file ai http://fileai.com/&#xA;Send Anywhere https://send-anywhere.com/&#xA;Just Beaam it https://www.justbeamit.com/&#xA;Yt2fb.in https://yt2fb.in/file-transfer/&#xA;CLI&#xA;croc https://github.com/schollz/croc&#xA;p2pcopy https://github.com/psantosl/p2pcopy&#xA;pcp https://github.com/dennis-tra/pcp&#xA;wormhole-william https://github.com/psanford/wormhole-william&#xA;This list is being maintained with Dynalist</description>
+      <description>Browser based
+FilePizza https://file.pizza/
+SnapDrop https://snapdrop.net/
+Instant.io https://instant.io/
+file ai http://fileai.com/
+Send Anywhere https://send-anywhere.com/
+Just Beaam it https://www.justbeamit.com/
+Yt2fb.in https://yt2fb.in/file-transfer/
+CLI
+croc https://github.com/schollz/croc
+p2pcopy https://github.com/psantosl/p2pcopy
+pcp https://github.com/dennis-tra/pcp
+wormhole-william https://github.com/psanford/wormhole-william
+This list is being maintained with Dynalist</description>
     </item>
+    
     <item>
       <title>All Hirens BootCD Versions</title>
       <link>https://xosh.org/hirens-bootcd/</link>
       <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/hirens-bootcd/</guid>
-      <description>Hiren’s BootCD 15.2&#xA;https://www.hirensbootcd.org/hbcd-v152/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.15.2.zip&#xA;Hiren’s BootCD 15.1&#xA;https://www.hirensbootcd.org/hbcd-v151/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.15.1.zip&#xA;Hiren’s BootCD 15.0&#xA;https://www.hirensbootcd.org/hbcd-v150/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.15.0.zip&#xA;Hiren’s BootCD 14.1&#xA;https://www.hirensbootcd.org/hbcd-v141/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.14.1.zip&#xA;Hiren’s BootCD 14.0&#xA;https://www.hirensbootcd.org/hbcd-v140/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.14.0.zip&#xA;Hiren’s BootCD 13.2&#xA;https://www.hirensbootcd.org/hbcd-v132/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.13.2.zip&#xA;Hiren’s BootCD 13.1&#xA;https://www.hirensbootcd.org/hbcd-v131/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.13.1.zip&#xA;Hiren’s BootCD 13.0&#xA;https://www.hirensbootcd.org/hbcd-v130/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.13.0.zip&#xA;Hiren’s BootCD 12.0&#xA;https://www.hirensbootcd.org/hbcd-v120/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.12.0.zip&#xA;Hiren’s BootCD 11.1&#xA;https://www.hirensbootcd.org/hbcd-v111/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.11.1.zip&#xA;Hiren’s BootCD 11.0&#xA;https://www.hirensbootcd.org/hbcd-v110/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.11.0.zip&#xA;Hiren’s BootCD 10.6&#xA;https://www.hirensbootcd.org/hbcd-v106/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.10.6.zip&#xA;Hiren’s BootCD 10.5&#xA;https://www.hirensbootcd.org/hbcd-v105/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.10.5.zip&#xA;Hiren’s BootCD 10.4&#xA;https://www.hirensbootcd.org/hbcd-v104/&#xA;https://www.hirensbootcd.org/files/Hirens.BootCD.10.4.zip</description>
+      <description>Hiren’s BootCD 15.2
+https://www.hirensbootcd.org/hbcd-v152/
+https://www.hirensbootcd.org/files/Hirens.BootCD.15.2.zip
+Hiren’s BootCD 15.1
+https://www.hirensbootcd.org/hbcd-v151/
+https://www.hirensbootcd.org/files/Hirens.BootCD.15.1.zip
+Hiren’s BootCD 15.0
+https://www.hirensbootcd.org/hbcd-v150/
+https://www.hirensbootcd.org/files/Hirens.BootCD.15.0.zip
+Hiren’s BootCD 14.1
+https://www.hirensbootcd.org/hbcd-v141/
+https://www.hirensbootcd.org/files/Hirens.BootCD.14.1.zip
+Hiren’s BootCD 14.0
+https://www.hirensbootcd.org/hbcd-v140/
+https://www.hirensbootcd.org/files/Hirens.BootCD.14.0.zip
+Hiren’s BootCD 13.2
+https://www.hirensbootcd.org/hbcd-v132/
+https://www.hirensbootcd.org/files/Hirens.BootCD.13.2.zip
+Hiren’s BootCD 13.1
+https://www.hirensbootcd.org/hbcd-v131/
+https://www.hirensbootcd.org/files/Hirens.BootCD.13.1.zip
+Hiren’s BootCD 13.0
+https://www.hirensbootcd.org/hbcd-v130/
+https://www.hirensbootcd.org/files/Hirens.BootCD.13.0.zip
+Hiren’s BootCD 12.0
+https://www.hirensbootcd.org/hbcd-v120/
+https://www.hirensbootcd.org/files/Hirens.BootCD.12.0.zip
+Hiren’s BootCD 11.1
+https://www.hirensbootcd.org/hbcd-v111/
+https://www.hirensbootcd.org/files/Hirens.BootCD.11.1.zip
+Hiren’s BootCD 11.0
+https://www.hirensbootcd.org/hbcd-v110/
+https://www.hirensbootcd.org/files/Hirens.BootCD.11.0.zip
+Hiren’s BootCD 10.6
+https://www.hirensbootcd.org/hbcd-v106/
+https://www.hirensbootcd.org/files/Hirens.BootCD.10.6.zip
+Hiren’s BootCD 10.5
+https://www.hirensbootcd.org/hbcd-v105/
+https://www.hirensbootcd.org/files/Hirens.BootCD.10.5.zip
+Hiren’s BootCD 10.4
+https://www.hirensbootcd.org/hbcd-v104/
+https://www.hirensbootcd.org/files/Hirens.BootCD.10.4.zip</description>
     </item>
+    
     <item>
       <title>Split String in Java vs C#, Python, JavaScript</title>
       <link>https://xosh.org/split-string/</link>
       <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/split-string/</guid>
-      <description>// C# Console.WriteLine(&amp;#34;&amp;#34;.Split(&amp;#39;=&amp;#39;).Length); // 1 Console.WriteLine(&amp;#34;=&amp;#34;.Split(&amp;#39;=&amp;#39;).Length); // 2 // Python print ( len(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;)) ); // 1 print ( len(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;)) ); // 2 // JavaScript console.log(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 1 console.log(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 2 then there is Java&#xA;// Java System.out.println(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 1 System.out.println(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 0 </description>
+      <description>// C# Console.WriteLine(&amp;#34;&amp;#34;.Split(&amp;#39;=&amp;#39;).Length); // 1 Console.WriteLine(&amp;#34;=&amp;#34;.Split(&amp;#39;=&amp;#39;).Length); // 2 // Python print ( len(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;)) ); // 1 print ( len(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;)) ); // 2 // JavaScript console.log(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 1 console.log(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 2 then there is Java
+// Java System.out.println(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 1 System.out.println(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 0 </description>
     </item>
+    
     <item>
       <title>List of JavaScript GUI Control libraries (dat.GUI alternatives)</title>
       <link>https://xosh.org/javascript-control-ui/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/javascript-control-ui/</guid>
-      <description>These libraries can be used to quickly create a GUI for configureable parameters using sliders, checkboxes, colors pickers etc. dat.GUI is the most famous one and can be found in many canvas based demos. This is a list of dat.GUI and it&amp;rsquo;s alternatives.&#xA;To view preview HTML directly from Github you can use https://htmlpreview.github.io/ or https://raw.githack.com/ (rawgit bookmarklet). I have added raw.githack links for some demos.&#xA;dat.GUI https://github.com/dataarts/dat.gui&#xA;Tweakpane https://cocopon.github.io/tweakpane/</description>
+      <description>These libraries can be used to quickly create a GUI for configureable parameters using sliders, checkboxes, colors pickers etc. dat.GUI is the most famous one and can be found in many canvas based demos. This is a list of dat.GUI and it&amp;rsquo;s alternatives.
+To view preview HTML directly from Github you can use https://htmlpreview.github.io/ or https://raw.githack.com/ (rawgit bookmarklet). I have added raw.githack links for some demos.
+dat.GUI https://github.com/dataarts/dat.gui
+Tweakpane https://cocopon.github.io/tweakpane/</description>
     </item>
+    
     <item>
       <title>All chatbots fail this simple question</title>
       <link>https://xosh.org/dumb-chatbots/</link>
       <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/dumb-chatbots/</guid>
-      <description>Try asking any chatbot something along the lines of&#xA;What did I just ask/tell you? What was my last/previous message? All of them fail. All of them.&#xA;GPT-3 is equally dumb smooth talker who can jump into any discussion, clever to detect the pattern of discussion and generate next sentences.</description>
+      <description>Try asking any chatbot something along the lines of
+What did I just ask/tell you? What was my last/previous message? All of them fail. All of them.
+GPT-3 is equally dumb smooth talker who can jump into any discussion, clever to detect the pattern of discussion and generate next sentences.</description>
     </item>
+    
     <item>
       <title>CanvasRecorder.js</title>
       <link>https://xosh.org/canvas-recorder/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/canvas-recorder/</guid>
-      <description>I made some visualizations in HTML5 canvas and wanted to record them to display in blog. Could not find a simple way to do that. CCapture.js added too much performance overhead which made animations slow. CanvasRecorder.js uses built in MediaRecorder which is apparently the simplest and most effitient way to record whatever is happening on canvas.&#xA;NOTE: I have only tested it with Chrome and it should work fine with Firefox</description>
+      <description>I made some visualizations in HTML5 canvas and wanted to record them to display in blog. Could not find a simple way to do that. CCapture.js added too much performance overhead which made animations slow. CanvasRecorder.js uses built in MediaRecorder which is apparently the simplest and most effitient way to record whatever is happening on canvas.
+NOTE: I have only tested it with Chrome and it should work fine with Firefox</description>
     </item>
+    
     <item>
       <title>Visualize sorting algorithms side by side</title>
       <link>https://xosh.org/sorting-algorithms-visual-comparison/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/sorting-algorithms-visual-comparison/</guid>
       <description>A few weeks ago I found out this imgur gallery of sorting algorithms through a reddit post. The patterns which emerged while sorting random data looked very beautiful and amazing with the only catch that they were not interactive. You can not play with them. I decided make them in JavaScript to see what many different sorting algorithms look like, the patterns they create, while also learning them in the process.</description>
     </item>
+    
     <item>
       <title>How to Root Moto X (2nd Gen) XT1093-Victara</title>
       <link>https://xosh.org/unlock-root-moto-x-2nd-gen/</link>
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/unlock-root-moto-x-2nd-gen/</guid>
       <description>&lt;p&gt;Steps to root and unlock Moto X (2nd Gen) boot loader.&lt;/p&gt;</description>
     </item>
+    
     <item>
       <title>How to explain git in simple words?</title>
       <link>https://xosh.org/explain-git-in-simple-words/</link>
       <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/explain-git-in-simple-words/</guid>
       <description>&lt;p&gt;A few years ago I started hearing about Git here and there and its various strange words like branch, index, tree, commit, clone, fork, master, origin, head, check out, check in, push and pull etc. Available tutorials were difficult to understand because they jumped straight to git commands. I approached &lt;a href=&#34;https://www.quora.com/How-do-you-explain-the-basics-of-Git-in-simple-words-What-does-branch-index-tree-commit-clone-fork-master-origin-head-check-out-check-in-etc-mean&#34;&gt;Quora&lt;/a&gt; in hope for something more visual and easier to understand, then answered it myself getting most upvotes. Now posting it here on my own blog with hopefully even better explanation :)&lt;/p&gt;</description>
     </item>
+    
     <item>
       <title>How to get windows copy paste events with shell hook.</title>
       <link>https://xosh.org/catch-copy-paste-from-explorer-using-shell-extension/</link>
       <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/catch-copy-paste-from-explorer-using-shell-extension/</guid>
-      <description>This article was originally posted here by the author, that is no longer available.&#xA;How to catch copy paste from explorer using shell extension? ICopyHook alternative for files and folder How to catch copy paste from explorer using shell extension? ICopyHook alternative for files and folder Howto trap copy paste event from explorer to do your custom processing or even Howto replace/substitute the copy-paste/cut-paste operation with your own copy or move or anything else?</description>
+      <description>This article was originally posted here by the author, that is no longer available.
+How to catch copy paste from explorer using shell extension? ICopyHook alternative for files and folder How to catch copy paste from explorer using shell extension? ICopyHook alternative for files and folder Howto trap copy paste event from explorer to do your custom processing or even Howto replace/substitute the copy-paste/cut-paste operation with your own copy or move or anything else?</description>
     </item>
+    
     <item>
       <title>ID3D10Device and ID3D11DeviceContext VTable Indexes</title>
       <link>https://xosh.org/id3d10device-vtable/</link>
       <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/id3d10device-vtable/</guid>
       <description>&lt;p&gt;I had trouble finding the index of DirectX 10 method &lt;code&gt;OMGetRenderTargets&lt;/code&gt; for hooking. I found these VTables (ID3D10Device and ID3D11DeviceContext) somewhere on the web. Putting these here to save the trouble for someone else.&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>

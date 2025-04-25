@@ -4,23 +4,28 @@
     <title>Code on XOSH.ORG</title>
     <link>https://xosh.org/categories/code/</link>
     <description>Recent content in Code on XOSH.ORG</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xosh.org/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xosh.org/categories/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Split String in Java vs C#, Python, JavaScript</title>
       <link>https://xosh.org/split-string/</link>
       <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/split-string/</guid>
-      <description>// C# Console.WriteLine(&amp;#34;&amp;#34;.Split(&amp;#39;=&amp;#39;).Length); // 1 Console.WriteLine(&amp;#34;=&amp;#34;.Split(&amp;#39;=&amp;#39;).Length); // 2 // Python print ( len(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;)) ); // 1 print ( len(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;)) ); // 2 // JavaScript console.log(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 1 console.log(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 2 then there is Java&#xA;// Java System.out.println(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 1 System.out.println(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 0 </description>
+      <description>// C# Console.WriteLine(&amp;#34;&amp;#34;.Split(&amp;#39;=&amp;#39;).Length); // 1 Console.WriteLine(&amp;#34;=&amp;#34;.Split(&amp;#39;=&amp;#39;).Length); // 2 // Python print ( len(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;)) ); // 1 print ( len(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;)) ); // 2 // JavaScript console.log(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 1 console.log(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 2 then there is Java
+// Java System.out.println(&amp;#34;&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 1 System.out.println(&amp;#34;=&amp;#34;.split(&amp;#34;=&amp;#34;).length); // 0 </description>
     </item>
+    
     <item>
       <title>CanvasRecorder.js</title>
       <link>https://xosh.org/canvas-recorder/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://xosh.org/canvas-recorder/</guid>
-      <description>I made some visualizations in HTML5 canvas and wanted to record them to display in blog. Could not find a simple way to do that. CCapture.js added too much performance overhead which made animations slow. CanvasRecorder.js uses built in MediaRecorder which is apparently the simplest and most effitient way to record whatever is happening on canvas.&#xA;NOTE: I have only tested it with Chrome and it should work fine with Firefox</description>
+      <description>I made some visualizations in HTML5 canvas and wanted to record them to display in blog. Could not find a simple way to do that. CCapture.js added too much performance overhead which made animations slow. CanvasRecorder.js uses built in MediaRecorder which is apparently the simplest and most effitient way to record whatever is happening on canvas.
+NOTE: I have only tested it with Chrome and it should work fine with Firefox</description>
     </item>
+    
   </channel>
 </rss>

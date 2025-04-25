@@ -12,22 +12,18 @@
     <meta name="description" content="A visual explaination of basic git jargon like commit, branch, tag, push and pull in simple words.">
     <meta name="google-site-verification" content="OKs4MAqPZspih4NptE9C4bIimeb0E-qMuCsWvTxPDtg" />
 
-	<meta property="og:url" content="https://xosh.org/explain-git-in-simple-words/">
-  <meta property="og:site_name" content="XOSH.ORG">
-  <meta property="og:title" content="How to explain git in simple words?">
-  <meta property="og:description" content="A visual explaination of basic git jargon like commit, branch, tag, push and pull in simple words.">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="blog">
-    <meta property="article:published_time" content="2017-10-14T00:00:00+00:00">
-    <meta property="article:modified_time" content="2017-10-14T00:00:00+00:00">
-    <meta property="og:image" content="https://xosh.org/site-feature-image.jpg">
+	<meta property="og:title" content="How to explain git in simple words?" />
+<meta property="og:description" content="A visual explaination of basic git jargon like commit, branch, tag, push and pull in simple words." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xosh.org/explain-git-in-simple-words/" /><meta property="og:image" content="https://xosh.org/site-feature-image.jpg"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2017-10-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-10-14T00:00:00+00:00" /><meta property="og:site_name" content="My cool site" />
 
-	
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://xosh.org/site-feature-image.jpg">
-  <meta name="twitter:title" content="How to explain git in simple words?">
-  <meta name="twitter:description" content="A visual explaination of basic git jargon like commit, branch, tag, push and pull in simple words.">
+	<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://xosh.org/site-feature-image.jpg"/>
+
+<meta name="twitter:title" content="How to explain git in simple words?"/>
+<meta name="twitter:description" content="A visual explaination of basic git jargon like commit, branch, tag, push and pull in simple words."/>
 
 
 	
@@ -36,13 +32,18 @@
 	
 	<script data-ad-client="ca-pub-6900458819212175" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	
-  
-    
-      
-    
-  
-
-
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-8113893-21', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 	
 	
     
@@ -124,42 +125,42 @@
 <hr>
 <h2 id="file-or-blob">File OR Blob</h2>
 <p>All contents of a file are stored in a thing called <code>blob</code>. When a file is changed, a new blob will store complete file with all new changes. Blob is one of the basic storage units in Git. Others units/object types are Commit and Tree.</p>
-<figure><img src="/blog/img_git/blob.png"><figcaption>
-      <h4>A blob stores file contents</h4>
-    </figcaption>
+<figure><img src="/blog/img_git/blob.png"/><figcaption>
+            <h4>A blob stores file contents</h4>
+        </figcaption>
 </figure>
 
 <h2 id="hash">Hash</h2>
 <p><code>de9f2c7fd25e1b3afad3e85a0bd17d9b100db4b3</code>. You see a similar strange string or its short form with (first few characters) everywhere in git. This is <code>hash</code> (<a href="http://en.wikipedia.org/wiki/SHA1">SHA1</a>). A hash can point to a blob, a commit or a tree. It is 40 characters but only few are usually enough to identify a commit. For example GitHub shows first 10 characters.</p>
 <figure><img src="/blog/img_git/hash.png"
-    alt="A Hash for each basic unit"><figcaption>
-      <p>A Hash for each basic unit</p>
-    </figcaption>
+         alt="A Hash for each basic unit"/><figcaption>
+            <p>A Hash for each basic unit</p>
+        </figcaption>
 </figure>
 
 <h2 id="tree">Tree</h2>
 <p>Files are always stored in some directory or folder. Folders can can also contain more directories. Similarly, a <code>tree</code> in git represent directories for blobs and more trees.</p>
 <p>There is always a tree on root, pointing to the tree wich contains stuff.</p>
 <figure><img src="/blog/img_git/tree.png"
-    alt="A tree stores blobs and trees"><figcaption>
-      <p>A tree stores blobs and trees</p>
-    </figcaption>
+         alt="A tree stores blobs and trees"/><figcaption>
+            <p>A tree stores blobs and trees</p>
+        </figcaption>
 </figure>
 
 <p>More details: <a href="http://www.gitguys.com/topics/git-object-tree/">Git Object: tree - GitGuys.com</a></p>
 <h2 id="commit">Commit</h2>
 <p>Now let say you have two files. You want to save these in a way that you can get back to them in exact same state anytime later. When you save a snapshot of it with git, a <code>commit</code> is created pointing to the tree with two blobs (lets call them blob1 and blob2). Each commit has its own hash and it also saves your message, timestamp and your info.</p>
 <figure><img src="/blog/img_git/commit1.png"
-    alt="A commit points to tree"><figcaption>
-      <p>A commit points to tree</p>
-    </figcaption>
+         alt="A commit points to tree"/><figcaption>
+            <p>A commit points to tree</p>
+        </figcaption>
 </figure>
 
 <p>When you change one file (blob1) and commit, git will store the complete file again in a new blob (blob1c). A new tree is created with a new hash pointing to blob2 and the new blob1c. Now your git repo has both versions of a file.</p>
 <figure><img src="/blog/img_git/commit2.png"
-    alt="For each change there is a new blob and a new tree"><figcaption>
-      <p>For each change there is a new blob and a new tree</p>
-    </figcaption>
+         alt="For each change there is a new blob and a new tree"/><figcaption>
+            <p>For each change there is a new blob and a new tree</p>
+        </figcaption>
 </figure>
 
 <h3 id="check-in--do-a-commit">Check in = Do a Commit</h3>
@@ -171,9 +172,9 @@
 <h3 id="stage-or-index">Stage OR Index</h3>
 <p>The Index is your proposed next commit. Its a buffer before actual commit. It’s basically a loading dock where you get to determine what changes get shipped away. Since the working directory and what gets saved by Git are essentially decoupled, this allows the developer to build up their commits however they want. You can even stage a single individual line from your many changes and only commit that.</p>
 <figure><img src="/blog/img_git/index.gif"
-    alt="Index is the buffer before commit."><figcaption>
-      <p>Index is the buffer before commit.</p>
-    </figcaption>
+         alt="Index is the buffer before commit."/><figcaption>
+            <p>Index is the buffer before commit.</p>
+        </figcaption>
 </figure>
 
 <p>More details What is the deal with the Git Index? What is the Git Index? - GitGuys <a href="http://www.gitguys.com/topics/whats-the-deal-with-the-git-index/">http://www.gitguys.com/topics/whats-the-deal-with-the-git-index/</a></p>
@@ -183,9 +184,9 @@
 <h2 id="history">History</h2>
 <p>If you make some changes and commit again, the new commit will also point to the previous commit. So each new commit only knows about its previous commit (like a &rsquo;linked list&rsquo; or &rsquo;tree&rsquo;). When you keep changing files, a chain of commits maintains the <code>history</code> of what was done in each commit. You may load any previous commit any time.</p>
 <figure><img src="/blog/img_git/history1.png"
-    alt="Commits are connected in chain keeping history of changes"><figcaption>
-      <p>Commits are connected in chain keeping history of changes</p>
-    </figcaption>
+         alt="Commits are connected in chain keeping history of changes"/><figcaption>
+            <p>Commits are connected in chain keeping history of changes</p>
+        </figcaption>
 </figure>
 
 <p>You can see that we can have multiple commits (commit3 and commit4) pointing to same previous commit (commit2). This is called <code>branching</code>.</p>
@@ -193,25 +194,25 @@
 <p>We have seen earlier that chain of commits can go in multiple directions creating multiple branches. But also note that each commit only knows about its previous commit. If you have loaded &ldquo;commit4&rdquo; you can go back to &ldquo;commit2&rdquo; but there is no way you can reach &ldquo;commit3&rdquo; until you have stored its address somewhere. The thing which keeps track of different branches is named simply a <code>branch</code>.</p>
 <p>A branch is just a <em>move-able</em> pointer which keeps pointing to latest commit in that branch. Everytime you commit, it moves to that newly made commit. Git names the default branch as <code>master</code>.</p>
 <figure><img src="/blog/img_git/branch1.png"
-    alt="Branch is a pointer with a name, pointing to latest commit"><figcaption>
-      <p>Branch is a pointer with a name, pointing to latest commit</p>
-    </figcaption>
+         alt="Branch is a pointer with a name, pointing to latest commit"/><figcaption>
+            <p>Branch is a pointer with a name, pointing to latest commit</p>
+        </figcaption>
 </figure>
 
 <p>What branch or commit which you have currently loaded is tracking by the <strong>HEAD</strong>. Head always points to the commit or branch which you are on at that time.</p>
 <figure><img src="/blog/img_git/branch2.png"
-    alt="Head points to currently loaded branch"><figcaption>
-      <p>Head points to currently loaded branch</p>
-    </figcaption>
+         alt="Head points to currently loaded branch"/><figcaption>
+            <p>Head points to currently loaded branch</p>
+        </figcaption>
 </figure>
 
 <p>You can work on each branch independently to work on different versions of your software independently e.g. for Windows XP and Windows 7. Imagine one base Linux with all different flavors as different branches.</p>
 <h3 id="visualizing-branches">Visualizing branches</h3>
 <p>Many GIT Gui tools (like SmartGit) can show graph representation of branches and commits to easily see how they are connected.</p>
 <figure><img src="/blog/img_git/branch-visual.png"
-    alt="commits and branches visualized"><figcaption>
-      <p>commits and branches visualized</p>
-    </figcaption>
+         alt="commits and branches visualized"/><figcaption>
+            <p>commits and branches visualized</p>
+        </figcaption>
 </figure>
 
 <p>See also:</p>
@@ -223,9 +224,9 @@
 <h2 id="tag-bookmark">Tag (Bookmark)</h2>
 <p>Think of <code>tag</code> as bookmark. Where branch is a <em>move-able</em> pointer, a tag is <em>immove-able</em> pointer which always points to one specific commit. Tags are useful to specify a version. e.g. after a lots of commits and fixes you can tag a commit where everything working fine as <code>version 1.0</code>.</p>
 <figure><img src="/blog/img_git/tag.png"
-    alt="Tag is a bookmark on the specified commit"><figcaption>
-      <p>Tag is a bookmark on the specified commit</p>
-    </figcaption>
+         alt="Tag is a bookmark on the specified commit"/><figcaption>
+            <p>Tag is a bookmark on the specified commit</p>
+        </figcaption>
 </figure>
 
 <p>More details:
