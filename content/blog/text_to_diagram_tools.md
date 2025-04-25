@@ -13,7 +13,7 @@ A comprehensive list of various text to diagram tools. Ordered roughly by recenc
 ### Sequence Diagrams:
 https://sequencediagram.org/ 
 
-# Online/Browser Based Text-to-Diagram tools
+# All Online/Browser Based Text-to-Diagram tools
 
 These tools don't need to be downloaded or installed. Open the URL and start writing text to generate diagrams right from your web-browser.
 
