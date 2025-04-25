@@ -1,5 +1,5 @@
 ---
-date: 2024-07-26
+date: 2025-04-25
 description: List of text to diagram tools
 excerpt_separator: <!--more-->
 url: /text-to-diagram
@@ -9,14 +9,18 @@ title: Online text to diagram tools
 
 A comprehensive list of various text to diagram tools. Ordered roughly by recency and similarity. CTRL+F on this page to find required tool for specific needs.
 
+## Best for:
+### Sequence Diagrams:
+https://sequencediagram.org/ 
+
 # Online/Browser Based Text-to-Diagram tools
 
 These tools don't need to be downloaded or installed. Open the URL and start writing text to generate diagrams right from your web-browser.
 
-1. **D2** https://play.d2lang.com/  
+1. **Pikchr** https://pikchr.org/home/pikchrshow  
 all
 
-1. **Pikchr** https://pikchr.org/home/pikchrshow  
+1. **D2** https://play.d2lang.com/  
 all
 
 1. **Diagon** https://arthursonzogni.com/Diagon  
