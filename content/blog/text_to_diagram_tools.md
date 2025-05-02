@@ -11,7 +11,13 @@ A comprehensive list of various text to diagram tools. Ordered roughly by recenc
 
 ## My choice of tool for a job:
 ### Sequence Diagrams:
-https://sequencediagram.org/ 
+https://sequencediagram.org/  
+You can edit the text or the diagram itself. No other tool does that.
+
+### Flow charts:
+https://flowchart.fun/  
+Fastest (and simplest) way to create flow charts IMO.
+
 
 # All Online/Browser Based Text-to-Diagram tools
 
