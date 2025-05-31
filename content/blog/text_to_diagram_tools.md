@@ -26,7 +26,7 @@ These tools don't need to be downloaded or installed. Open the URL and start wri
 1. **Pikchr** https://pikchr.org/home/pikchrshow  
 all
 
-1. **D2** https://play.d2lang.com/  
+1. **D2** https://play.d2lang.com/ (requires internet)  
 all
 
 1. **Diagon** https://arthursonzogni.com/Diagon  
@@ -48,7 +48,7 @@ ascii-to-all
 draw in ascii in left panel and see the diagram in right panel. uses svgbob  
 Source: https://github.com/mbarkhau/asciigrid
 
-1. **shaky** https://shaky.github.bushong.net/
+1. **shaky** https://shaky.github.bushong.net/ https://web.archive.org/web/20250107053616/https://shaky.github.bushong.net/  
 ascii-to-all  
 Source: https://github.com/dbushong/shaky
 
