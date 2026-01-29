@@ -83,6 +83,10 @@ BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, C4 (
 timeline/gantt  
 Source: https://github.com/mark-when/markwhen
 
+1. **Graph Easy Online** https://graph-easy.online/
+ascii flow
+Source: https://github.com/cjlm/graph-easy-online
+
 1. **flowchart.fun** https://flowchart.fun/  
 flow
 
@@ -270,7 +274,7 @@ These tools need to be downloaded. Pass diagram text as arguments on the CLI to 
 ascii-to-all  
 
 1. **perl graph-easy** http://bloodgate.com/perl/graph/index.html #cli  
-flow  
+ascii flow  
 Doc: https://developpaper.com/recommend-a-tool-for-making-ascii-flow-chart-graph-easy  
 Example: `graph-easy <<< [node 1]->[some text]-[this][node 1]->[branch]`  
 
