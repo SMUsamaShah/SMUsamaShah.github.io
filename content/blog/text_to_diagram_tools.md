@@ -3,7 +3,7 @@ date: 2025-04-25
 description: List of text to diagram tools
 excerpt_separator: <!--more-->
 url: /text-to-diagram
-title: Online text to diagram tools
+title: List of Online text to diagram tools
 ---
 
 
@@ -76,7 +76,7 @@ ascii-drawing
 1. **fsymbols** https://fsymbols.com/draw/  
 ascii-drawing
 
-1. *cascii* https://cascii.app/  
+1. **cascii** https://cascii.app/  
 ascii-drawing
 
 1. **Kroki** https://kroki.io/  
