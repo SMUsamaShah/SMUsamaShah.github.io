@@ -76,6 +76,9 @@ ascii-drawing
 1. **fsymbols** https://fsymbols.com/draw/  
 ascii-drawing
 
+1. *cascii* https://cascii.app/  
+ascii-drawing
+
 1. **Kroki** https://kroki.io/  
 BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, C4 (with PlantUML), D2, DBML, Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, Pikchr, PlantUML, Structurizr, SvgBob, TikZ, UMLet, Vega, Vega-Lite, WaveDrom, WireViz
 
