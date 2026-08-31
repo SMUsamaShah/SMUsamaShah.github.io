@@ -12,6 +12,8 @@ Open the page's `index.html` and edit it directly. For example:
 
 To add a new page, create `your-page/index.html`, then link to it from whichever page should lead to it. Pages may use entirely different markup, CSS and JavaScript when that makes sense.
 
+If it is a blog post, add its link to `index.html` and `blog/index.html`. Update `index.xml` and `sitemap.xml` too when you want it in the RSS feed and sitemap. Nothing will later regenerate or overwrite those files.
+
 ## Publishing
 
 Push or merge into `source`. The deployment workflow copies the static files to `master`, which GitHub Pages serves. It does not transform or generate the site.
