@@ -1,0 +1,1370 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NTSCRT — Clean CRT browser reference</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101113;
+      --panel: #181a1e;
+      --panel-2: #202329;
+      --line: #30343c;
+      --text: #f1f3f5;
+      --muted: #9ca3af;
+      --accent: #ffb454;
+      --accent-2: #75d9ff;
+      --shadow: rgba(0, 0, 0, .35);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(117, 217, 255, .08), transparent 30rem),
+        radial-gradient(circle at 100% 100%, rgba(255, 180, 84, .06), transparent 32rem),
+        var(--bg);
+      color: var(--text);
+      font: 14px/1.45 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .shell {
+      width: min(1440px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 34px 0 42px;
+    }
+
+    .top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font: 700 11px/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .14em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 5vw, 58px);
+      line-height: .98;
+      letter-spacing: -.055em;
+    }
+
+    .lede {
+      max-width: 670px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    a {
+      color: var(--accent-2);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .repo-link {
+      flex: none;
+      padding-top: 5px;
+      font: 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .preview-card, .controls {
+      border: 1px solid var(--line);
+      background: rgba(24, 26, 30, .88);
+      box-shadow: 0 18px 46px var(--shadow);
+    }
+
+    .preview-card { padding: 14px; }
+
+    .preview-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0 2px 11px;
+      color: var(--muted);
+      font: 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .stage {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: min(68vh, 760px);
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.025) 25%, transparent 25%) 0 0 / 20px 20px,
+        linear-gradient(315deg, rgba(255,255,255,.025) 25%, transparent 25%) 0 0 / 20px 20px,
+        #0b0c0e;
+    }
+
+    #screen {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: min(68vh, 760px);
+      object-fit: contain;
+      image-rendering: auto;
+      background: #000;
+    }
+
+    .empty {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 30px;
+      color: var(--muted);
+      text-align: center;
+      pointer-events: none;
+    }
+
+    .empty.hidden { display: none; }
+
+    .empty-box {
+      max-width: 340px;
+      padding: 22px;
+      border: 1px dashed #4a505c;
+      background: rgba(16, 17, 19, .78);
+    }
+
+    .controls {
+      padding: 17px;
+    }
+
+    .controls h2 {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: -.02em;
+    }
+
+    .subtle {
+      margin: 5px 0 16px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .dropzone {
+      display: block;
+      padding: 15px;
+      border: 1px dashed #59616d;
+      background: #131519;
+      cursor: pointer;
+      transition: border-color .15s, background .15s;
+    }
+
+    .dropzone:hover, .dropzone.dragging {
+      border-color: var(--accent);
+      background: #1a1b1e;
+    }
+
+    .drop-title {
+      display: block;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .drop-name {
+      display: block;
+      overflow: hidden;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 9px;
+    }
+
+    button, select, input[type="number"] {
+      border: 1px solid var(--line);
+      border-radius: 0;
+      color: var(--text);
+      background: var(--panel-2);
+      font: inherit;
+    }
+
+    button {
+      padding: 8px 10px;
+      cursor: pointer;
+    }
+
+    button:hover { border-color: var(--accent); }
+
+    .button-row button { flex: 1; }
+
+    .section {
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 11px;
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .section-title small {
+      color: var(--accent);
+      font: 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .toggle-row, .select-row, .number-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 30px;
+      margin: 7px 0;
+    }
+
+    .toggle-row label, .select-row label, .number-row label {
+      color: #d8dce2;
+      font-size: 12px;
+    }
+
+    .number-row input[type="number"] {
+      width: 92px;
+      padding: 5px 7px;
+    }
+
+    select { padding: 5px 7px; }
+
+    input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--accent);
+    }
+
+    .range-row {
+      margin: 11px 0 13px;
+    }
+
+    .range-label {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 5px;
+      color: #d8dce2;
+      font: 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .range-label output { color: var(--accent); }
+
+    input[type="range"] {
+      display: block;
+      width: 100%;
+      height: 16px;
+      margin: 0;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    .preset-note {
+      margin: 15px 0 0;
+      padding: 11px;
+      border-left: 2px solid var(--accent-2);
+      background: rgba(117, 217, 255, .06);
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .preset-note strong { color: var(--text); }
+
+    .status {
+      min-height: 34px;
+      margin-top: 14px;
+      padding: 8px 10px;
+      color: var(--muted);
+      background: #111216;
+      font: 11px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .status.error {
+      color: #ff9d9d;
+      border-left: 2px solid #ff6565;
+    }
+
+    footer {
+      margin-top: 19px;
+      color: #737b87;
+      font-size: 11px;
+    }
+
+    footer p { margin: 5px 0; }
+
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .controls { order: -1; }
+      .stage { min-height: 46vh; }
+      #screen { max-height: 62vh; }
+    }
+
+    @media (max-width: 560px) {
+      .shell { width: min(100% - 20px, 1440px); padding-top: 22px; }
+      .top { display: block; }
+      .repo-link { display: inline-block; margin-top: 13px; }
+      .preview-card { padding: 9px; }
+      .controls { padding: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="top">
+      <div>
+        <p class="eyebrow">NTSCRT · BROWSER REFERENCE</p>
+        <h1>Clean CRT</h1>
+        <p class="lede">A self-contained JavaScript/WebGL port of NTSCRT’s shipped clean CRT path. Drop in an image, tune the original preset parameters, and download the result.</p>
+      </div>
+      <a class="repo-link" href="https://github.com/finnmckenty/NTSCRT" target="_blank" rel="noreferrer">View NTSCRT source ↗</a>
+    </header>
+
+    <main class="layout">
+      <section class="preview-card">
+        <div class="preview-head">
+          <span>Output</span>
+          <span id="dimensions">Waiting for image</span>
+        </div>
+        <div class="stage" id="stage">
+          <canvas id="screen" aria-label="CRT effect output"></canvas>
+          <div class="empty hidden" id="empty">
+            <div class="empty-box">
+              <strong>Drop an image to begin</strong><br>
+              PNG, JPEG, WebP, GIF, or any browser-readable image.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="controls">
+        <h2>Input image</h2>
+        <p class="subtle">The demo starts with a built-in test pattern.</p>
+
+        <label class="dropzone" id="dropzone" for="fileInput">
+          <span class="drop-title">Choose an image</span>
+          <span class="drop-name" id="fileName">Built-in test pattern</span>
+        </label>
+        <input id="fileInput" type="file" accept="image/*" hidden>
+
+        <div class="button-row">
+          <button id="sampleBtn" type="button">Load test pattern</button>
+          <button id="downloadBtn" type="button">Download PNG</button>
+        </div>
+
+        <div class="section">
+          <div class="section-title">
+            <span>Downscale</span>
+            <small>before CRT shader</small>
+          </div>
+          <div class="toggle-row">
+            <label for="downscaleEnabled">Enabled</label>
+            <input id="downscaleEnabled" type="checkbox" checked>
+          </div>
+          <div class="number-row">
+            <label for="downscaleWidth">Width</label>
+            <input id="downscaleWidth" type="number" min="16" max="2048" step="2" value="256">
+          </div>
+          <div class="select-row">
+            <label for="downscaleMethod">Method</label>
+            <select id="downscaleMethod">
+              <option value="area">Area average</option>
+              <option value="nearest">Nearest</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">
+            <span>glow_gauss</span>
+            <small>pinned shader preset</small>
+          </div>
+
+          <div class="range-row">
+            <div class="range-label"><span>INPUT_GAMMA</span><output id="value-INPUT_GAMMA"></output></div>
+            <input data-param="INPUT_GAMMA" type="range" min="1.8" max="2.8" step="0.01" value="2.4">
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>BOOST</span><output id="value-BOOST"></output></div>
+            <input data-param="BOOST" type="range" min=".5" max="1.8" step=".01" value="1.1">
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>GLOW_WHITEPOINT</span><output id="value-GLOW_WHITEPOINT"></output></div>
+            <input data-param="GLOW_WHITEPOINT" type="range" min=".5" max="1.5" step=".01" value="1">
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>GLOW_ROLLOFF</span><output id="value-GLOW_ROLLOFF"></output></div>
+            <input data-param="GLOW_ROLLOFF" type="range" min="1" max="6" step=".05" value="2.4">
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>BLOOM_STRENGTH</span><output id="value-BLOOM_STRENGTH"></output></div>
+            <input data-param="BLOOM_STRENGTH" type="range" min="0" max="1" step=".01" value=".1">
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>OUTPUT_GAMMA</span><output id="value-OUTPUT_GAMMA"></output></div>
+            <input data-param="OUTPUT_GAMMA" type="range" min="1.6" max="2.8" step=".01" value="2.2">
+          </div>
+
+          <div class="toggle-row">
+            <label for="curvature">Curvature / corners</label>
+            <input id="curvature" type="checkbox">
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>warpX</span><output id="value-warpX"></output></div>
+            <input data-param="warpX" type="range" min="0" max=".08" step=".001" value=".031">
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>warpY</span><output id="value-warpY"></output></div>
+            <input data-param="warpY" type="range" min="0" max=".08" step=".001" value=".041">
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>cornersize</span><output id="value-cornersize"></output></div>
+            <input data-param="cornersize" type="range" min="0" max=".08" step=".001" value=".01">
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>cornersmooth</span><output id="value-cornersmooth"></output></div>
+            <input data-param="cornersmooth" type="range" min="10" max="1600" step="10" value="1000">
+          </div>
+
+          <div class="select-row">
+            <label for="shadowMask">shadowMask</label>
+            <select id="shadowMask">
+              <option value="0">0 · Off</option>
+              <option value="1">1 · Slot mask</option>
+              <option value="2">2 · RGB mask</option>
+              <option value="3">3 · RGB mask 2</option>
+              <option value="4">4 · RGB mask 3</option>
+            </select>
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>maskDark</span><output id="value-maskDark"></output></div>
+            <input data-param="maskDark" type="range" min="0" max="1" step=".01" value=".5">
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>maskLight</span><output id="value-maskLight"></output></div>
+            <input data-param="maskLight" type="range" min="1" max="2.5" step=".01" value="1.5">
+          </div>
+          <div class="range-row">
+            <div class="range-label"><span>noise_amt</span><output id="value-noise_amt"></output></div>
+            <input data-param="noise_amt" type="range" min="0" max="2" step=".01" value="1">
+          </div>
+          <div class="toggle-row">
+            <label for="animate">Animate frame count</label>
+            <input id="animate" type="checkbox" checked>
+          </div>
+          <div class="button-row">
+            <button id="resetBtn" type="button">Reset preset</button>
+          </div>
+        </div>
+
+        <p class="preset-note"><strong>Reference path:</strong> linearize → Gaussian horizontal → Gaussian vertical → threshold → bloom blur horizontal → bloom blur vertical → resolve. The optional NTSC/VHS signal stage is not approximated in this page.</p>
+        <div class="status" id="status">Preparing WebGL…</div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Default values match NTSCRT’s <code>Clean CRT.json</code> preset and its pinned <code>glow_gauss</code> RetroArch shader chain.</p>
+      <p>Browser GPU precision and texture filtering can differ slightly from Metal/librashader at individual pixels.</p>
+    </footer>
+  </div>
+
+  <script>
+  (function () {
+    'use strict';
+
+    var screen = document.getElementById('screen');
+    var stage = document.getElementById('stage');
+    var empty = document.getElementById('empty');
+    var status = document.getElementById('status');
+    var dimensions = document.getElementById('dimensions');
+    var dropzone = document.getElementById('dropzone');
+    var fileInput = document.getElementById('fileInput');
+    var fileName = document.getElementById('fileName');
+    var sampleBtn = document.getElementById('sampleBtn');
+    var downloadBtn = document.getElementById('downloadBtn');
+    var resetBtn = document.getElementById('resetBtn');
+    var downscaleEnabled = document.getElementById('downscaleEnabled');
+    var downscaleWidth = document.getElementById('downscaleWidth');
+    var downscaleMethod = document.getElementById('downscaleMethod');
+    var curvature = document.getElementById('curvature');
+    var shadowMask = document.getElementById('shadowMask');
+    var animate = document.getElementById('animate');
+
+    function setStatus(message, isError) {
+      status.textContent = message;
+      status.classList.toggle('error', !!isError);
+    }
+
+    var gl = screen.getContext('webgl2', {
+      alpha: false,
+      antialias: false,
+      premultipliedAlpha: false,
+      preserveDrawingBuffer: true
+    });
+
+    if (!gl) {
+      empty.classList.remove('hidden');
+      empty.querySelector('.empty-box').innerHTML = '<strong>WebGL 2 is required</strong><br>Please open this page in a current desktop or mobile browser.';
+      setStatus('This browser does not expose WebGL 2.', true);
+      return;
+    }
+
+    var maxTextureSize = gl.getParameter(gl.MAX_TEXTURE_SIZE);
+
+    var VERTEX_SOURCE = [
+      '#version 300 es',
+      'precision highp float;',
+      'out vec2 vUv;',
+      'void main() {',
+      '  vec2 p = vec2((gl_VertexID == 1) ? 2.0 : 0.0, (gl_VertexID == 2) ? 2.0 : 0.0);',
+      '  gl_Position = vec4(p * 2.0 - 1.0, 0.0, 1.0);',
+      '  vUv = p;',
+      '}'
+    ].join('\n');
+
+    /*
+     * NTSCRT's shader chain writes the first six passes to SRGB textures.
+     * WebGL's browser color-management path is deliberately made explicit here:
+     * every intermediate read decodes sRGB and every intermediate write encodes it.
+     */
+    var COMMON = [
+      'precision highp float;',
+      'in vec2 vUv;',
+      'out vec4 outColor;',
+      'uniform sampler2D u_source;',
+      'uniform vec2 u_sourceSize;',
+      'uniform vec2 u_outputSize;',
+      'uniform float u_frame;',
+      'vec3 srgbToLinear(vec3 c) {',
+      '  vec3 low = c / 12.92;',
+      '  vec3 high = pow((c + 0.055) / 1.055, vec3(2.4));',
+      '  return mix(high, low, step(c, vec3(0.04045)));',
+      '}',
+      'vec3 linearToSrgb(vec3 c) {',
+      '  c = max(c, vec3(0.0));',
+      '  vec3 low = c * 12.92;',
+      '  vec3 high = 1.055 * pow(c, vec3(1.0 / 2.4)) - 0.055;',
+      '  return mix(high, low, step(c, vec3(0.0031308)));',
+      '}',
+      'vec3 sampleLinear(sampler2D tex, vec2 uv) {',
+      '  return srgbToLinear(texture(tex, uv).rgb);',
+      '}',
+      'vec3 sampleLinearLod(sampler2D tex, vec2 uv, float lod) {',
+      '  return srgbToLinear(textureLod(tex, uv, lod).rgb);',
+      '}'
+    ].join('\n');
+
+    var FS0 = COMMON + '\n' + [
+      'uniform float u_gamma;',
+      'void main() {',
+      '  vec3 color = texture(u_source, vec2(vUv.x, 1.0 - vUv.y)).rgb;',
+      '  outColor = vec4(linearToSrgb(pow(max(color, vec3(0.0)), vec3(u_gamma))), 1.0);',
+      '}'
+    ].join('\n');
+
+    var FS1 = COMMON + '\n' + [
+      'void main() {',
+      '  float dataPixNo = vUv.x * u_sourceSize.x;',
+      '  float dataOne = 1.0 / u_sourceSize.x;',
+      '  float texel = floor(dataPixNo);',
+      '  float phase = dataPixNo - texel;',
+      '  float basePhase = phase - 0.5;',
+      '  vec2 tex = vec2((texel + 0.5) * dataOne, vUv.y);',
+      '  vec3 col = vec3(0.0);',
+      '  for (int i = -2; i <= 2; i++) {',
+      '    float tapPhase = basePhase - float(i);',
+      '    float g = 0.38 * exp(-0.5 * tapPhase * tapPhase / (0.5 * 0.5)) / 0.5;',
+      '    col += sampleLinear(u_source, tex + vec2(float(i) * dataOne, 0.0)) * g;',
+      '  }',
+      '  outColor = vec4(linearToSrgb(col), 1.0);',
+      '}'
+    ].join('\n');
+
+    var FS2 = COMMON + '\n' + [
+      'uniform float u_boost;',
+      'void main() {',
+      '  vec2 dataPixNo = vUv * u_sourceSize - vec2(0.0, 0.5);',
+      '  vec2 dataOne = 1.0 / u_sourceSize;',
+      '  vec2 texel = floor(dataPixNo);',
+      '  float phase = dataPixNo.y - texel.y;',
+      '  vec2 tex = (texel + 0.5) * dataOne;',
+      '  vec3 top = sampleLinear(u_source, tex);',
+      '  vec3 bottom = sampleLinear(u_source, tex + vec2(0.0, dataOne.y));',
+      '  vec3 wid = 2.0 + 2.0 * pow(top, vec3(4.0));',
+      '  vec3 weights = vec3(abs(phase) * 3.333333333333);',
+      '  vec3 scanline = 2.0 * top * exp(-pow(weights * inversesqrt(0.5 * wid), wid)) / (0.6 + 0.2 * wid);',
+      '  wid = 2.0 + 2.0 * pow(bottom, vec3(4.0));',
+      '  weights = vec3(abs(1.0 - phase) * 3.333333333333);',
+      '  scanline += 2.0 * bottom * exp(-pow(weights * inversesqrt(0.5 * wid), wid)) / (0.6 + 0.2 * wid);',
+      '  outColor = vec4(linearToSrgb(u_boost * scanline * 0.869565217391304), 1.0);',
+      '}'
+    ].join('\n');
+
+    var FS3 = COMMON + '\n' + [
+      'uniform float u_whitepoint;',
+      'uniform float u_rolloff;',
+      'void main() {',
+      '  vec3 color = 1.15 * sampleLinear(u_source, vUv);',
+      '  vec3 factor = clamp(color / u_whitepoint, vec3(0.0), vec3(1.0));',
+      '  outColor = vec4(linearToSrgb(pow(factor, vec3(u_rolloff))), 1.0);',
+      '}'
+    ].join('\n');
+
+    var FS4 = COMMON + '\n' + [
+      '#define GLOW_FALLOFF 0.35',
+      '#define TAPS 4',
+      'void main() {',
+      '  float dx = 4.0 / u_sourceSize.x;',
+      '  float kTotal = 0.0;',
+      '  vec3 col = vec3(0.0);',
+      '  for (int i = -TAPS; i <= TAPS; i++) {',
+      '    float k = exp(-GLOW_FALLOFF * float(i * i));',
+      '    col += k * sampleLinearLod(u_source, vUv + vec2(float(i) * dx, 0.0), 2.0);',
+      '    kTotal += k;',
+      '  }',
+      '  outColor = vec4(linearToSrgb(col / kTotal), 1.0);',
+      '}'
+    ].join('\n');
+
+    var FS5 = COMMON + '\n' + [
+      '#define GLOW_FALLOFF 0.35',
+      '#define TAPS 4',
+      'void main() {',
+      '  float dy = 1.0 / u_sourceSize.y;',
+      '  float kTotal = 0.0;',
+      '  vec3 col = vec3(0.0);',
+      '  for (int i = -TAPS; i <= TAPS; i++) {',
+      '    float k = exp(-GLOW_FALLOFF * float(i * i));',
+      '    col += k * sampleLinear(u_source, vUv + vec2(0.0, float(i) * dy));',
+      '    kTotal += k;',
+      '  }',
+      '  outColor = vec4(linearToSrgb(col / kTotal), 1.0);',
+      '}'
+    ].join('\n');
+
+    var FS6 = COMMON + '\n' + [
+      'uniform sampler2D u_crt;',
+      'uniform sampler2D u_bloom;',
+      'uniform float u_bloomStrength;',
+      'uniform float u_outputGamma;',
+      'uniform float u_curvature;',
+      'uniform float u_warpX;',
+      'uniform float u_warpY;',
+      'uniform float u_shadowMask;',
+      'uniform float u_maskDark;',
+      'uniform float u_maskLight;',
+      'uniform float u_cornersize;',
+      'uniform float u_cornersmooth;',
+      'uniform float u_noiseAmt;',
+      '',
+      'float rand2(vec2 n) {',
+      '  return fract(sin(dot(n, vec2(12.9898, 4.1414))) * 43758.5453);',
+      '}',
+      'float noise2(vec2 p) {',
+      '  vec2 ip = floor(p);',
+      '  vec2 u = fract(p);',
+      '  u = u * u * (3.0 - 2.0 * u);',
+      '  float res = mix(',
+      '    mix(rand2(ip), rand2(ip + vec2(1.0, 0.0)), u.x),',
+      '    mix(rand2(ip + vec2(0.0, 1.0)), rand2(ip + vec2(1.0, 1.0)), u.x),',
+      '    u.y',
+      '  );',
+      '  return res * res;',
+      '}',
+      'vec2 warp(vec2 texCoord) {',
+      '  vec2 distortion = vec2(u_warpX, u_warpY) * 15.0;',
+      '  float offsetX = noise2(sin(gl_FragCoord.xy) * mod(u_frame, 361.0));',
+      '  float offsetY = noise2(cos(gl_FragCoord.yx) * mod(u_frame, 873.0));',
+      '  vec2 noiseCoord = texCoord + vec2(offsetX, offsetY) * 0.001 * u_noiseAmt;',
+      '  vec2 curved = noiseCoord * 2.0 - 1.0;',
+      '  float dist = sqrt(dot(curved, curved));',
+      '  curved /= max(dist, 0.000001);',
+      '  curved = curved * (vec2(1.0) - pow(vec2(1.0 - dist / 1.41421356237), vec2(1.0) / (vec2(1.0) + distortion * 0.2)));',
+      '  curved = curved / (vec2(1.0) - pow(vec2(0.2928932188), vec2(1.0) / (vec2(1.0) + distortion * 0.2)));',
+      '  return curved * 0.5 + 0.5;',
+      '}',
+      'float corner(vec2 texCoord) {',
+      '  vec2 aspect = vec2(1.0, 0.75);',
+      '  vec2 coord = texCoord;',
+      '  coord -= vec2(0.5);',
+      '  coord *= 1.0 / aspect;',
+      '  coord += vec2(0.5);',
+      '  coord = min(coord, vec2(1.0) - coord);',
+      '  coord *= aspect;',
+      '  vec2 cdist = vec2(u_cornersize);',
+      '  coord = cdist - min(coord, cdist);',
+      '  float dist = sqrt(dot(coord, coord));',
+      '  return clamp((cdist.x - dist) * u_cornersmooth, 0.0, 1.0);',
+      '}',
+      'vec3 maskPattern(vec2 pos) {',
+      '  if (u_shadowMask < 0.5) return vec3(1.0);',
+      '  vec3 mask = vec3(u_maskDark);',
+      '  if (abs(u_shadowMask - 1.0) < 0.1) {',
+      '    float line = u_maskLight;',
+      '    float odd = 0.0;',
+      '    if (fract(pos.x * 0.166666666) < 0.5) odd = 1.0;',
+      '    if (fract((pos.y + odd) * 0.5) < 0.5) line = u_maskDark;',
+      '    pos.x = fract(pos.x * 0.333333333);',
+      '    if (pos.x < 0.333333333) mask.r = u_maskLight;',
+      '    else if (pos.x < 0.666666666) mask.g = u_maskLight;',
+      '    else mask.b = u_maskLight;',
+      '    mask *= line;',
+      '  } else if (abs(u_shadowMask - 2.0) < 0.1) {',
+      '    pos.x = fract(pos.x * 0.333333333);',
+      '    if (pos.x < 0.333333333) mask.r = u_maskLight;',
+      '    else if (pos.x < 0.666666666) mask.g = u_maskLight;',
+      '    else mask.b = u_maskLight;',
+      '  } else if (abs(u_shadowMask - 3.0) < 0.1) {',
+      '    pos.x += pos.y * 3.0;',
+      '    pos.x = fract(pos.x * 0.166666666);',
+      '    if (pos.x < 0.333333333) mask.r = u_maskLight;',
+      '    else if (pos.x < 0.666666666) mask.g = u_maskLight;',
+      '    else mask.b = u_maskLight;',
+      '  } else if (abs(u_shadowMask - 4.0) < 0.1) {',
+      '    pos.xy = floor(pos.xy * vec2(1.0, 0.5));',
+      '    pos.x += pos.y * 3.0;',
+      '    pos.x = fract(pos.x * 0.166666666);',
+      '    if (pos.x < 0.333333333) mask.r = u_maskLight;',
+      '    else if (pos.x < 0.666666666) mask.g = u_maskLight;',
+      '    else mask.b = u_maskLight;',
+      '  }',
+      '  return mask;',
+      '}',
+      'void main() {',
+      '  vec2 pp = vUv;',
+      '  if (u_curvature > 0.5) pp = warp(pp);',
+      '  vec3 source = 1.15 * sampleLinear(u_crt, pp);',
+      '  vec3 bloom = sampleLinear(u_bloom, pp);',
+      '  source += u_bloomStrength * bloom;',
+      '  vec3 color = pow(clamp(source, vec3(0.0), vec3(1.0)), vec3(1.0 / u_outputGamma));',
+      '  if (!(pp.x > 0.0001 && pp.x < 0.9999 && pp.y > 0.0001 && pp.y < 0.9999)) color = vec3(0.0);',
+      '  if (u_curvature > 0.5) color *= corner(pp);',
+      '  if (u_shadowMask > 0.5) {',
+      '    color = pow(pow(max(color, vec3(0.0)), vec3(2.2)) * maskPattern(vUv * u_outputSize * 1.000001), vec3(1.0 / 2.2));',
+      '  }',
+      '  outColor = vec4(color, 1.0);',
+      '}'
+    ].join('\n');
+
+    function compile(type, source) {
+      var shader = gl.createShader(type);
+      gl.shaderSource(shader, source);
+      gl.compileShader(shader);
+      if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+        var message = gl.getShaderInfoLog(shader) || 'Unknown shader compilation error';
+        gl.deleteShader(shader);
+        throw new Error(message);
+      }
+      return shader;
+    }
+
+    function makeProgram(fragmentSource) {
+      var program = gl.createProgram();
+      var vertex = compile(gl.VERTEX_SHADER, VERTEX_SOURCE);
+      var fragment = compile(gl.FRAGMENT_SHADER, '#version 300 es\n' + fragmentSource);
+      gl.attachShader(program, vertex);
+      gl.attachShader(program, fragment);
+      gl.linkProgram(program);
+      gl.deleteShader(vertex);
+      gl.deleteShader(fragment);
+      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+        throw new Error(gl.getProgramInfoLog(program) || 'Unable to link WebGL program');
+      }
+      return program;
+    }
+
+    var programs;
+    var vao = gl.createVertexArray();
+    gl.bindVertexArray(vao);
+
+    try {
+      programs = {
+        p0: makeProgram(FS0),
+        p1: makeProgram(FS1),
+        p2: makeProgram(FS2),
+        p3: makeProgram(FS3),
+        p4: makeProgram(FS4),
+        p5: makeProgram(FS5),
+        p6: makeProgram(FS6)
+      };
+    } catch (shaderError) {
+      setStatus('Shader setup failed: ' + shaderError.message, true);
+      return;
+    }
+
+    var state = {
+      source: null,
+      sourceId: 0,
+      gpu: null,
+      frame: 0,
+      renderQueued: false
+    };
+
+    function destroyTexture(texture) {
+      if (texture) gl.deleteTexture(texture);
+    }
+
+    function destroyTarget(target) {
+      if (!target) return;
+      if (target.fb) gl.deleteFramebuffer(target.fb);
+      destroyTexture(target.tex);
+    }
+
+    function destroyGpu(gpu) {
+      if (!gpu) return;
+      destroyTexture(gpu.chainTex);
+      destroyTarget(gpu.p0);
+      destroyTarget(gpu.p1);
+      destroyTarget(gpu.p2);
+      destroyTarget(gpu.p3);
+      destroyTarget(gpu.p4);
+      destroyTarget(gpu.p5);
+    }
+
+    function setTextureFiltering(texture, minFilter, magFilter) {
+      gl.bindTexture(gl.TEXTURE_2D, texture);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, minFilter);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, magFilter);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    }
+
+    function makeTexture(width, height, pixels, minFilter, magFilter) {
+      var texture = gl.createTexture();
+      gl.bindTexture(gl.TEXTURE_2D, texture);
+      gl.pixelStorei(gl.UNPACK_ALIGNMENT, 1);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, minFilter);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, magFilter);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, pixels || null);
+      return texture;
+    }
+
+    function makeTarget(width, height) {
+      var target = {
+        width: width,
+        height: height,
+        tex: makeTexture(width, height, null, gl.NEAREST, gl.NEAREST),
+        fb: null
+      };
+      target.fb = gl.createFramebuffer();
+      gl.bindFramebuffer(gl.FRAMEBUFFER, target.fb);
+      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, target.tex, 0);
+      if (gl.checkFramebufferStatus(gl.FRAMEBUFFER) !== gl.FRAMEBUFFER_COMPLETE) {
+        destroyTarget(target);
+        throw new Error('Framebuffer is incomplete at ' + width + '×' + height);
+      }
+      gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+      return target;
+    }
+
+    function areaResize(pixels, sw, sh, dw, dh) {
+      var result = new Uint8ClampedArray(dw * dh * 4);
+      for (var dy = 0; dy < dh; dy++) {
+        var sy0 = dy * sh / dh;
+        var sy1 = (dy + 1) * sh / dh;
+        var y0 = Math.floor(sy0);
+        var y1 = Math.ceil(sy1);
+        for (var dx = 0; dx < dw; dx++) {
+          var sx0 = dx * sw / dw;
+          var sx1 = (dx + 1) * sw / dw;
+          var x0 = Math.floor(sx0);
+          var x1 = Math.ceil(sx1);
+          var red = 0;
+          var green = 0;
+          var blue = 0;
+          var alpha = 0;
+          var weightSum = 0;
+          for (var y = y0; y < y1; y++) {
+            var fy = Math.max(0, Math.min(y + 1, sy1) - Math.max(y, sy0));
+            for (var x = x0; x < x1; x++) {
+              var fx = Math.max(0, Math.min(x + 1, sx1) - Math.max(x, sx0));
+              var weight = fx * fy;
+              var index = (y * sw + x) * 4;
+              red += pixels[index] * weight;
+              green += pixels[index + 1] * weight;
+              blue += pixels[index + 2] * weight;
+              alpha += pixels[index + 3] * weight;
+              weightSum += weight;
+            }
+          }
+          var outputIndex = (dy * dw + dx) * 4;
+          result[outputIndex] = red / weightSum;
+          result[outputIndex + 1] = green / weightSum;
+          result[outputIndex + 2] = blue / weightSum;
+          result[outputIndex + 3] = alpha / weightSum;
+        }
+      }
+      return result;
+    }
+
+    function nearestResize(pixels, sw, sh, dw, dh) {
+      var result = new Uint8ClampedArray(dw * dh * 4);
+      for (var dy = 0; dy < dh; dy++) {
+        var sy = Math.min(sh - 1, Math.floor((dy + 0.5) * sh / dh));
+        for (var dx = 0; dx < dw; dx++) {
+          var sx = Math.min(sw - 1, Math.floor((dx + 0.5) * sw / dw));
+          var sourceIndex = (sy * sw + sx) * 4;
+          var outputIndex = (dy * dw + dx) * 4;
+          result[outputIndex] = pixels[sourceIndex];
+          result[outputIndex + 1] = pixels[sourceIndex + 1];
+          result[outputIndex + 2] = pixels[sourceIndex + 2];
+          result[outputIndex + 3] = pixels[sourceIndex + 3];
+        }
+      }
+      return result;
+    }
+
+    function evenHeight(sourceWidth, sourceHeight, targetWidth) {
+      var aspect = Math.max(0.05, sourceWidth / sourceHeight);
+      return Math.max(16, 2 * Math.round((targetWidth / aspect) / 2));
+    }
+
+    function getChainSettings() {
+      var source = state.source;
+      var width = Math.max(16, Math.min(2048, Number(downscaleWidth.value) || 256));
+      if (!downscaleEnabled.checked) {
+        return {
+          width: source.width,
+          height: source.height,
+          pixels: source.pixels,
+          label: 'native source'
+        };
+      }
+      var height = evenHeight(source.width, source.height, width);
+      var pixels = downscaleMethod.value === 'nearest'
+        ? nearestResize(source.pixels, source.width, source.height, width, height)
+        : areaResize(source.pixels, source.width, source.height, width, height);
+      return {
+        width: width,
+        height: height,
+        pixels: pixels,
+        label: downscaleMethod.value + ' ' + width + '×' + height
+      };
+    }
+
+    function rebuildGpu() {
+      if (state.gpu) destroyGpu(state.gpu);
+      var chain = getChainSettings();
+      var longest = Math.max(chain.width, chain.height);
+      var scale = Math.max(1, Math.min(6, Math.floor(4096 / longest)));
+      var outputWidth = chain.width * scale;
+      var outputHeight = chain.height * scale;
+      var bloomWidth = Math.max(1, Math.floor(outputWidth * 0.25));
+      var bloomHeight = Math.max(1, Math.floor(outputHeight * 0.25));
+
+      state.gpu = {
+        chainWidth: chain.width,
+        chainHeight: chain.height,
+        chainLabel: chain.label,
+        scale: scale,
+        outputWidth: outputWidth,
+        outputHeight: outputHeight,
+        chainTex: makeTexture(chain.width, chain.height, chain.pixels, gl.NEAREST, gl.NEAREST),
+        p0: makeTarget(chain.width, chain.height),
+        p1: makeTarget(outputWidth, chain.height),
+        p2: makeTarget(outputWidth, outputHeight),
+        p3: makeTarget(outputWidth, outputHeight),
+        p4: makeTarget(bloomWidth, bloomHeight),
+        p5: makeTarget(bloomWidth, bloomHeight)
+      };
+    }
+
+    function uniformLocation(program, name) {
+      return gl.getUniformLocation(program, name);
+    }
+
+    function drawPass(target, program, sourceSize, outputSize, textures, floats) {
+      gl.bindFramebuffer(gl.FRAMEBUFFER, target ? target.fb : null);
+      gl.viewport(0, 0, outputSize[0], outputSize[1]);
+      gl.useProgram(program);
+
+      var textureUnit = 0;
+      Object.keys(textures || {}).forEach(function (name) {
+        var location = uniformLocation(program, name);
+        if (location === null) return;
+        gl.activeTexture(gl.TEXTURE0 + textureUnit);
+        gl.bindTexture(gl.TEXTURE_2D, textures[name]);
+        gl.uniform1i(location, textureUnit);
+        textureUnit++;
+      });
+
+      var sourceLocation = uniformLocation(program, 'u_sourceSize');
+      if (sourceLocation !== null) gl.uniform2f(sourceLocation, sourceSize[0], sourceSize[1]);
+      var outputLocation = uniformLocation(program, 'u_outputSize');
+      if (outputLocation !== null) gl.uniform2f(outputLocation, outputSize[0], outputSize[1]);
+      var frameLocation = uniformLocation(program, 'u_frame');
+      if (frameLocation !== null) gl.uniform1f(frameLocation, state.frame);
+
+      Object.keys(floats || {}).forEach(function (name) {
+        var location = uniformLocation(program, name);
+        if (location !== null) gl.uniform1f(location, floats[name]);
+      });
+
+      gl.drawArrays(gl.TRIANGLES, 0, 3);
+    }
+
+    function getParams() {
+      function value(name) {
+        return Number(document.querySelector('[data-param="' + name + '"]').value);
+      }
+      return {
+        INPUT_GAMMA: value('INPUT_GAMMA'),
+        BOOST: value('BOOST'),
+        GLOW_WHITEPOINT: value('GLOW_WHITEPOINT'),
+        GLOW_ROLLOFF: value('GLOW_ROLLOFF'),
+        BLOOM_STRENGTH: value('BLOOM_STRENGTH'),
+        OUTPUT_GAMMA: value('OUTPUT_GAMMA'),
+        warpX: value('warpX'),
+        warpY: value('warpY'),
+        cornersize: value('cornersize'),
+        cornersmooth: value('cornersmooth'),
+        maskDark: value('maskDark'),
+        maskLight: value('maskLight'),
+        noise_amt: value('noise_amt'),
+        curvature: curvature.checked ? 1 : 0,
+        shadowMask: Number(shadowMask.value)
+      };
+    }
+
+    function render() {
+      if (!state.source) {
+        empty.classList.remove('hidden');
+        return;
+      }
+
+      try {
+        if (!state.gpu) rebuildGpu();
+        var g = state.gpu;
+        var p = getParams();
+
+        drawPass(g.p0, programs.p0, [g.chainWidth, g.chainHeight], [g.chainWidth, g.chainHeight], {
+          u_source: g.chainTex
+        }, {
+          u_gamma: p.INPUT_GAMMA
+        });
+
+        drawPass(g.p1, programs.p1, [g.chainWidth, g.chainHeight], [g.outputWidth, g.chainHeight], {
+          u_source: g.p0.tex
+        }, {});
+
+        drawPass(g.p2, programs.p2, [g.outputWidth, g.chainHeight], [g.outputWidth, g.outputHeight], {
+          u_source: g.p1.tex
+        }, {
+          u_boost: p.BOOST
+        });
+
+        drawPass(g.p3, programs.p3, [g.outputWidth, g.outputHeight], [g.outputWidth, g.outputHeight], {
+          u_source: g.p2.tex
+        }, {
+          u_whitepoint: p.GLOW_WHITEPOINT,
+          u_rolloff: p.GLOW_ROLLOFF
+        });
+
+        gl.bindTexture(gl.TEXTURE_2D, g.p3.tex);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+        gl.generateMipmap(gl.TEXTURE_2D);
+
+        drawPass(g.p4, programs.p4, [g.outputWidth, g.outputHeight], [g.p4.width, g.p4.height], {
+          u_source: g.p3.tex
+        }, {});
+
+        drawPass(g.p5, programs.p5, [g.p4.width, g.p4.height], [g.p5.width, g.p5.height], {
+          u_source: g.p4.tex
+        }, {});
+
+        setTextureFiltering(g.p2.tex, gl.LINEAR, gl.LINEAR);
+        screen.width = g.outputWidth;
+        screen.height = g.outputHeight;
+        screen.style.aspectRatio = g.outputWidth + ' / ' + g.outputHeight';
+
+        drawPass(null, programs.p6, [g.outputWidth, g.outputHeight], [g.outputWidth, g.outputHeight], {
+          u_crt: g.p2.tex,
+          u_bloom: g.p5.tex
+        }, {
+          u_bloomStrength: p.BLOOM_STRENGTH,
+          u_outputGamma: p.OUTPUT_GAMMA,
+          u_curvature: p.curvature,
+          u_warpX: p.warpX,
+          u_warpY: p.warpY,
+          u_shadowMask: p.shadowMask,
+          u_maskDark: p.maskDark,
+          u_maskLight: p.maskLight,
+          u_cornersize: p.cornersize,
+          u_cornersmooth: p.cornersmooth,
+          u_noiseAmt: p.noise_amt
+        });
+
+        empty.classList.add('hidden');
+        dimensions.textContent = g.chainWidth + '×' + g.chainHeight + ' → ' + g.outputWidth + '×' + g.outputHeight;
+        setStatus('Rendered ' + g.chainLabel + ' chain at ' + g.scale + '× preview scale.', false);
+      } catch (renderError) {
+        setStatus('Render failed: ' + renderError.message, true);
+      }
+    }
+
+    function requestRender() {
+      if (state.renderQueued) return;
+      state.renderQueued = true;
+      requestAnimationFrame(function () {
+        state.renderQueued = false;
+        render();
+      });
+    }
+
+    function setSource(width, height, pixels, name) {
+      if (width > maxTextureSize || height > maxTextureSize) {
+        setStatus('Image is larger than this GPU supports (' + maxTextureSize + 'px maximum).', true);
+        return;
+      }
+      state.sourceId += 1;
+      state.source = {
+        width: width,
+        height: height,
+        pixels: pixels
+      };
+      state.gpu = null;
+      state.frame = 0;
+      fileName.textContent = name;
+      requestRender();
+    }
+
+    async function loadFile(file) {
+      if (!file || !file.type || file.type.indexOf('image/') !== 0) {
+        setStatus('Please choose an image file.', true);
+        return;
+      }
+      try {
+        setStatus('Loading ' + file.name + '…', false);
+        var bitmap = await createImageBitmap(file);
+        var canvas = document.createElement('canvas');
+        canvas.width = bitmap.width;
+        canvas.height = bitmap.height;
+        var context = canvas.getContext('2d', { willReadFrequently: true });
+        context.drawImage(bitmap, 0, 0);
+        var pixels = context.getImageData(0, 0, bitmap.width, bitmap.height).data;
+        if (bitmap.close) bitmap.close();
+        setSource(canvas.width, canvas.height, pixels, file.name);
+      } catch (loadError) {
+        setStatus('Could not decode image: ' + loadError.message, true);
+      }
+    }
+
+    function makeTestPattern() {
+      var width = 768;
+      var height = 432;
+      var canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      var context = canvas.getContext('2d');
+      var gradient = context.createLinearGradient(0, 0, width, height);
+      gradient.addColorStop(0, '#101b48');
+      gradient.addColorStop(.48, '#8c286b');
+      gradient.addColorStop(1, '#ff8e36');
+      context.fillStyle = gradient;
+      context.fillRect(0, 0, width, height);
+
+      context.globalAlpha = .2;
+      context.fillStyle = '#77d9ff';
+      for (var i = 0; i < 12; i++) context.fillRect(i * 64, 0, 32, height);
+      context.globalAlpha = 1;
+
+      var colors = ['#f7f7e8', '#ff4747', '#3ad37c', '#4db7ff', '#ffdb4d', '#111318'];
+      colors.forEach(function (color, index) {
+        context.fillStyle = color;
+        context.fillRect(40 + index * 112, 82, 96, 160);
+      });
+
+      context.strokeStyle = 'rgba(255,255,255,.8)';
+      context.lineWidth = 3;
+      context.strokeRect(40, 82, 656, 160);
+      context.strokeStyle = 'rgba(255,255,255,.22)';
+      context.lineWidth = 1;
+      for (var x = 40; x <= 696; x += 16) {
+        context.beginPath();
+        context.moveTo(x, 82);
+        context.lineTo(x, 242);
+        context.stroke();
+      }
+      for (var y = 82; y <= 242; y += 16) {
+        context.beginPath();
+        context.moveTo(40, y);
+        context.lineTo(696, y);
+        context.stroke();
+      }
+
+      context.fillStyle = '#f4f0dc';
+      context.font = '700 28px ui-monospace, monospace';
+      context.fillText('NTSCRT', 45,  forty = 315);
+      context.font = '14px ui-monospace, monospace';
+      context.fillText('CLEAN CRT / GLOW_GAUSS', 45, 345);
+      context.fillStyle = 'rgba(255,255,255,.65)';
+      context.fillText('AREA DOWNSCALE  ·  256 px  ·  SRGB PASSES', 45, 370);
+
+      return {
+        width: width,
+        height: height,
+        pixels: context.getImageData(0, 0, width, height).data
+      };
+    }
+
+    function loadTestPattern() {
+      var pattern = makeTestPattern();
+      setSource(pattern.width, pattern.height, pattern.pixels, 'Built-in test pattern');
+    }
+
+    function updateValueLabels() {
+      document.querySelectorAll('[data-param]').forEach(function (input) {
+        var output = document.getElementById('value-' + input.getAttribute('data-param'));
+        if (output) output.textContent = input.value;
+      });
+      downscaleWidth.disabled = !downscaleEnabled.checked;
+    }
+
+    var defaults = {
+      INPUT_GAMMA: '2.4',
+      BOOST: '1.1',
+      GLOW_WHITEPOINT: '1',
+      GLOW_ROLLOFF: '2.4',
+      BLOOM_STRENGTH: '.1',
+      OUTPUT_GAMMA: '2.2',
+      warpX: '.031',
+      warpY: '.041',
+      cornersize: '.01',
+      cornersmooth: '1000',
+      maskDark: '.5',
+      maskLight: '1.5',
+      noise_amt: '1'
+    };
+
+    document.querySelectorAll('[data-param]').forEach(function (input) {
+      input.addEventListener('input', function () {
+        updateValueLabels();
+        requestRender();
+      });
+    });
+
+    [downscaleEnabled, downscaleWidth, downscaleMethod, curvature, shadowMask].forEach(function (input) {
+      input.addEventListener('input', function () {
+        if (input === downscaleEnabled || input === downscaleWidth || input === downscaleMethod) state.gpu = null;
+        updateValueLabels();
+        requestRender();
+      });
+      input.addEventListener('change', function () {
+        if (input === downscaleEnabled || input === downscaleWidth || input === downscaleMethod) state.gpu = null;
+        updateValueLabels();
+        requestRender();
+      });
+    });
+
+    animate.addEventListener('change', updateValueLabels);
+
+    resetBtn.addEventListener('click', function () {
+      Object.keys(defaults).forEach(function (name) {
+        document.querySelector('[data-param="' + name + '"]').value = defaults[name];
+      });
+      downscaleEnabled.checked = true;
+      downscaleWidth.value = '256';
+      downscaleMethod.value = 'area';
+      curvature.checked = false;
+      shadowMask.value = '0';
+      animate.checked = true;
+      state.gpu = null;
+      updateValueLabels();
+      requestRender();
+    });
+
+    fileInput.addEventListener('change', function () {
+      if (fileInput.files && fileInput.files[0]) loadFile(fileInput.files[0]);
+    });
+
+    ['dragenter', 'dragover'].forEach(function (eventName) {
+      dropzone.addEventListener(eventName, function (event) {
+        event.preventDefault();
+        dropzone.classList.add('dragging');
+      });
+    });
+
+    ['dragleave', 'drop'].forEach(function (eventName) {
+      dropzone.addEventListener(eventName, function (event) {
+        event.preventDefault();
+        dropzone.classList.remove('dragging');
+      });
+    });
+
+    dropzone.addEventListener('drop', function (event) {
+      var files = event.dataTransfer && event.dataTransfer.files;
+      if (files && files[0]) loadFile(files[0]);
+    });
+
+    sampleBtn.addEventListener('click', loadTestPattern);
+
+    downloadBtn.addEventListener('click', function () {
+      if (!state.source) {
+        setStatus('Load an image first.', true);
+        return;
+      }
+      screen.toBlob(function (blob) {
+        if (!blob) {
+          setStatus('The browser could not export the canvas.', true);
+          return;
+        }
+        var link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'ntscrt-clean-crt.png';
+        link.click();
+        setTimeout(function () { URL.revokeObjectURL(link.href); }, 1000);
+      }, 'image/png');
+    });
+
+    updateValueLabels();
+    loadTestPattern();
+
+    function animationLoop() {
+      if (animate.checked && curvature.checked && state.source) {
+        state.frame = (state.frame + 1) % 1000000;
+        requestRender();
+      }
+      requestAnimationFrame(animationLoop);
+    }
+    requestAnimationFrame(animationLoop);
+  }());
+  </script>
+</body>
+</html>
