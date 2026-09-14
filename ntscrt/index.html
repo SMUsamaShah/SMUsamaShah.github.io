@@ -1105,10 +1105,14 @@
           u_source: g.p3.tex
         }, {});
 
+        setTextureFiltering(g.p4.tex, gl.LINEAR, gl.LINEAR);
+
         drawPass(g.p5, programs.p5, [g.p4.width, g.p4.height], [g.p5.width, g.p5.height], {
           u_source: g.p4.tex
         }, {});
 
+        setTextureFiltering(g.p4.tex, gl.LINEAR, gl.LINEAR);
+        setTextureFiltering(g.p5.tex, gl.LINEAR, gl.LINEAR);
         setTextureFiltering(g.p2.tex, gl.LINEAR, gl.LINEAR);
         screen.width = g.outputWidth;
         screen.height = g.outputHeight;
