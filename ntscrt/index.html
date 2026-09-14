@@ -1089,6 +1089,8 @@
           u_boost: p.BOOST
         });
 
+        setTextureFiltering(g.p2.tex, gl.NEAREST, gl.NEAREST);
+
         drawPass(g.p3, programs.p3, [g.outputWidth, g.outputHeight], [g.outputWidth, g.outputHeight], {
           u_source: g.p2.tex
         }, {
