@@ -1112,7 +1112,7 @@
         setTextureFiltering(g.p2.tex, gl.LINEAR, gl.LINEAR);
         screen.width = g.outputWidth;
         screen.height = g.outputHeight;
-        screen.style.aspectRatio = g.outputWidth + ' / ' + g.outputHeight';
+        screen.style.aspectRatio = g.outputWidth + ' / ' + g.outputHeight;
 
         drawPass(null, programs.p6, [g.outputWidth, g.outputHeight], [g.outputWidth, g.outputHeight], {
           u_crt: g.p2.tex,
@@ -1231,7 +1231,7 @@
 
       context.fillStyle = '#f4f0dc';
       context.font = '700 28px ui-monospace, monospace';
-      context.fillText('NTSCRT', 45,  forty = 315);
+      context.fillText('NTSCRT', 45, 315);
       context.font = '14px ui-monospace, monospace';
       context.fillText('CLEAN CRT / GLOW_GAUSS', 45, 345);
       context.fillStyle = 'rgba(255,255,255,.65)';
